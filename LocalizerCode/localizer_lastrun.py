@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.3),
-    on June 21, 2021, at 10:27
+This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
+    on June 29, 2021, at 07:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,14 +15,14 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
-from numpy.random import random, randint, normal, shuffle, choice as randchoice
+from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.3'
+psychopyVersion = '2020.2.10'
 expName = 'localizer'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'run': '0001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -46,12 +46,12 @@ expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+filename = _thisDir + os.sep + u'data/subj%s_run%s_%s_%s' % (expInfo['participant'], expInfo['run'], expName, expInfo['date'])
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Public\\Moore_fMRI\\LocalizerCode\\localizer_lastrun.py',
+    originPath='C:\\Users\\smwei\\Documents\\Moore_2020\\LocalizerCode\\localizer_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=True, screen=0, 
+    size=[1536, 864], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -96,7 +96,8 @@ wait_for_tClock = core.Clock()
 scanner_t = keyboard.Keyboard()
 import datetime
 
-subject = 'subj%04d' % int(expInfo['participant'])
+subject = str(expInfo['participant'])
+subject = 'subj0' + subject[-3:]
 session = 'run%04d' % int(expInfo['run'])
 
 sequence_file = 'localizer' + os.sep + 'sequences' + os.sep + 'loc_' + subject + '_' + session + '.csv'
@@ -106,7 +107,8 @@ fixation_wait_for_t = visual.ShapeStim(
     win=win, name='fixation_wait_for_t', vertices='cross',
     size=(0.02, 0.02),
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[-1,-1,-1], fillColor=[-1,-1,-1],
+    lineWidth=1, lineColor=[-1,-1,-1], lineColorSpace='rgb',
+    fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-2.0, interpolate=True)
 
 # Initialize components for Routine "trial"
@@ -123,7 +125,8 @@ fixation = visual.ShapeStim(
     win=win, name='fixation', vertices='cross',
     size=(0.02, 0.02),
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[-1,-1,-1], fillColor=[-1.000,-1.000,-1.000],
+    lineWidth=1, lineColor=[-1,-1,-1], lineColorSpace='rgb',
+    fillColor=[-1.000,-1.000,-1.000], fillColorSpace='rgb',
     opacity=1, depth=-2.0, interpolate=True)
 repeat_response = keyboard.Keyboard()
 
@@ -133,7 +136,8 @@ fixation_null = visual.ShapeStim(
     win=win, name='fixation_null', vertices='cross',
     size=(0.02, 0.02),
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[-1,-1,-1], fillColor=[-1,-1,-1],
+    lineWidth=1, lineColor=[-1,-1,-1], lineColorSpace='rgb',
+    fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "end"
