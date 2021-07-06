@@ -8,7 +8,6 @@ Created on Mon Jun 28 15:16:37 2021
 import os
 import glob
 import pandas as pd
-import warnings
 
 # Find the directory containing this file
 baseDir = os.path.dirname(os.path.realpath(__file__))
@@ -37,20 +36,19 @@ def generateOnsets(inputFile):
     # Using input filename to generate output directory and file name stem
     
     if 'subj' in inputFile:
-        subj = inputFile.split('\\')[-1][4:9]
-        run = inputFile.split('\\')[-1][13:17]
+        subj = 'sub-dspfmri' + inputFile.split('\\')[-1][4:9]
+        run = 'run-' + inputFile.split('\\')[-1][15:17]
         
-        outputStem = subj + '_' + run
+        outputStem = subj + '_task-funcLocalizer_' + run
     
-        print(f'Making subj specific directory by subj name: {outputStem}')
+        print(f'Making subj specific directory by subj name: {subj}')
         
     else:
-        outputStem = inputFile.split('\\')[-1][:-4]
         
-        print(f'Directory created by file name. Subj # not found: {outputStem}')
+        print(f'No subject number found in {inputFile}')
         
         
-    subjOutputDir = os.path.join(outputDir,outputStem)
+    subjOutputDir = os.path.join(outputDir,subj)
     if not os.path.exists(subjOutputDir):
         os.mkdir(subjOutputDir)
 
@@ -60,7 +58,7 @@ def generateOnsets(inputFile):
     
     # Sanity check input CSV as being complete
     if len(df) <= 246:
-        warnings.warn(f'Data incomplete ({len(df)} trials found in {inputFile}')
+        print(f'Data incomplete ({len(df)} trials found in {inputFile}')
     
     if len(df) == 0:
         return 
@@ -92,13 +90,17 @@ def generateOnsets(inputFile):
                                'trial_type' : trial_type})
         
         
+        # Save full file as events file.
+        events.to_csv(os.path.join(subjOutputDir,outputStem + '_events.tsv'),sep='\t',index=False)
+        
+        # Save each condition as a separate onset.
         for condition in ['scrambled','objects','scenes','faces']:
-            events[events['trial_type']==condition].to_csv(os.path.join(subjOutputDir,condition+'_onsets.tsv'),sep='\t',index=False)
+            events[events['trial_type']==condition].to_csv(os.path.join(subjOutputDir,outputStem + '_condition-' + condition +'_onsets.tsv'),sep='\t',index=False)
         
         return events
     
     else: 
-        warnings.warn(f'Data incomplete: Onsets, duration, and conditions are not the same length for {inputFile}.')
+        print(f'Data incomplete: Onsets, duration, and conditions are not the same length for {inputFile}.')
 
 for file in inputFiles: 
     events = generateOnsets(file)
