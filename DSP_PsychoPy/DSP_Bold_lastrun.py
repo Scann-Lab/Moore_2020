@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.3),
-    on June 28, 2021, at 22:36
+This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
+    on July 07, 2021, at 16:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,14 +15,14 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
-from numpy.random import random, randint, normal, shuffle, choice as randchoice
+from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.3'
+psychopyVersion = '2020.2.10'
 expName = 'DSP_Bold'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'run': '', 'group': '', 'version': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s_%s_%s' % (expInfo['participant'],
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Public\\Moore_fMRI\\PsychoPy\\DSP_Bold_lastrun.py',
+    originPath='C:\\Users\\smwei\\Documents\\Moore_2020\\DSP_PsychoPy\\DSP_Bold_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -98,7 +98,8 @@ Alignment_background = visual.Rect(
     win=win, name='Alignment_background',
     width=(2,2)[0], height=(2,2)[1],
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor='black', fillColor='black',
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 Alignment_image = visual.ImageStim(
     win=win,
@@ -254,13 +255,15 @@ Learning_1_fixation_horz = visual.Line(
     win=win, name='Learning_1_fixation_horz',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=0, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-6.0, interpolate=True)
 Learning_1_fixation_vert = visual.Line(
     win=win, name='Learning_1_fixation_vert',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=90, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "Control_1"
@@ -312,13 +315,15 @@ Control_1_fixation_horz = visual.Line(
     win=win, name='Control_1_fixation_horz',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=0, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-10.0, interpolate=True)
 Control_1_fixation_vert = visual.Line(
     win=win, name='Control_1_fixation_vert',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=90, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-11.0, interpolate=True)
 
 # Initialize components for Routine "Learning_2"
@@ -363,13 +368,15 @@ Learning_2_fixation_horz = visual.Line(
     win=win, name='Learning_2_fixation_horz',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=0, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-6.0, interpolate=True)
 Learning_2_fixation_vert = visual.Line(
     win=win, name='Learning_2_fixation_vert',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=90, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "Control_2"
@@ -421,13 +428,15 @@ Control_2_fixation_horz = visual.Line(
     win=win, name='Control_2_fixation_horz',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=0, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-10.0, interpolate=True)
 Control_2_fixation_vert = visual.Line(
     win=win, name='Control_2_fixation_vert',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=90, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-11.0, interpolate=True)
 
 # Initialize components for Routine "Learning_3"
@@ -472,13 +481,15 @@ Learning_3_fixation_horz = visual.Line(
     win=win, name='Learning_3_fixation_horz',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=0, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-6.0, interpolate=True)
 Learning_3_fixation_vert = visual.Line(
     win=win, name='Learning_3_fixation_vert',
     start=(-(0.075, 0)[0]/2.0, 0), end=(+(0.075, 0)[0]/2.0, 0),
     ori=90, pos=(0, 0),
-    lineWidth=5,     colorSpace='rgb',  lineColor='black', fillColor=[1,1,1],
+    lineWidth=5, lineColor='black', lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "Done"

@@ -181,11 +181,15 @@ def generateOnsets(inputFile,outputDir):
     events.sort_values(by='onset',inplace=True)
     
     #full file as events file.
-    events.to_csv(os.path.join(subjOutputDir,outputStem + '_events.tsv'),sep='\t',index=False)
+    events.to_csv(os.path.join(subjOutputDir,outputStem + '_events.tsv'),sep='\t',index=False,line_terminator="\n")
     
     # Save each condition as a separate onset.
-    for condition in ['instructions','response','vid']:
-        events[events['trial_type'].str.match(condition)].to_csv(os.path.join(subjOutputDir,outputStem + '_condition-' + condition +'_onsets.tsv'),sep='\t',index=False)
+    for condition in ['instructions','response','learning_vid','control_vid']:
+        temp = events[['onset','duration','trial_type']]
+        temp = temp[temp['trial_type'].str.match(condition)].copy()
+        temp['strength'] = 1
+        temp.drop(columns='trial_type',inplace=True)
+        temp.to_csv(os.path.join(subjOutputDir,outputStem + '_condition-' + condition +'_onsets.tsv'),sep='\t',index=False,line_terminator="\n",header=False)
     
     return events
 
