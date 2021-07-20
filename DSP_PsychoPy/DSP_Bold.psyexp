@@ -25,7 +25,7 @@
     <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
-    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Use version" updates="None" val="2020.2.10" valType="str"/>
     <Param name="Window size (pixels)" updates="None" val="[1536, 864]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[.4,.4,.4]" valType="str"/>
@@ -178,7 +178,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="loop" updates="None" val="False" valType="bool"/>
-        <Param name="movie" updates="set every repeat" val="$video_file" valType="str"/>
+        <Param name="movie" updates="constant" val="$control_1" valType="str"/>
         <Param name="name" updates="None" val="Control_1_video" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -283,8 +283,8 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="76" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="91" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
@@ -310,11 +310,28 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="76" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="91" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
+      <CodeComponent name="Control_1_code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="thisExp.addData(&quot;control_video_file_1&quot;, control_1);&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('control_video_file_1', control_1)" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="Control_1_code" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Control_2">
       <CodeComponent name="Control_2_same_different_code">
@@ -459,7 +476,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="loop" updates="None" val="False" valType="bool"/>
-        <Param name="movie" updates="set every repeat" val="$video_file" valType="str"/>
+        <Param name="movie" updates="constant" val="$control_2" valType="str"/>
         <Param name="name" updates="None" val="Control_2_video" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -564,8 +581,8 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="76" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="91" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
@@ -591,11 +608,28 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="76" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="91" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
+      <CodeComponent name="Control_2_code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="thisExp.addData(&quot;control_video_file_2&quot;, control_2);&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('control_video_file_2', control_2)" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="Control_2_code" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Learning_1">
       <CodeComponent name="Learning_1_time">
@@ -1443,96 +1477,6 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="Ring">
-      <TextComponent name="Ring_text">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.075" valType="code"/>
-        <Param name="name" updates="None" val="Ring_text" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Press the button under your ring finger." valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
-      </TextComponent>
-      <KeyboardComponent name="Ring_resp">
-        <Param name="allowedKeys" updates="constant" val="'g'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="Ring_resp" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-    </Routine>
-    <Routine name="Pinky">
-      <TextComponent name="Pinky_text">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.075" valType="code"/>
-        <Param name="name" updates="None" val="Pinky_text" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Press the button under your pinky finger." valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
-      </TextComponent>
-      <KeyboardComponent name="Pinky_resp">
-        <Param name="allowedKeys" updates="constant" val="'y'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="Pinky_resp" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-    </Routine>
     <Routine name="Repeat">
       <CodeComponent name="Repeat_code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -1781,52 +1725,6 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="Setup"/>
-    <Routine name="Middle_2">
-      <TextComponent name="Index_text_2">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.075" valType="code"/>
-        <Param name="name" updates="None" val="Index_text_2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Press the button under your index finger." valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <KeyboardComponent name="Index_resp_2">
-        <Param name="allowedKeys" updates="constant" val="'b'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="Index_resp_2" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-    </Routine>
     <Routine name="Stim_stuff">
       <CodeComponent name="Learning_code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -1848,11 +1746,11 @@
       <CodeComponent name="Control_code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import xlrd&amp;#10;&amp;#10;if expInfo['group'] == 'alt' and expInfo['version'] == 'A':&amp;#10;    control_1 = 'Control_Alternate_A.xlsx'&amp;#10;    control_2 = 'Control_Alternate_A.xlsx'&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'B':&amp;#10;    control_1 = 'Control_Alternate_B.xlsx'&amp;#10;    control_2 = 'Control_Alternate_B.xlsx'&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'C':&amp;#10;    control_1 = 'Control_Alternate_C.xlsx'&amp;#10;    control_2 = 'Control_Alternate_C.xlsx'&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'D':&amp;#10;    control_1 = 'Control_Alternate_D.xlsx'&amp;#10;    control_2 = 'Control_Alternate_D.xlsx'&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'A':&amp;#10;    control_1 = 'Control_Normal_A.xlsx'&amp;#10;    control_2 = 'Control_Normal_A.xlsx'&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'B':&amp;#10;    control_1 = 'Control_Normal_B.xlsx'&amp;#10;    control_2 = 'Control_Normal_B.xlsx'&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'C':&amp;#10;    control_1 = 'Control_Normal_C.xlsx'&amp;#10;    control_2 = 'Control_Normal_C.xlsx'&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'D':&amp;#10;    control_1 = 'Control_Normal_D.xlsx'&amp;#10;    control_2 = 'Control_Normal_D.xlsx'&amp;#10;    &amp;#10;if expInfo['run'] == '1':&amp;#10;    row_1 = '0'&amp;#10;    row_2 = '1'&amp;#10;elif expInfo['run'] == '2':&amp;#10;    row_1 = '2'&amp;#10;    row_2 = '3'&amp;#10;elif expInfo['run'] == '3':&amp;#10;    row_1 = '4'&amp;#10;    row_2 = '5'&amp;#10;elif expInfo['run'] == '4':&amp;#10;    row_1 = '6'&amp;#10;    row_2 = '7'" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import xlrd&amp;#10;&amp;#10;if expInfo['group'] == 'alt' and expInfo['version'] == 'A':&amp;#10;    Control_Alternate_A = 'Control_Alternate_A.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Alternate_A)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'B':&amp;#10;    Control_Alternate_B = 'Control_Alternate_B.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Alternate_B)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'C':&amp;#10;    Control_Alternate_C = 'Control_Alternate_C.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Alternate_C)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'alt' and expInfo['version'] == 'D':&amp;#10;    Control_Alternate_D = 'Control_Alternate_D.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Alternate_D)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'A':&amp;#10;    Control_Normal_A = 'Control_Normal_A.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Normal_A)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'B':&amp;#10;    Control_Normal_B = 'Control_Normal_B.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Normal_B)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'C':&amp;#10;    Control_Normal_C = 'Control_Normal_C.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Normal_C)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;elif expInfo['group'] == 'nor' and expInfo['version'] == 'D':&amp;#10;    Control_Normal_D = 'Control_Normal_D.xlsx'&amp;#10;    workbook = xlrd.open_workbook(Control_Normal_D)&amp;#10;    worksheet = workbook.sheet_by_index(0)&amp;#10;&amp;#10;control_videos = []&amp;#10;&amp;#10;for rowx in range(1, 9):&amp;#10;    row = worksheet.row_values(rowx)&amp;#10;    control_videos.append(row[0])&amp;#10;&amp;#10;if expInfo['run'] == '1':&amp;#10;    control_1 = control_videos[0]&amp;#10;    control_2 = control_videos[1]&amp;#10;elif expInfo['run'] == '2':&amp;#10;    control_1 = control_videos[2]&amp;#10;    control_2 = control_videos[3]&amp;#10;elif expInfo['run'] == '3':&amp;#10;    control_1 = control_videos[4]&amp;#10;    control_2 = control_videos[5]&amp;#10;elif expInfo['run'] == '4':&amp;#10;    control_1 = control_videos[6]&amp;#10;    control_2 = control_videos[7]" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="import * as xlrd from 'xlrd';&amp;#10;var control_1, control_2, row_1, row_2;&amp;#10;if (((expInfo[&quot;group&quot;] === &quot;alt&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;A&quot;))) {&amp;#10;    control_1 = &quot;Control_Alternate_A.xlsx&quot;;&amp;#10;    control_2 = &quot;Control_Alternate_A.xlsx&quot;;&amp;#10;} else {&amp;#10;    if (((expInfo[&quot;group&quot;] === &quot;alt&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;B&quot;))) {&amp;#10;        control_1 = &quot;Control_Alternate_B.xlsx&quot;;&amp;#10;        control_2 = &quot;Control_Alternate_B.xlsx&quot;;&amp;#10;    } else {&amp;#10;        if (((expInfo[&quot;group&quot;] === &quot;alt&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;C&quot;))) {&amp;#10;            control_1 = &quot;Control_Alternate_C.xlsx&quot;;&amp;#10;            control_2 = &quot;Control_Alternate_C.xlsx&quot;;&amp;#10;        } else {&amp;#10;            if (((expInfo[&quot;group&quot;] === &quot;alt&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;D&quot;))) {&amp;#10;                control_1 = &quot;Control_Alternate_D.xlsx&quot;;&amp;#10;                control_2 = &quot;Control_Alternate_D.xlsx&quot;;&amp;#10;            } else {&amp;#10;                if (((expInfo[&quot;group&quot;] === &quot;nor&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;A&quot;))) {&amp;#10;                    control_1 = &quot;Control_Normal_A.xlsx&quot;;&amp;#10;                    control_2 = &quot;Control_Normal_A.xlsx&quot;;&amp;#10;                } else {&amp;#10;                    if (((expInfo[&quot;group&quot;] === &quot;nor&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;B&quot;))) {&amp;#10;                        control_1 = &quot;Control_Normal_B.xlsx&quot;;&amp;#10;                        control_2 = &quot;Control_Normal_B.xlsx&quot;;&amp;#10;                    } else {&amp;#10;                        if (((expInfo[&quot;group&quot;] === &quot;nor&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;C&quot;))) {&amp;#10;                            control_1 = &quot;Control_Normal_C.xlsx&quot;;&amp;#10;                            control_2 = &quot;Control_Normal_C.xlsx&quot;;&amp;#10;                        } else {&amp;#10;                            if (((expInfo[&quot;group&quot;] === &quot;nor&quot;) &amp;&amp; (expInfo[&quot;version&quot;] === &quot;D&quot;))) {&amp;#10;                                control_1 = &quot;Control_Normal_D.xlsx&quot;;&amp;#10;                                control_2 = &quot;Control_Normal_D.xlsx&quot;;&amp;#10;                            }&amp;#10;                        }&amp;#10;                    }&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if ((expInfo[&quot;run&quot;] === &quot;1&quot;)) {&amp;#10;    row_1 = &quot;0&quot;;&amp;#10;    row_2 = &quot;1&quot;;&amp;#10;} else {&amp;#10;    if ((expInfo[&quot;run&quot;] === &quot;2&quot;)) {&amp;#10;        row_1 = &quot;2&quot;;&amp;#10;        row_2 = &quot;3&quot;;&amp;#10;    } else {&amp;#10;        if ((expInfo[&quot;run&quot;] === &quot;3&quot;)) {&amp;#10;            row_1 = &quot;4&quot;;&amp;#10;            row_2 = &quot;5&quot;;&amp;#10;        } else {&amp;#10;            if ((expInfo[&quot;run&quot;] === &quot;4&quot;)) {&amp;#10;                row_1 = &quot;6&quot;;&amp;#10;                row_2 = &quot;7&quot;;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -1886,33 +1784,9 @@
     <Routine name="Stim_stuff"/>
     <Routine name="Ready_scanner"/>
     <Routine name="Learning_1"/>
-    <LoopInitiator loopType="TrialHandler" name="Control_1_loop">
-      <Param name="Selected rows" updates="None" val="$row_1" valType="str"/>
-      <Param name="conditions" updates="None" val="None" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="$control_1" valType="str"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="Control_1_loop" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
     <Routine name="Control_1"/>
-    <LoopTerminator name="Control_1_loop"/>
     <Routine name="Learning_2"/>
-    <LoopInitiator loopType="TrialHandler" name="Control_2_loop">
-      <Param name="Selected rows" updates="None" val="$row_2" valType="str"/>
-      <Param name="conditions" updates="None" val="None" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="$control_2" valType="str"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="Control_2_loop" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
     <Routine name="Control_2"/>
-    <LoopTerminator name="Control_2_loop"/>
     <Routine name="Learning_3"/>
     <Routine name="Done"/>
   </Flow>
