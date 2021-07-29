@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2021.1.3">
+<PsychoPy2experiment encoding="utf-8" version="2021.2.1">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -17,6 +17,7 @@
     <Param name="Resources" updates="None" val="[]" valType="fileList"/>
     <Param name="Save csv file" updates="None" val="False" valType="bool"/>
     <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save hdf5 file" updates="None" val="False" valType="bool"/>
     <Param name="Save log file" updates="None" val="True" valType="bool"/>
     <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
     <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
@@ -29,9 +30,29 @@
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
+    <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
+    <Param name="elLiveFiltering" updates="None" val="FILTER_LEVEL_OFF" valType="str"/>
+    <Param name="elModel" updates="None" val="EYELINK 1000 DESKTOP" valType="str"/>
+    <Param name="elPupilAlgorithm" updates="None" val="ELLIPSE_FIT" valType="str"/>
+    <Param name="elPupilMeasure" updates="None" val="PUPIL_AREA" valType="str"/>
+    <Param name="elSampleRate" updates="None" val="1000" valType="num"/>
+    <Param name="elSimMode" updates="None" val="False" valType="bool"/>
+    <Param name="elTrackEyes" updates="None" val="RIGHT_EYE" valType="str"/>
+    <Param name="elTrackingMode" updates="None" val="PUPIL_CR_TRACKING" valType="str"/>
     <Param name="expName" updates="None" val="localizer" valType="str"/>
     <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="eyetracker" updates="None" val="None" valType="str"/>
+    <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
+    <Param name="gpPort" updates="None" val="4242" valType="num"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="mgBlink" updates="None" val="MIDDLE_BUTTON" valType="list"/>
+    <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
+    <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
+    <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
+    <Param name="tbModel" updates="None" val="" valType="str"/>
+    <Param name="tbSampleRate" updates="None" val="60" valType="num"/>
+    <Param name="tbSerialNo" updates="None" val="" valType="str"/>
   </Settings>
   <Routines>
     <Routine name="trial">
@@ -104,6 +125,7 @@
         <Param name="stopVal" updates="constant" val=".8" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
       </PolygonComponent>
       <KeyboardComponent name="repeat_response">
         <Param name="allowedKeys" updates="constant" val="'y'" valType="code"/>
@@ -231,6 +253,7 @@
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
       </PolygonComponent>
     </Routine>
     <Routine name="null_block">
@@ -260,6 +283,7 @@
         <Param name="stopVal" updates="constant" val="12" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
       </PolygonComponent>
       <CodeComponent name="null_block_code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -306,11 +330,11 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
-<<<<<<< HEAD
     <Routine name="Ready_experimenter">
       <TextComponent name="Ready_experimenter_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
@@ -353,29 +377,8 @@
     </Routine>
     <Routine name="Alignment">
       <PolygonComponent name="Alignment_background">
-=======
-    <Routine name="Alignment">
-      <CodeComponent name="code">
-        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if expInfo['run'] &gt; '1':&amp;#10;    continueRoutine = False    " valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="if ((expInfo[&quot;run&quot;] &gt; &quot;1&quot;)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code" valType="code"/>
-      </CodeComponent>
-      <PolygonComponent name="Alignment_background">
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="black" valType="str"/>
@@ -399,14 +402,12 @@
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
       </PolygonComponent>
       <ImageComponent name="Alignment_image">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-<<<<<<< HEAD
-=======
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
@@ -430,11 +431,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
       <KeyboardComponent name="Alignment_resp">
-<<<<<<< HEAD
         <Param name="allowedKeys" updates="constant" val="'return','enter'" valType="code"/>
-=======
-        <Param name="allowedKeys" updates="constant" val="'return', 'enter'" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -456,20 +453,13 @@
       <TextComponent name="Button_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-<<<<<<< HEAD
-=======
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-<<<<<<< HEAD
         <Param name="letterHeight" updates="constant" val=".075" valType="code"/>
-=======
-        <Param name="letterHeight" updates="constant" val="0.075" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="name" updates="None" val="Button_text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -479,11 +469,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-<<<<<<< HEAD
         <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
-=======
-        <Param name="stopVal" updates="constant" val="1" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Button check." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -494,10 +480,7 @@
       <TextComponent name="Index_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-<<<<<<< HEAD
-=======
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
@@ -511,21 +494,13 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-<<<<<<< HEAD
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-=======
-        <Param name="startVal" updates="None" val="0" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Press the button under your index finger." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-<<<<<<< HEAD
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-=======
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
       </TextComponent>
       <KeyboardComponent name="Index_resp">
         <Param name="allowedKeys" updates="constant" val="'y'" valType="code"/>
@@ -550,10 +525,7 @@
       <TextComponent name="Middle_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-<<<<<<< HEAD
-=======
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
@@ -567,21 +539,13 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-<<<<<<< HEAD
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-=======
-        <Param name="startVal" updates="None" val="0" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Press the button under your middle finger." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-<<<<<<< HEAD
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-=======
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
       </TextComponent>
       <KeyboardComponent name="Middle_resp">
         <Param name="allowedKeys" updates="constant" val="'b'" valType="code"/>
@@ -623,10 +587,7 @@
       <TextComponent name="Repeat_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-<<<<<<< HEAD
-=======
         <Param name="contrast" updates="constant" val="1" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
@@ -669,27 +630,16 @@
     </Routine>
   </Routines>
   <Flow>
-<<<<<<< HEAD
     <Routine name="Ready_experimenter"/>
-=======
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     <Routine name="Alignment"/>
     <LoopInitiator loopType="TrialHandler" name="Button">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
-<<<<<<< HEAD
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="5" valType="code"/>
-=======
-      <Param name="conditionsFile" updates="None" val="" valType="file"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="5" valType="num"/>
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
       <Param name="name" updates="None" val="Button" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
