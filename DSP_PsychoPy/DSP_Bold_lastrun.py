@@ -2,11 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-<<<<<<< HEAD
-    on July 07, 2021, at 16:39
-=======
-    on July 09, 2021, at 13:28
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
+    on September 17, 2021, at 12:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -59,11 +55,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s_%s_%s' % (expInfo['participant'],
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-<<<<<<< HEAD
-    originPath='C:\\Users\\smwei\\Documents\\Moore_2020\\DSP_PsychoPy\\DSP_Bold_lastrun.py',
-=======
     originPath='C:\\Users\\Public\\Moore_fMRI\\DSP_PsychoPy\\DSP_Bold_lastrun.py',
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
