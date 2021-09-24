@@ -1,13 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-<<<<<<< HEAD
-This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on July 20, 2021, at 09:10
-=======
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.3),
-    on July 12, 2021, at 09:31
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
+    on September 24, 2021, at 14:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -85,7 +80,6 @@ else:
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
 
-<<<<<<< HEAD
 # Initialize components for Routine "Ready_experimenter"
 Ready_experimenterClock = core.Clock()
 Ready_experimenter_text = visual.TextStim(win=win, name='Ready_experimenter_text',
@@ -97,22 +91,14 @@ Ready_experimenter_text = visual.TextStim(win=win, name='Ready_experimenter_text
     depth=0.0);
 Ready_experimenter_resp = keyboard.Keyboard()
 
-=======
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
 # Initialize components for Routine "Alignment"
 AlignmentClock = core.Clock()
 Alignment_background = visual.Rect(
     win=win, name='Alignment_background',
     width=(2,2)[0], height=(2,2)[1],
     ori=0, pos=(0, 0),
-<<<<<<< HEAD
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-=======
     lineWidth=1,     colorSpace='rgb',  lineColor='black', fillColor='black',
-    opacity=1, depth=-1.0, interpolate=True)
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
+    opacity=1, depth=0.0, interpolate=True)
 Alignment_image = visual.ImageStim(
     win=win,
     name='Alignment_image', 
@@ -120,11 +106,7 @@ Alignment_image = visual.ImageStim(
     ori=0, pos=(0, 0), size=[1.4,1],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-<<<<<<< HEAD
     texRes=512, interpolate=True, depth=-1.0)
-=======
-    texRes=512, interpolate=True, depth=-2.0)
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
 Alignment_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "Button_check"
@@ -132,11 +114,7 @@ Button_checkClock = core.Clock()
 Button_text = visual.TextStim(win=win, name='Button_text',
     text='Button check.',
     font='Arial',
-<<<<<<< HEAD
     pos=(0, 0), height=.075, wrapWidth=None, ori=0, 
-=======
-    pos=(0, 0), height=0.075, wrapWidth=None, ori=0, 
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -146,11 +124,7 @@ IndexClock = core.Clock()
 Index_text = visual.TextStim(win=win, name='Index_text',
     text='Press the button under your index finger.',
     font='Arial',
-<<<<<<< HEAD
     pos=(0, 0), height=0.075, wrapWidth=None, ori=0, 
-=======
-    pos=(0, 0), height=0.075, wrapWidth=1.5, ori=0, 
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -161,11 +135,7 @@ MiddleClock = core.Clock()
 Middle_text = visual.TextStim(win=win, name='Middle_text',
     text='Press the button under your middle finger.',
     font='Arial',
-<<<<<<< HEAD
     pos=(0, 0), height=0.075, wrapWidth=None, ori=0, 
-=======
-    pos=(0, 0), height=0.075, wrapWidth=1.5, ori=0, 
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -253,7 +223,6 @@ end_text = visual.TextStim(win=win, name='end_text',
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
-<<<<<<< HEAD
 # ------Prepare to start Routine "Ready_experimenter"-------
 continueRoutine = True
 # update component parameters for each repeat
@@ -350,8 +319,6 @@ thisExp.nextEntry()
 # the Routine "Ready_experimenter" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-=======
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
 # ------Prepare to start Routine "Alignment"-------
 continueRoutine = True
 # update component parameters for each repeat
@@ -381,11 +348,6 @@ while continueRoutine:
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
-<<<<<<< HEAD
-=======
-    if expInfo['run'] > '1':
-        continueRoutine = False    
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     
     # *Alignment_background* updates
     if Alignment_background.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -465,11 +427,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-<<<<<<< HEAD
 Button = data.TrialHandler(nReps=5, method='random', 
-=======
-Button = data.TrialHandler(nReps=5.0, method='random', 
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='Button')
@@ -525,11 +483,7 @@ for thisButton in Button:
             Button_text.setAutoDraw(True)
         if Button_text.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-<<<<<<< HEAD
             if tThisFlipGlobal > Button_text.tStartRefresh + 1.0-frameTolerance:
-=======
-            if tThisFlipGlobal > Button_text.tStartRefresh + 1-frameTolerance:
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
                 # keep track of stop time/frame for later
                 Button_text.tStop = t  # not accounting for scr refresh
                 Button_text.frameNStop = frameN  # exact frame index
@@ -591,11 +545,7 @@ for thisButton in Button:
         # update/draw components on each frame
         
         # *Index_text* updates
-<<<<<<< HEAD
         if Index_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-=======
-        if Index_text.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
             # keep track of start time/frame for later
             Index_text.frameNStart = frameN  # exact frame index
             Index_text.tStart = t  # local t and not account for scr refresh
@@ -690,11 +640,7 @@ for thisButton in Button:
         # update/draw components on each frame
         
         # *Middle_text* updates
-<<<<<<< HEAD
         if Middle_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-=======
-        if Middle_text.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
             # keep track of start time/frame for later
             Middle_text.frameNStart = frameN  # exact frame index
             Middle_text.tStart = t  # local t and not account for scr refresh
@@ -868,11 +814,7 @@ for thisButton in Button:
     routineTimer.reset()
     thisExp.nextEntry()
     
-<<<<<<< HEAD
 # completed 5 repeats of 'Button'
-=======
-# completed 5.0 repeats of 'Button'
->>>>>>> ea616d268ad71ba8145a26b6c61fd6e9124a99c8
 
 
 # ------Prepare to start Routine "instructions"-------
