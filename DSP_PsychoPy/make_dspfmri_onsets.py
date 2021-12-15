@@ -20,7 +20,7 @@ dataDir = os.path.join(baseDir,'data')
 outputDir = os.path.join(baseDir,'onsets')
 
 # list of input files
-inputFiles = glob.glob(os.path.join(dataDir,'*.csv'))
+inputFiles = glob.glob(os.path.join(dataDir,'*Bold*.csv'))
 
 
 def generateOnsets(inputFile,outputDir):
@@ -78,7 +78,8 @@ def generateOnsets(inputFile,outputDir):
             # Select all columns with the stem name and reset index to match that
             vid = df.filter(regex=(stem)).dropna(thresh=1).copy()
             origIndex = vid.index[0]
-            vid.index = [stem[:-1]]
+            # Set all indices equal to that video name.
+            vid.index = np.tile([stem[:-1]],len(vid.index))
 
             # All vids have these: Instructions start, instructions end, and video end
             thisVid = pd.DataFrame(columns={'instructions_begin','instructions_end',

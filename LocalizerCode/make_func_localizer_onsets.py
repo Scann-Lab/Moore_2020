@@ -55,11 +55,11 @@ def generateOnsets(inputFile):
     
     # Read in file name
     df = pd.read_csv(inputFile)
-    
+
     # Sanity check input CSV as being complete
     if len(df) <= 246:
         print(f'Data incomplete ({len(df)} trials found in {inputFile}')
-    
+        return            
     if len(df) == 0:
         return 
     
