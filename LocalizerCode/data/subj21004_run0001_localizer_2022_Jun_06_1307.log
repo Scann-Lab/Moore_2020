@@ -1,0 +1,3135 @@
+0.7042 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+9.0287 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+10.2393 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F2C0D1EFD0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F2C0CFF6A0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.2399 	EXP 	window1: mouseVisible = True
+10.2399 	EXP 	window1: recordFrameIntervals = False
+10.4054 	EXP 	window1: recordFrameIntervals = True
+10.5888 	EXP 	window1: recordFrameIntervals = False
+10.7202 	EXP 	Created Ready_experimenter_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Ready_experimenter_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for the experimenter...', units='height', win=Window(...), wrapWidth=1)
+10.7218 	EXP 	Created Alignment_background = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1, -1, -1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='Alignment_background', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([2., 2.]), units='height', vertices=ndarray(...), win=Window(...))
+10.7635 	EXP 	Created Alignment_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='Alignment.png', interpolate=True, mask=None, maskParams=None, name='Alignment_image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.4, 1. ]), texRes=512, units='height', win=Window(...))
+10.7697 	EXP 	Created Button_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Button_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Button check.', units='height', win=Window(...), wrapWidth=1)
+10.7773 	EXP 	Created Index_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Index_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press the button under your index finger.', units='height', win=Window(...), wrapWidth=1)
+10.7824 	EXP 	Created Middle_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Middle_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press the button under your middle finger.', units='height', win=Window(...), wrapWidth=1)
+10.7918 	EXP 	Created Repeat_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Repeat_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.8132 	EXP 	Created instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruction_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.8133 	EXP 	window1: mouseVisible = False
+10.8143 	EXP 	Created fixation_wait_for_t = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1, -1, -1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='fixation_wait_for_t', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.8170 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.8]), texRes=128, units='height', win=Window(...))
+10.8179 	EXP 	Created fixation = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1, -1, -1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='fixation', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.8188 	EXP 	Created fixation_null = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1, -1, -1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='fixation_null', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.8215 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='That concludes this run.', units='height', win=Window(...), wrapWidth=1)
+10.8577 	EXP 	Ready_experimenter_text: autoDraw = True
+75.4312 	DATA 	Keypress: return
+75.4404 	EXP 	Ready_experimenter_text: autoDraw = False
+75.4404 	EXP 	Alignment_background: autoDraw = True
+75.4404 	EXP 	Alignment_image: autoDraw = True
+81.1304 	DATA 	Keypress: return
+81.1480 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+81.1483 	EXP 	New trial (rep=0, index=0): None
+81.1556 	EXP 	Alignment_background: autoDraw = False
+81.1556 	EXP 	Alignment_image: autoDraw = False
+81.1556 	EXP 	Button_text: autoDraw = True
+82.1771 	EXP 	Button_text: autoDraw = False
+82.1771 	EXP 	Index_text: autoDraw = True
+86.6958 	DATA 	Keypress: y
+86.7055 	EXP 	Index_text: autoDraw = False
+86.7055 	EXP 	Middle_text: autoDraw = True
+89.3445 	DATA 	Keypress: b
+89.3583 	EXP 	Middle_text: autoDraw = False
+89.3583 	EXP 	Repeat_text: autoDraw = True
+91.4770 	DATA 	Keypress: n
+91.4865 	EXP 	Repeat_text: autoDraw = False
+91.4865 	EXP 	instruction_text: autoDraw = True
+126.8698 	EXP 	Imported localizer\sequences\loc_subj0004_run0001.csv as conditions, 244 conditions, 3 params
+126.8703 	EXP 	Created sequence: sequential, trialTypes=244, nReps=1, seed=None
+126.8704 	EXP 	New trial (rep=0, index=0): OrderedDict([('block_type', 'null_block'), ('condition', 'null_block'), ('img_name', 'null_block.bmp')])
+126.8723 	DATA 	Keypress: y
+126.8760 	EXP 	instruction_text: autoDraw = False
+126.8760 	EXP 	fixation_wait_for_t: autoDraw = True
+142.8401 	DATA 	Keypress: t
+142.8437 	EXP 	fixation_wait_for_t: autoDraw = False
+142.8437 	EXP 	image: texRes = 128
+142.8437 	EXP 	image: image = 'localizer//stimuli//null_block.bmp'
+142.8437 	EXP 	image: texRes = 128
+142.8437 	EXP 	image: autoDraw = True
+142.8437 	EXP 	fixation: autoDraw = True
+142.8437 	EXP 	image: autoDraw = False
+142.8437 	EXP 	fixation: autoDraw = False
+142.8437 	EXP 	fixation_null: autoDraw = True
+144.8082 	DATA 	Keypress: t
+146.8083 	DATA 	Keypress: t
+148.8091 	DATA 	Keypress: t
+150.8076 	DATA 	Keypress: t
+152.8086 	DATA 	Keypress: t
+154.8070 	DATA 	Keypress: t
+154.8409 	EXP 	New trial (rep=0, index=1): OrderedDict([('block_type', 'block_start'), ('condition', 'scenes'), ('img_name', 'scenes085.bmp')])
+154.8546 	EXP 	fixation_null: autoDraw = False
+154.8546 	EXP 	fixation_null: autoDraw = False
+154.8546 	EXP 	fixation_wait_for_t: autoDraw = True
+156.8317 	DATA 	Keypress: t
+156.8365 	EXP 	fixation_wait_for_t: autoDraw = False
+156.8365 	EXP 	image: texRes = 128
+156.8365 	EXP 	image: image = 'localizer//stimuli//scenes085.bmp'
+156.8365 	EXP 	image: autoDraw = True
+156.8365 	EXP 	fixation: autoDraw = True
+157.1383 	EXP 	image: autoDraw = False
+157.6237 	EXP 	New trial (rep=0, index=2): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes057.bmp')])
+157.6464 	EXP 	image: autoDraw = False
+157.6464 	EXP 	fixation: autoDraw = False
+157.6464 	EXP 	fixation_null: autoDraw = True
+157.6464 	EXP 	fixation_null: autoDraw = False
+157.6464 	EXP 	fixation_wait_for_t: autoDraw = True
+157.6464 	EXP 	fixation_wait_for_t: autoDraw = False
+157.6464 	EXP 	image: texRes = 128
+157.6464 	EXP 	image: image = 'localizer//stimuli//scenes057.bmp'
+157.6464 	EXP 	image: autoDraw = True
+157.6464 	EXP 	fixation: autoDraw = True
+157.9546 	EXP 	image: autoDraw = False
+158.4405 	EXP 	New trial (rep=0, index=3): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes032.bmp')])
+158.4644 	EXP 	image: autoDraw = False
+158.4644 	EXP 	fixation: autoDraw = False
+158.4644 	EXP 	fixation_null: autoDraw = True
+158.4644 	EXP 	fixation_null: autoDraw = False
+158.4644 	EXP 	fixation_wait_for_t: autoDraw = True
+158.4644 	EXP 	fixation_wait_for_t: autoDraw = False
+158.4644 	EXP 	image: texRes = 128
+158.4644 	EXP 	image: image = 'localizer//stimuli//scenes032.bmp'
+158.4644 	EXP 	image: autoDraw = True
+158.4644 	EXP 	fixation: autoDraw = True
+158.7710 	EXP 	image: autoDraw = False
+158.8086 	DATA 	Keypress: t
+159.2572 	EXP 	New trial (rep=0, index=4): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes017.bmp')])
+159.2824 	EXP 	image: autoDraw = False
+159.2824 	EXP 	fixation: autoDraw = False
+159.2824 	EXP 	fixation_null: autoDraw = True
+159.2824 	EXP 	fixation_null: autoDraw = False
+159.2824 	EXP 	fixation_wait_for_t: autoDraw = True
+159.2824 	EXP 	fixation_wait_for_t: autoDraw = False
+159.2824 	EXP 	image: texRes = 128
+159.2824 	EXP 	image: image = 'localizer//stimuli//scenes017.bmp'
+159.2824 	EXP 	image: autoDraw = True
+159.2824 	EXP 	fixation: autoDraw = True
+159.5879 	EXP 	image: autoDraw = False
+160.0737 	EXP 	New trial (rep=0, index=5): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes081.bmp')])
+160.1114 	EXP 	image: autoDraw = False
+160.1114 	EXP 	fixation: autoDraw = False
+160.1114 	EXP 	fixation_null: autoDraw = True
+160.1114 	EXP 	fixation_null: autoDraw = False
+160.1114 	EXP 	fixation_wait_for_t: autoDraw = True
+160.1114 	EXP 	fixation_wait_for_t: autoDraw = False
+160.1114 	EXP 	image: texRes = 128
+160.1114 	EXP 	image: image = 'localizer//stimuli//scenes081.bmp'
+160.1114 	EXP 	image: autoDraw = True
+160.1114 	EXP 	fixation: autoDraw = True
+160.4216 	EXP 	image: autoDraw = False
+160.8092 	DATA 	Keypress: t
+160.8910 	EXP 	New trial (rep=0, index=6): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes035.bmp')])
+160.9167 	EXP 	image: autoDraw = False
+160.9167 	EXP 	fixation: autoDraw = False
+160.9167 	EXP 	fixation_null: autoDraw = True
+160.9167 	EXP 	fixation_null: autoDraw = False
+160.9167 	EXP 	fixation_wait_for_t: autoDraw = True
+160.9167 	EXP 	fixation_wait_for_t: autoDraw = False
+160.9167 	EXP 	image: texRes = 128
+160.9167 	EXP 	image: image = 'localizer//stimuli//scenes035.bmp'
+160.9167 	EXP 	image: autoDraw = True
+160.9167 	EXP 	fixation: autoDraw = True
+161.2274 	EXP 	image: autoDraw = False
+161.7072 	EXP 	New trial (rep=0, index=7): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes075.bmp')])
+161.7324 	EXP 	image: autoDraw = False
+161.7324 	EXP 	fixation: autoDraw = False
+161.7324 	EXP 	fixation_null: autoDraw = True
+161.7324 	EXP 	fixation_null: autoDraw = False
+161.7324 	EXP 	fixation_wait_for_t: autoDraw = True
+161.7324 	EXP 	fixation_wait_for_t: autoDraw = False
+161.7324 	EXP 	image: texRes = 128
+161.7324 	EXP 	image: image = 'localizer//stimuli//scenes075.bmp'
+161.7324 	EXP 	image: autoDraw = True
+161.7324 	EXP 	fixation: autoDraw = True
+162.0377 	EXP 	image: autoDraw = False
+162.5238 	EXP 	New trial (rep=0, index=8): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes020.bmp')])
+162.5469 	EXP 	image: autoDraw = False
+162.5469 	EXP 	fixation: autoDraw = False
+162.5469 	EXP 	fixation_null: autoDraw = True
+162.5469 	EXP 	fixation_null: autoDraw = False
+162.5469 	EXP 	fixation_wait_for_t: autoDraw = True
+162.5469 	EXP 	fixation_wait_for_t: autoDraw = False
+162.5469 	EXP 	image: texRes = 128
+162.5469 	EXP 	image: image = 'localizer//stimuli//scenes020.bmp'
+162.5469 	EXP 	image: autoDraw = True
+162.5469 	EXP 	fixation: autoDraw = True
+162.8084 	DATA 	Keypress: t
+162.8545 	EXP 	image: autoDraw = False
+163.3405 	EXP 	New trial (rep=0, index=9): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes040.bmp')])
+163.3644 	EXP 	image: autoDraw = False
+163.3644 	EXP 	fixation: autoDraw = False
+163.3644 	EXP 	fixation_null: autoDraw = True
+163.3644 	EXP 	fixation_null: autoDraw = False
+163.3644 	EXP 	fixation_wait_for_t: autoDraw = True
+163.3644 	EXP 	fixation_wait_for_t: autoDraw = False
+163.3644 	EXP 	image: texRes = 128
+163.3644 	EXP 	image: image = 'localizer//stimuli//scenes040.bmp'
+163.3644 	EXP 	image: autoDraw = True
+163.3644 	EXP 	fixation: autoDraw = True
+163.6710 	EXP 	image: autoDraw = False
+164.1571 	EXP 	New trial (rep=0, index=10): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes066.bmp')])
+164.1776 	EXP 	image: autoDraw = False
+164.1776 	EXP 	fixation: autoDraw = False
+164.1776 	EXP 	fixation_null: autoDraw = True
+164.1776 	EXP 	fixation_null: autoDraw = False
+164.1776 	EXP 	fixation_wait_for_t: autoDraw = True
+164.1776 	EXP 	fixation_wait_for_t: autoDraw = False
+164.1776 	EXP 	image: texRes = 128
+164.1776 	EXP 	image: image = 'localizer//stimuli//scenes066.bmp'
+164.1776 	EXP 	image: autoDraw = True
+164.1776 	EXP 	fixation: autoDraw = True
+164.4881 	EXP 	image: autoDraw = False
+164.8089 	DATA 	Keypress: t
+164.9742 	EXP 	New trial (rep=0, index=11): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes009.bmp')])
+164.9989 	EXP 	image: autoDraw = False
+164.9989 	EXP 	fixation: autoDraw = False
+164.9989 	EXP 	fixation_null: autoDraw = True
+164.9989 	EXP 	fixation_null: autoDraw = False
+164.9989 	EXP 	fixation_wait_for_t: autoDraw = True
+164.9989 	EXP 	fixation_wait_for_t: autoDraw = False
+164.9989 	EXP 	image: texRes = 128
+164.9989 	EXP 	image: image = 'localizer//stimuli//scenes009.bmp'
+164.9989 	EXP 	image: autoDraw = True
+164.9989 	EXP 	fixation: autoDraw = True
+165.3053 	EXP 	image: autoDraw = False
+165.7905 	EXP 	New trial (rep=0, index=12): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes011.bmp')])
+165.8133 	EXP 	image: autoDraw = False
+165.8133 	EXP 	fixation: autoDraw = False
+165.8133 	EXP 	fixation_null: autoDraw = True
+165.8133 	EXP 	fixation_null: autoDraw = False
+165.8133 	EXP 	fixation_wait_for_t: autoDraw = True
+165.8133 	EXP 	fixation_wait_for_t: autoDraw = False
+165.8133 	EXP 	image: texRes = 128
+165.8133 	EXP 	image: image = 'localizer//stimuli//scenes011.bmp'
+165.8133 	EXP 	image: autoDraw = True
+165.8133 	EXP 	fixation: autoDraw = True
+166.1212 	EXP 	image: autoDraw = False
+166.6072 	EXP 	New trial (rep=0, index=13): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes007.bmp')])
+166.6390 	EXP 	image: autoDraw = False
+166.6390 	EXP 	fixation: autoDraw = False
+166.6390 	EXP 	fixation_null: autoDraw = True
+166.6390 	EXP 	fixation_null: autoDraw = False
+166.6390 	EXP 	fixation_wait_for_t: autoDraw = True
+166.6390 	EXP 	fixation_wait_for_t: autoDraw = False
+166.6390 	EXP 	image: texRes = 128
+166.6390 	EXP 	image: image = 'localizer//stimuli//scenes007.bmp'
+166.6390 	EXP 	image: autoDraw = True
+166.6390 	EXP 	fixation: autoDraw = True
+166.8096 	DATA 	Keypress: t
+166.9546 	EXP 	image: autoDraw = False
+167.4253 	EXP 	New trial (rep=0, index=14): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes030.bmp')])
+167.4509 	EXP 	image: autoDraw = False
+167.4509 	EXP 	fixation: autoDraw = False
+167.4509 	EXP 	fixation_null: autoDraw = True
+167.4509 	EXP 	fixation_null: autoDraw = False
+167.4509 	EXP 	fixation_wait_for_t: autoDraw = True
+167.4509 	EXP 	fixation_wait_for_t: autoDraw = False
+167.4509 	EXP 	image: texRes = 128
+167.4509 	EXP 	image: image = 'localizer//stimuli//scenes030.bmp'
+167.4509 	EXP 	image: autoDraw = True
+167.4509 	EXP 	fixation: autoDraw = True
+167.7544 	EXP 	image: autoDraw = False
+168.2410 	EXP 	New trial (rep=0, index=15): OrderedDict([('block_type', 'block_end'), ('condition', 'scenes'), ('img_name', 'scenes019.bmp')])
+168.2685 	EXP 	image: autoDraw = False
+168.2685 	EXP 	fixation: autoDraw = False
+168.2685 	EXP 	fixation_null: autoDraw = True
+168.2685 	EXP 	fixation_null: autoDraw = False
+168.2685 	EXP 	fixation_wait_for_t: autoDraw = True
+168.2685 	EXP 	fixation_wait_for_t: autoDraw = False
+168.2685 	EXP 	image: texRes = 128
+168.2685 	EXP 	image: image = 'localizer//stimuli//scenes019.bmp'
+168.2685 	EXP 	image: autoDraw = True
+168.2685 	EXP 	fixation: autoDraw = True
+168.5718 	EXP 	image: autoDraw = False
+168.8093 	DATA 	Keypress: t
+169.0577 	EXP 	New trial (rep=0, index=16): OrderedDict([('block_type', 'block_start'), ('condition', 'scrambled'), ('img_name', 'scrambled055.bmp')])
+169.0710 	EXP 	image: autoDraw = False
+169.0710 	EXP 	fixation: autoDraw = False
+169.0710 	EXP 	fixation_null: autoDraw = True
+169.0710 	EXP 	fixation_null: autoDraw = False
+169.0710 	EXP 	fixation_wait_for_t: autoDraw = True
+170.8257 	DATA 	Keypress: t
+170.8308 	EXP 	fixation_wait_for_t: autoDraw = False
+170.8308 	EXP 	image: texRes = 128
+170.8308 	EXP 	image: image = 'localizer//stimuli//scrambled055.bmp'
+170.8308 	EXP 	image: autoDraw = True
+170.8308 	EXP 	fixation: autoDraw = True
+171.1382 	EXP 	image: autoDraw = False
+171.6235 	EXP 	New trial (rep=0, index=17): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled081.bmp')])
+171.6481 	EXP 	image: autoDraw = False
+171.6481 	EXP 	fixation: autoDraw = False
+171.6481 	EXP 	fixation_null: autoDraw = True
+171.6481 	EXP 	fixation_null: autoDraw = False
+171.6481 	EXP 	fixation_wait_for_t: autoDraw = True
+171.6481 	EXP 	fixation_wait_for_t: autoDraw = False
+171.6481 	EXP 	image: texRes = 128
+171.6481 	EXP 	image: image = 'localizer//stimuli//scrambled081.bmp'
+171.6481 	EXP 	image: autoDraw = True
+171.6481 	EXP 	fixation: autoDraw = True
+171.9545 	EXP 	image: autoDraw = False
+172.4411 	EXP 	New trial (rep=0, index=18): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled066.bmp')])
+172.4658 	EXP 	image: autoDraw = False
+172.4658 	EXP 	fixation: autoDraw = False
+172.4658 	EXP 	fixation_null: autoDraw = True
+172.4658 	EXP 	fixation_null: autoDraw = False
+172.4658 	EXP 	fixation_wait_for_t: autoDraw = True
+172.4658 	EXP 	fixation_wait_for_t: autoDraw = False
+172.4658 	EXP 	image: texRes = 128
+172.4658 	EXP 	image: image = 'localizer//stimuli//scrambled066.bmp'
+172.4658 	EXP 	image: autoDraw = True
+172.4658 	EXP 	fixation: autoDraw = True
+172.7715 	EXP 	image: autoDraw = False
+172.8099 	DATA 	Keypress: t
+173.2571 	EXP 	New trial (rep=0, index=19): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled051.bmp')])
+173.2804 	EXP 	image: autoDraw = False
+173.2804 	EXP 	fixation: autoDraw = False
+173.2804 	EXP 	fixation_null: autoDraw = True
+173.2804 	EXP 	fixation_null: autoDraw = False
+173.2804 	EXP 	fixation_wait_for_t: autoDraw = True
+173.2804 	EXP 	fixation_wait_for_t: autoDraw = False
+173.2804 	EXP 	image: texRes = 128
+173.2804 	EXP 	image: image = 'localizer//stimuli//scrambled051.bmp'
+173.2804 	EXP 	image: autoDraw = True
+173.2804 	EXP 	fixation: autoDraw = True
+173.5877 	EXP 	image: autoDraw = False
+174.0738 	EXP 	New trial (rep=0, index=20): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled046.bmp')])
+174.0981 	EXP 	image: autoDraw = False
+174.0981 	EXP 	fixation: autoDraw = False
+174.0981 	EXP 	fixation_null: autoDraw = True
+174.0981 	EXP 	fixation_null: autoDraw = False
+174.0981 	EXP 	fixation_wait_for_t: autoDraw = True
+174.0981 	EXP 	fixation_wait_for_t: autoDraw = False
+174.0981 	EXP 	image: texRes = 128
+174.0981 	EXP 	image: image = 'localizer//stimuli//scrambled046.bmp'
+174.0981 	EXP 	image: autoDraw = True
+174.0981 	EXP 	fixation: autoDraw = True
+174.4047 	EXP 	image: autoDraw = False
+174.8078 	DATA 	Keypress: t
+174.8906 	EXP 	New trial (rep=0, index=21): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled068.bmp')])
+174.9145 	EXP 	image: autoDraw = False
+174.9145 	EXP 	fixation: autoDraw = False
+174.9145 	EXP 	fixation_null: autoDraw = True
+174.9145 	EXP 	fixation_null: autoDraw = False
+174.9145 	EXP 	fixation_wait_for_t: autoDraw = True
+174.9145 	EXP 	fixation_wait_for_t: autoDraw = False
+174.9145 	EXP 	image: texRes = 128
+174.9145 	EXP 	image: image = 'localizer//stimuli//scrambled068.bmp'
+174.9145 	EXP 	image: autoDraw = True
+174.9145 	EXP 	fixation: autoDraw = True
+175.2213 	EXP 	image: autoDraw = False
+175.7078 	EXP 	New trial (rep=0, index=22): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled026.bmp')])
+175.7305 	EXP 	image: autoDraw = False
+175.7305 	EXP 	fixation: autoDraw = False
+175.7305 	EXP 	fixation_null: autoDraw = True
+175.7305 	EXP 	fixation_null: autoDraw = False
+175.7305 	EXP 	fixation_wait_for_t: autoDraw = True
+175.7305 	EXP 	fixation_wait_for_t: autoDraw = False
+175.7305 	EXP 	image: texRes = 128
+175.7305 	EXP 	image: image = 'localizer//stimuli//scrambled026.bmp'
+175.7305 	EXP 	image: autoDraw = True
+175.7305 	EXP 	fixation: autoDraw = True
+176.0383 	EXP 	image: autoDraw = False
+176.5239 	EXP 	New trial (rep=0, index=23): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled017.bmp')])
+176.5439 	EXP 	image: autoDraw = False
+176.5439 	EXP 	fixation: autoDraw = False
+176.5439 	EXP 	fixation_null: autoDraw = True
+176.5439 	EXP 	fixation_null: autoDraw = False
+176.5439 	EXP 	fixation_wait_for_t: autoDraw = True
+176.5439 	EXP 	fixation_wait_for_t: autoDraw = False
+176.5439 	EXP 	image: texRes = 128
+176.5439 	EXP 	image: image = 'localizer//stimuli//scrambled017.bmp'
+176.5439 	EXP 	image: autoDraw = True
+176.5439 	EXP 	fixation: autoDraw = True
+176.8089 	DATA 	Keypress: t
+176.8548 	EXP 	image: autoDraw = False
+177.3411 	EXP 	New trial (rep=0, index=24): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled074.bmp')])
+177.3661 	EXP 	image: autoDraw = False
+177.3661 	EXP 	fixation: autoDraw = False
+177.3661 	EXP 	fixation_null: autoDraw = True
+177.3661 	EXP 	fixation_null: autoDraw = False
+177.3661 	EXP 	fixation_wait_for_t: autoDraw = True
+177.3661 	EXP 	fixation_wait_for_t: autoDraw = False
+177.3661 	EXP 	image: texRes = 128
+177.3661 	EXP 	image: image = 'localizer//stimuli//scrambled074.bmp'
+177.3661 	EXP 	image: autoDraw = True
+177.3661 	EXP 	fixation: autoDraw = True
+177.6713 	EXP 	image: autoDraw = False
+178.1569 	EXP 	New trial (rep=0, index=25): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled059.bmp')])
+178.1764 	EXP 	image: autoDraw = False
+178.1764 	EXP 	fixation: autoDraw = False
+178.1764 	EXP 	fixation_null: autoDraw = True
+178.1764 	EXP 	fixation_null: autoDraw = False
+178.1764 	EXP 	fixation_wait_for_t: autoDraw = True
+178.1764 	EXP 	fixation_wait_for_t: autoDraw = False
+178.1764 	EXP 	image: texRes = 128
+178.1764 	EXP 	image: image = 'localizer//stimuli//scrambled059.bmp'
+178.1764 	EXP 	image: autoDraw = True
+178.1764 	EXP 	fixation: autoDraw = True
+178.4774 	EXP 	image: autoDraw = False
+178.8115 	DATA 	Keypress: t
+178.9755 	EXP 	New trial (rep=0, index=26): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled033.bmp')])
+179.0036 	EXP 	image: autoDraw = False
+179.0036 	EXP 	fixation: autoDraw = False
+179.0036 	EXP 	fixation_null: autoDraw = True
+179.0036 	EXP 	fixation_null: autoDraw = False
+179.0036 	EXP 	fixation_wait_for_t: autoDraw = True
+179.0036 	EXP 	fixation_wait_for_t: autoDraw = False
+179.0036 	EXP 	image: texRes = 128
+179.0036 	EXP 	image: image = 'localizer//stimuli//scrambled033.bmp'
+179.0036 	EXP 	image: autoDraw = True
+179.0036 	EXP 	fixation: autoDraw = True
+179.3048 	EXP 	image: autoDraw = False
+179.7904 	EXP 	New trial (rep=0, index=27): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled079.bmp')])
+179.8146 	EXP 	image: autoDraw = False
+179.8146 	EXP 	fixation: autoDraw = False
+179.8146 	EXP 	fixation_null: autoDraw = True
+179.8146 	EXP 	fixation_null: autoDraw = False
+179.8146 	EXP 	fixation_wait_for_t: autoDraw = True
+179.8146 	EXP 	fixation_wait_for_t: autoDraw = False
+179.8146 	EXP 	image: texRes = 128
+179.8146 	EXP 	image: image = 'localizer//stimuli//scrambled079.bmp'
+179.8146 	EXP 	image: autoDraw = True
+179.8146 	EXP 	fixation: autoDraw = True
+180.1211 	EXP 	image: autoDraw = False
+180.6075 	EXP 	New trial (rep=0, index=28): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled036.bmp')])
+180.6311 	EXP 	image: autoDraw = False
+180.6311 	EXP 	fixation: autoDraw = False
+180.6311 	EXP 	fixation_null: autoDraw = True
+180.6311 	EXP 	fixation_null: autoDraw = False
+180.6311 	EXP 	fixation_wait_for_t: autoDraw = True
+180.6311 	EXP 	fixation_wait_for_t: autoDraw = False
+180.6311 	EXP 	image: texRes = 128
+180.6311 	EXP 	image: image = 'localizer//stimuli//scrambled036.bmp'
+180.6311 	EXP 	image: autoDraw = True
+180.6311 	EXP 	fixation: autoDraw = True
+180.8088 	DATA 	Keypress: t
+180.9381 	EXP 	image: autoDraw = False
+181.4264 	EXP 	New trial (rep=0, index=29): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled070.bmp')])
+181.4555 	EXP 	image: autoDraw = False
+181.4555 	EXP 	fixation: autoDraw = False
+181.4555 	EXP 	fixation_null: autoDraw = True
+181.4555 	EXP 	fixation_null: autoDraw = False
+181.4555 	EXP 	fixation_wait_for_t: autoDraw = True
+181.4555 	EXP 	fixation_wait_for_t: autoDraw = False
+181.4555 	EXP 	image: texRes = 128
+181.4555 	EXP 	image: image = 'localizer//stimuli//scrambled070.bmp'
+181.4555 	EXP 	image: autoDraw = True
+181.4555 	EXP 	fixation: autoDraw = True
+181.7718 	EXP 	image: autoDraw = False
+182.2411 	EXP 	New trial (rep=0, index=30): OrderedDict([('block_type', 'block_end'), ('condition', 'scrambled'), ('img_name', 'scrambled031.bmp')])
+182.2658 	EXP 	image: autoDraw = False
+182.2658 	EXP 	fixation: autoDraw = False
+182.2658 	EXP 	fixation_null: autoDraw = True
+182.2658 	EXP 	fixation_null: autoDraw = False
+182.2658 	EXP 	fixation_wait_for_t: autoDraw = True
+182.2658 	EXP 	fixation_wait_for_t: autoDraw = False
+182.2658 	EXP 	image: texRes = 128
+182.2658 	EXP 	image: image = 'localizer//stimuli//scrambled031.bmp'
+182.2658 	EXP 	image: autoDraw = True
+182.2658 	EXP 	fixation: autoDraw = True
+182.5713 	EXP 	image: autoDraw = False
+182.8091 	DATA 	Keypress: t
+183.0587 	EXP 	New trial (rep=0, index=31): OrderedDict([('block_type', 'block_start'), ('condition', 'objects'), ('img_name', 'objects073.bmp')])
+183.0716 	EXP 	image: autoDraw = False
+183.0716 	EXP 	fixation: autoDraw = False
+183.0716 	EXP 	fixation_null: autoDraw = True
+183.0716 	EXP 	fixation_null: autoDraw = False
+183.0716 	EXP 	fixation_wait_for_t: autoDraw = True
+184.8256 	DATA 	Keypress: t
+184.8304 	EXP 	fixation_wait_for_t: autoDraw = False
+184.8304 	EXP 	image: texRes = 128
+184.8304 	EXP 	image: image = 'localizer//stimuli//objects073.bmp'
+184.8304 	EXP 	image: autoDraw = True
+184.8304 	EXP 	fixation: autoDraw = True
+185.1388 	EXP 	image: autoDraw = False
+185.6241 	EXP 	New trial (rep=0, index=32): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects050.bmp')])
+185.6481 	EXP 	image: autoDraw = False
+185.6481 	EXP 	fixation: autoDraw = False
+185.6481 	EXP 	fixation_null: autoDraw = True
+185.6481 	EXP 	fixation_null: autoDraw = False
+185.6481 	EXP 	fixation_wait_for_t: autoDraw = True
+185.6481 	EXP 	fixation_wait_for_t: autoDraw = False
+185.6481 	EXP 	image: texRes = 128
+185.6481 	EXP 	image: image = 'localizer//stimuli//objects050.bmp'
+185.6481 	EXP 	image: autoDraw = True
+185.6481 	EXP 	fixation: autoDraw = True
+185.9548 	EXP 	image: autoDraw = False
+186.4405 	EXP 	New trial (rep=0, index=33): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects050.bmp')])
+186.4556 	EXP 	image: autoDraw = False
+186.4556 	EXP 	fixation: autoDraw = False
+186.4556 	EXP 	fixation_null: autoDraw = True
+186.4556 	EXP 	fixation_null: autoDraw = False
+186.4556 	EXP 	fixation_wait_for_t: autoDraw = True
+186.4556 	EXP 	fixation_wait_for_t: autoDraw = False
+186.4556 	EXP 	image: texRes = 128
+186.4556 	EXP 	image: image = 'localizer//stimuli//objects050.bmp'
+186.4556 	EXP 	image: autoDraw = True
+186.4556 	EXP 	fixation: autoDraw = True
+186.7712 	EXP 	image: autoDraw = False
+186.8106 	DATA 	Keypress: t
+186.9279 	DATA 	Keypress: y
+187.2433 	EXP 	New trial (rep=0, index=34): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects012.bmp')])
+187.2656 	EXP 	fixation: autoDraw = False
+187.2656 	EXP 	image: autoDraw = False
+187.2656 	EXP 	fixation: autoDraw = False
+187.2656 	EXP 	fixation_null: autoDraw = True
+187.2656 	EXP 	fixation_null: autoDraw = False
+187.2656 	EXP 	fixation_wait_for_t: autoDraw = True
+187.2656 	EXP 	fixation_wait_for_t: autoDraw = False
+187.2656 	EXP 	image: texRes = 128
+187.2656 	EXP 	image: image = 'localizer//stimuli//objects012.bmp'
+187.2656 	EXP 	image: autoDraw = True
+187.2656 	EXP 	fixation: autoDraw = True
+187.5713 	EXP 	image: autoDraw = False
+188.0596 	EXP 	New trial (rep=0, index=35): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects067.bmp')])
+188.0843 	EXP 	image: autoDraw = False
+188.0843 	EXP 	fixation: autoDraw = False
+188.0843 	EXP 	fixation_null: autoDraw = True
+188.0843 	EXP 	fixation_null: autoDraw = False
+188.0843 	EXP 	fixation_wait_for_t: autoDraw = True
+188.0843 	EXP 	fixation_wait_for_t: autoDraw = False
+188.0843 	EXP 	image: texRes = 128
+188.0843 	EXP 	image: image = 'localizer//stimuli//objects067.bmp'
+188.0843 	EXP 	image: autoDraw = True
+188.0843 	EXP 	fixation: autoDraw = True
+188.3885 	EXP 	image: autoDraw = False
+188.8076 	DATA 	Keypress: t
+188.8741 	EXP 	New trial (rep=0, index=36): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects070.bmp')])
+188.8978 	EXP 	image: autoDraw = False
+188.8978 	EXP 	fixation: autoDraw = False
+188.8978 	EXP 	fixation_null: autoDraw = True
+188.8978 	EXP 	fixation_null: autoDraw = False
+188.8978 	EXP 	fixation_wait_for_t: autoDraw = True
+188.8978 	EXP 	fixation_wait_for_t: autoDraw = False
+188.8978 	EXP 	image: texRes = 128
+188.8978 	EXP 	image: image = 'localizer//stimuli//objects070.bmp'
+188.8978 	EXP 	image: autoDraw = True
+188.8978 	EXP 	fixation: autoDraw = True
+189.2042 	EXP 	image: autoDraw = False
+189.6905 	EXP 	New trial (rep=0, index=37): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects034.bmp')])
+189.7146 	EXP 	image: autoDraw = False
+189.7146 	EXP 	fixation: autoDraw = False
+189.7146 	EXP 	fixation_null: autoDraw = True
+189.7146 	EXP 	fixation_null: autoDraw = False
+189.7146 	EXP 	fixation_wait_for_t: autoDraw = True
+189.7146 	EXP 	fixation_wait_for_t: autoDraw = False
+189.7146 	EXP 	image: texRes = 128
+189.7146 	EXP 	image: image = 'localizer//stimuli//objects034.bmp'
+189.7146 	EXP 	image: autoDraw = True
+189.7146 	EXP 	fixation: autoDraw = True
+190.0212 	EXP 	image: autoDraw = False
+190.5072 	EXP 	New trial (rep=0, index=38): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects016.bmp')])
+190.5312 	EXP 	image: autoDraw = False
+190.5312 	EXP 	fixation: autoDraw = False
+190.5312 	EXP 	fixation_null: autoDraw = True
+190.5312 	EXP 	fixation_null: autoDraw = False
+190.5312 	EXP 	fixation_wait_for_t: autoDraw = True
+190.5312 	EXP 	fixation_wait_for_t: autoDraw = False
+190.5312 	EXP 	image: texRes = 128
+190.5312 	EXP 	image: image = 'localizer//stimuli//objects016.bmp'
+190.5312 	EXP 	image: autoDraw = True
+190.5312 	EXP 	fixation: autoDraw = True
+190.8080 	DATA 	Keypress: t
+190.8378 	EXP 	image: autoDraw = False
+191.3274 	EXP 	New trial (rep=0, index=39): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects007.bmp')])
+191.3571 	EXP 	image: autoDraw = False
+191.3571 	EXP 	fixation: autoDraw = False
+191.3571 	EXP 	fixation_null: autoDraw = True
+191.3571 	EXP 	fixation_null: autoDraw = False
+191.3571 	EXP 	fixation_wait_for_t: autoDraw = True
+191.3571 	EXP 	fixation_wait_for_t: autoDraw = False
+191.3571 	EXP 	image: texRes = 128
+191.3571 	EXP 	image: image = 'localizer//stimuli//objects007.bmp'
+191.3571 	EXP 	image: autoDraw = True
+191.3571 	EXP 	fixation: autoDraw = True
+191.6711 	EXP 	image: autoDraw = False
+192.1413 	EXP 	New trial (rep=0, index=40): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects003.bmp')])
+192.1657 	EXP 	image: autoDraw = False
+192.1657 	EXP 	fixation: autoDraw = False
+192.1657 	EXP 	fixation_null: autoDraw = True
+192.1657 	EXP 	fixation_null: autoDraw = False
+192.1657 	EXP 	fixation_wait_for_t: autoDraw = True
+192.1657 	EXP 	fixation_wait_for_t: autoDraw = False
+192.1657 	EXP 	image: texRes = 128
+192.1657 	EXP 	image: image = 'localizer//stimuli//objects003.bmp'
+192.1657 	EXP 	image: autoDraw = True
+192.1657 	EXP 	fixation: autoDraw = True
+192.4711 	EXP 	image: autoDraw = False
+192.8087 	DATA 	Keypress: t
+192.9506 	EXP 	New trial (rep=0, index=41): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects004.bmp')])
+192.9837 	EXP 	image: autoDraw = False
+192.9837 	EXP 	fixation: autoDraw = False
+192.9837 	EXP 	fixation_null: autoDraw = True
+192.9837 	EXP 	fixation_null: autoDraw = False
+192.9837 	EXP 	fixation_wait_for_t: autoDraw = True
+192.9837 	EXP 	fixation_wait_for_t: autoDraw = False
+192.9837 	EXP 	image: texRes = 128
+192.9837 	EXP 	image: image = 'localizer//stimuli//objects004.bmp'
+192.9837 	EXP 	image: autoDraw = True
+192.9837 	EXP 	fixation: autoDraw = True
+193.2881 	EXP 	image: autoDraw = False
+193.7583 	EXP 	New trial (rep=0, index=42): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects081.bmp')])
+193.7837 	EXP 	image: autoDraw = False
+193.7837 	EXP 	fixation: autoDraw = False
+193.7837 	EXP 	fixation_null: autoDraw = True
+193.7837 	EXP 	fixation_null: autoDraw = False
+193.7837 	EXP 	fixation_wait_for_t: autoDraw = True
+193.7837 	EXP 	fixation_wait_for_t: autoDraw = False
+193.7837 	EXP 	image: texRes = 128
+193.7837 	EXP 	image: image = 'localizer//stimuli//objects081.bmp'
+193.7837 	EXP 	image: autoDraw = True
+193.7837 	EXP 	fixation: autoDraw = True
+194.0880 	EXP 	image: autoDraw = False
+194.5738 	EXP 	New trial (rep=0, index=43): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects024.bmp')])
+194.5975 	EXP 	image: autoDraw = False
+194.5975 	EXP 	fixation: autoDraw = False
+194.5975 	EXP 	fixation_null: autoDraw = True
+194.5975 	EXP 	fixation_null: autoDraw = False
+194.5975 	EXP 	fixation_wait_for_t: autoDraw = True
+194.5975 	EXP 	fixation_wait_for_t: autoDraw = False
+194.5975 	EXP 	image: texRes = 128
+194.5975 	EXP 	image: image = 'localizer//stimuli//objects024.bmp'
+194.5975 	EXP 	image: autoDraw = True
+194.5975 	EXP 	fixation: autoDraw = True
+194.8089 	DATA 	Keypress: t
+194.9047 	EXP 	image: autoDraw = False
+195.3940 	EXP 	New trial (rep=0, index=44): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects008.bmp')])
+195.4221 	EXP 	image: autoDraw = False
+195.4221 	EXP 	fixation: autoDraw = False
+195.4221 	EXP 	fixation_null: autoDraw = True
+195.4221 	EXP 	fixation_null: autoDraw = False
+195.4221 	EXP 	fixation_wait_for_t: autoDraw = True
+195.4221 	EXP 	fixation_wait_for_t: autoDraw = False
+195.4221 	EXP 	image: texRes = 128
+195.4221 	EXP 	image: image = 'localizer//stimuli//objects008.bmp'
+195.4221 	EXP 	image: autoDraw = True
+195.4221 	EXP 	fixation: autoDraw = True
+195.7383 	EXP 	image: autoDraw = False
+196.2081 	EXP 	New trial (rep=0, index=45): OrderedDict([('block_type', 'block_end'), ('condition', 'objects'), ('img_name', 'objects010.bmp')])
+196.2339 	EXP 	image: autoDraw = False
+196.2339 	EXP 	fixation: autoDraw = False
+196.2339 	EXP 	fixation_null: autoDraw = True
+196.2339 	EXP 	fixation_null: autoDraw = False
+196.2339 	EXP 	fixation_wait_for_t: autoDraw = True
+196.2339 	EXP 	fixation_wait_for_t: autoDraw = False
+196.2339 	EXP 	image: texRes = 128
+196.2339 	EXP 	image: image = 'localizer//stimuli//objects010.bmp'
+196.2339 	EXP 	image: autoDraw = True
+196.2339 	EXP 	fixation: autoDraw = True
+196.5381 	EXP 	image: autoDraw = False
+196.8092 	DATA 	Keypress: t
+197.0249 	EXP 	New trial (rep=0, index=46): OrderedDict([('block_type', 'block_start'), ('condition', 'faces'), ('img_name', 'faces078.bmp')])
+197.0388 	EXP 	image: autoDraw = False
+197.0388 	EXP 	fixation: autoDraw = False
+197.0388 	EXP 	fixation_null: autoDraw = True
+197.0388 	EXP 	fixation_null: autoDraw = False
+197.0388 	EXP 	fixation_wait_for_t: autoDraw = True
+198.8307 	DATA 	Keypress: t
+198.8356 	EXP 	fixation_wait_for_t: autoDraw = False
+198.8356 	EXP 	image: texRes = 128
+198.8356 	EXP 	image: image = 'localizer//stimuli//faces078.bmp'
+198.8356 	EXP 	image: autoDraw = True
+198.8356 	EXP 	fixation: autoDraw = True
+199.1383 	EXP 	image: autoDraw = False
+199.6237 	EXP 	New trial (rep=0, index=47): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces007.bmp')])
+199.6483 	EXP 	image: autoDraw = False
+199.6483 	EXP 	fixation: autoDraw = False
+199.6483 	EXP 	fixation_null: autoDraw = True
+199.6483 	EXP 	fixation_null: autoDraw = False
+199.6483 	EXP 	fixation_wait_for_t: autoDraw = True
+199.6483 	EXP 	fixation_wait_for_t: autoDraw = False
+199.6483 	EXP 	image: texRes = 128
+199.6483 	EXP 	image: image = 'localizer//stimuli//faces007.bmp'
+199.6483 	EXP 	image: autoDraw = True
+199.6483 	EXP 	fixation: autoDraw = True
+199.9552 	EXP 	image: autoDraw = False
+200.4414 	EXP 	New trial (rep=0, index=48): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces089.bmp')])
+200.4652 	EXP 	image: autoDraw = False
+200.4652 	EXP 	fixation: autoDraw = False
+200.4652 	EXP 	fixation_null: autoDraw = True
+200.4652 	EXP 	fixation_null: autoDraw = False
+200.4652 	EXP 	fixation_wait_for_t: autoDraw = True
+200.4652 	EXP 	fixation_wait_for_t: autoDraw = False
+200.4652 	EXP 	image: texRes = 128
+200.4652 	EXP 	image: image = 'localizer//stimuli//faces089.bmp'
+200.4652 	EXP 	image: autoDraw = True
+200.4652 	EXP 	fixation: autoDraw = True
+200.7714 	EXP 	image: autoDraw = False
+200.8090 	DATA 	Keypress: t
+201.2575 	EXP 	New trial (rep=0, index=49): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces044.bmp')])
+201.2831 	EXP 	image: autoDraw = False
+201.2831 	EXP 	fixation: autoDraw = False
+201.2831 	EXP 	fixation_null: autoDraw = True
+201.2831 	EXP 	fixation_null: autoDraw = False
+201.2831 	EXP 	fixation_wait_for_t: autoDraw = True
+201.2831 	EXP 	fixation_wait_for_t: autoDraw = False
+201.2831 	EXP 	image: texRes = 128
+201.2831 	EXP 	image: image = 'localizer//stimuli//faces044.bmp'
+201.2831 	EXP 	image: autoDraw = True
+201.2831 	EXP 	fixation: autoDraw = True
+201.5949 	EXP 	image: autoDraw = False
+202.0753 	EXP 	New trial (rep=0, index=50): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces085.bmp')])
+202.1050 	EXP 	image: autoDraw = False
+202.1050 	EXP 	fixation: autoDraw = False
+202.1050 	EXP 	fixation_null: autoDraw = True
+202.1050 	EXP 	fixation_null: autoDraw = False
+202.1050 	EXP 	fixation_wait_for_t: autoDraw = True
+202.1050 	EXP 	fixation_wait_for_t: autoDraw = False
+202.1050 	EXP 	image: texRes = 128
+202.1050 	EXP 	image: image = 'localizer//stimuli//faces085.bmp'
+202.1050 	EXP 	image: autoDraw = True
+202.1050 	EXP 	fixation: autoDraw = True
+202.4052 	EXP 	image: autoDraw = False
+202.8091 	DATA 	Keypress: t
+202.8931 	EXP 	New trial (rep=0, index=51): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces014.bmp')])
+202.9189 	EXP 	image: autoDraw = False
+202.9189 	EXP 	fixation: autoDraw = False
+202.9189 	EXP 	fixation_null: autoDraw = True
+202.9189 	EXP 	fixation_null: autoDraw = False
+202.9189 	EXP 	fixation_wait_for_t: autoDraw = True
+202.9189 	EXP 	fixation_wait_for_t: autoDraw = False
+202.9189 	EXP 	image: texRes = 128
+202.9189 	EXP 	image: image = 'localizer//stimuli//faces014.bmp'
+202.9189 	EXP 	image: autoDraw = True
+202.9189 	EXP 	fixation: autoDraw = True
+203.2217 	EXP 	image: autoDraw = False
+203.7081 	EXP 	New trial (rep=0, index=52): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces058.bmp')])
+203.7357 	EXP 	image: autoDraw = False
+203.7357 	EXP 	fixation: autoDraw = False
+203.7357 	EXP 	fixation_null: autoDraw = True
+203.7357 	EXP 	fixation_null: autoDraw = False
+203.7357 	EXP 	fixation_wait_for_t: autoDraw = True
+203.7357 	EXP 	fixation_wait_for_t: autoDraw = False
+203.7357 	EXP 	image: texRes = 128
+203.7357 	EXP 	image: image = 'localizer//stimuli//faces058.bmp'
+203.7357 	EXP 	image: autoDraw = True
+203.7357 	EXP 	fixation: autoDraw = True
+204.0382 	EXP 	image: autoDraw = False
+204.5241 	EXP 	New trial (rep=0, index=53): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces034.bmp')])
+204.5493 	EXP 	image: autoDraw = False
+204.5493 	EXP 	fixation: autoDraw = False
+204.5493 	EXP 	fixation_null: autoDraw = True
+204.5493 	EXP 	fixation_null: autoDraw = False
+204.5493 	EXP 	fixation_wait_for_t: autoDraw = True
+204.5493 	EXP 	fixation_wait_for_t: autoDraw = False
+204.5493 	EXP 	image: texRes = 128
+204.5493 	EXP 	image: image = 'localizer//stimuli//faces034.bmp'
+204.5493 	EXP 	image: autoDraw = True
+204.5493 	EXP 	fixation: autoDraw = True
+204.8091 	DATA 	Keypress: t
+204.8549 	EXP 	image: autoDraw = False
+205.3416 	EXP 	New trial (rep=0, index=54): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces038.bmp')])
+205.3742 	EXP 	image: autoDraw = False
+205.3742 	EXP 	fixation: autoDraw = False
+205.3742 	EXP 	fixation_null: autoDraw = True
+205.3742 	EXP 	fixation_null: autoDraw = False
+205.3742 	EXP 	fixation_wait_for_t: autoDraw = True
+205.3742 	EXP 	fixation_wait_for_t: autoDraw = False
+205.3742 	EXP 	image: texRes = 128
+205.3742 	EXP 	image: image = 'localizer//stimuli//faces038.bmp'
+205.3742 	EXP 	image: autoDraw = True
+205.3742 	EXP 	fixation: autoDraw = True
+205.6879 	EXP 	image: autoDraw = False
+206.1574 	EXP 	New trial (rep=0, index=55): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces055.bmp')])
+206.1828 	EXP 	image: autoDraw = False
+206.1828 	EXP 	fixation: autoDraw = False
+206.1828 	EXP 	fixation_null: autoDraw = True
+206.1828 	EXP 	fixation_null: autoDraw = False
+206.1828 	EXP 	fixation_wait_for_t: autoDraw = True
+206.1828 	EXP 	fixation_wait_for_t: autoDraw = False
+206.1828 	EXP 	image: texRes = 128
+206.1828 	EXP 	image: image = 'localizer//stimuli//faces055.bmp'
+206.1828 	EXP 	image: autoDraw = True
+206.1828 	EXP 	fixation: autoDraw = True
+206.4883 	EXP 	image: autoDraw = False
+206.8102 	DATA 	Keypress: t
+206.9749 	EXP 	New trial (rep=0, index=56): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces026.bmp')])
+207.0283 	EXP 	image: autoDraw = False
+207.0283 	EXP 	fixation: autoDraw = False
+207.0283 	EXP 	fixation_null: autoDraw = True
+207.0283 	EXP 	fixation_null: autoDraw = False
+207.0283 	EXP 	fixation_wait_for_t: autoDraw = True
+207.0283 	EXP 	fixation_wait_for_t: autoDraw = False
+207.0283 	EXP 	image: texRes = 128
+207.0283 	EXP 	image: image = 'localizer//stimuli//faces026.bmp'
+207.0283 	EXP 	image: autoDraw = True
+207.0283 	EXP 	fixation: autoDraw = True
+207.3383 	EXP 	image: autoDraw = False
+207.7912 	EXP 	New trial (rep=0, index=57): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces045.bmp')])
+207.8161 	EXP 	image: autoDraw = False
+207.8161 	EXP 	fixation: autoDraw = False
+207.8161 	EXP 	fixation_null: autoDraw = True
+207.8161 	EXP 	fixation_null: autoDraw = False
+207.8161 	EXP 	fixation_wait_for_t: autoDraw = True
+207.8161 	EXP 	fixation_wait_for_t: autoDraw = False
+207.8161 	EXP 	image: texRes = 128
+207.8161 	EXP 	image: image = 'localizer//stimuli//faces045.bmp'
+207.8161 	EXP 	image: autoDraw = True
+207.8161 	EXP 	fixation: autoDraw = True
+208.1222 	EXP 	image: autoDraw = False
+208.5996 	EXP 	New trial (rep=0, index=58): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces031.bmp')])
+208.6338 	EXP 	image: autoDraw = False
+208.6338 	EXP 	fixation: autoDraw = False
+208.6338 	EXP 	fixation_null: autoDraw = True
+208.6338 	EXP 	fixation_null: autoDraw = False
+208.6338 	EXP 	fixation_wait_for_t: autoDraw = True
+208.6338 	EXP 	fixation_wait_for_t: autoDraw = False
+208.6338 	EXP 	image: texRes = 128
+208.6338 	EXP 	image: image = 'localizer//stimuli//faces031.bmp'
+208.6338 	EXP 	image: autoDraw = True
+208.6338 	EXP 	fixation: autoDraw = True
+208.8092 	DATA 	Keypress: t
+208.9385 	EXP 	image: autoDraw = False
+209.4078 	EXP 	New trial (rep=0, index=59): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces062.bmp')])
+209.4327 	EXP 	image: autoDraw = False
+209.4327 	EXP 	fixation: autoDraw = False
+209.4327 	EXP 	fixation_null: autoDraw = True
+209.4327 	EXP 	fixation_null: autoDraw = False
+209.4327 	EXP 	fixation_wait_for_t: autoDraw = True
+209.4327 	EXP 	fixation_wait_for_t: autoDraw = False
+209.4327 	EXP 	image: texRes = 128
+209.4327 	EXP 	image: image = 'localizer//stimuli//faces062.bmp'
+209.4327 	EXP 	image: autoDraw = True
+209.4327 	EXP 	fixation: autoDraw = True
+209.7382 	EXP 	image: autoDraw = False
+210.2274 	EXP 	New trial (rep=0, index=60): OrderedDict([('block_type', 'block_end'), ('condition', 'faces'), ('img_name', 'faces080.bmp')])
+210.2603 	EXP 	image: autoDraw = False
+210.2603 	EXP 	fixation: autoDraw = False
+210.2603 	EXP 	fixation_null: autoDraw = True
+210.2603 	EXP 	fixation_null: autoDraw = False
+210.2603 	EXP 	fixation_wait_for_t: autoDraw = True
+210.2603 	EXP 	fixation_wait_for_t: autoDraw = False
+210.2603 	EXP 	image: texRes = 128
+210.2603 	EXP 	image: image = 'localizer//stimuli//faces080.bmp'
+210.2603 	EXP 	image: autoDraw = True
+210.2603 	EXP 	fixation: autoDraw = True
+210.5714 	EXP 	image: autoDraw = False
+210.8084 	DATA 	Keypress: t
+211.0406 	EXP 	New trial (rep=0, index=61): OrderedDict([('block_type', 'block_start'), ('condition', 'scrambled'), ('img_name', 'scrambled031.bmp')])
+211.0549 	EXP 	image: autoDraw = False
+211.0549 	EXP 	fixation: autoDraw = False
+211.0549 	EXP 	fixation_null: autoDraw = True
+211.0549 	EXP 	fixation_null: autoDraw = False
+211.0549 	EXP 	fixation_wait_for_t: autoDraw = True
+212.8148 	DATA 	Keypress: t
+212.8231 	EXP 	fixation_wait_for_t: autoDraw = False
+212.8231 	EXP 	image: texRes = 128
+212.8231 	EXP 	image: image = 'localizer//stimuli//scrambled031.bmp'
+212.8231 	EXP 	image: autoDraw = True
+212.8231 	EXP 	fixation: autoDraw = True
+213.1226 	EXP 	image: autoDraw = False
+213.6164 	EXP 	New trial (rep=0, index=62): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled075.bmp')])
+213.6466 	EXP 	image: autoDraw = False
+213.6466 	EXP 	fixation: autoDraw = False
+213.6466 	EXP 	fixation_null: autoDraw = True
+213.6466 	EXP 	fixation_null: autoDraw = False
+213.6466 	EXP 	fixation_wait_for_t: autoDraw = True
+213.6466 	EXP 	fixation_wait_for_t: autoDraw = False
+213.6466 	EXP 	image: texRes = 128
+213.6466 	EXP 	image: image = 'localizer//stimuli//scrambled075.bmp'
+213.6466 	EXP 	image: autoDraw = True
+213.6466 	EXP 	fixation: autoDraw = True
+213.9551 	EXP 	image: autoDraw = False
+214.4244 	EXP 	New trial (rep=0, index=63): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled003.bmp')])
+214.4505 	EXP 	image: autoDraw = False
+214.4505 	EXP 	fixation: autoDraw = False
+214.4505 	EXP 	fixation_null: autoDraw = True
+214.4505 	EXP 	fixation_null: autoDraw = False
+214.4505 	EXP 	fixation_wait_for_t: autoDraw = True
+214.4505 	EXP 	fixation_wait_for_t: autoDraw = False
+214.4505 	EXP 	image: texRes = 128
+214.4505 	EXP 	image: image = 'localizer//stimuli//scrambled003.bmp'
+214.4505 	EXP 	image: autoDraw = True
+214.4505 	EXP 	fixation: autoDraw = True
+214.7548 	EXP 	image: autoDraw = False
+214.8088 	DATA 	Keypress: t
+215.2403 	EXP 	New trial (rep=0, index=64): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled025.bmp')])
+215.2631 	EXP 	image: autoDraw = False
+215.2631 	EXP 	fixation: autoDraw = False
+215.2631 	EXP 	fixation_null: autoDraw = True
+215.2631 	EXP 	fixation_null: autoDraw = False
+215.2631 	EXP 	fixation_wait_for_t: autoDraw = True
+215.2631 	EXP 	fixation_wait_for_t: autoDraw = False
+215.2631 	EXP 	image: texRes = 128
+215.2631 	EXP 	image: image = 'localizer//stimuli//scrambled025.bmp'
+215.2631 	EXP 	image: autoDraw = True
+215.2631 	EXP 	fixation: autoDraw = True
+215.5713 	EXP 	image: autoDraw = False
+216.0484 	EXP 	New trial (rep=0, index=65): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled063.bmp')])
+216.0733 	EXP 	image: autoDraw = False
+216.0733 	EXP 	fixation: autoDraw = False
+216.0733 	EXP 	fixation_null: autoDraw = True
+216.0733 	EXP 	fixation_null: autoDraw = False
+216.0733 	EXP 	fixation_wait_for_t: autoDraw = True
+216.0733 	EXP 	fixation_wait_for_t: autoDraw = False
+216.0733 	EXP 	image: texRes = 128
+216.0733 	EXP 	image: image = 'localizer//stimuli//scrambled063.bmp'
+216.0733 	EXP 	image: autoDraw = True
+216.0733 	EXP 	fixation: autoDraw = True
+216.3881 	EXP 	image: autoDraw = False
+216.8113 	DATA 	Keypress: t
+216.8589 	EXP 	New trial (rep=0, index=66): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled066.bmp')])
+216.8749 	EXP 	image: autoDraw = False
+216.8749 	EXP 	fixation: autoDraw = False
+216.8749 	EXP 	fixation_null: autoDraw = True
+216.8749 	EXP 	fixation_null: autoDraw = False
+216.8749 	EXP 	fixation_wait_for_t: autoDraw = True
+216.8749 	EXP 	fixation_wait_for_t: autoDraw = False
+216.8749 	EXP 	image: texRes = 128
+216.8749 	EXP 	image: image = 'localizer//stimuli//scrambled066.bmp'
+216.8749 	EXP 	image: autoDraw = True
+216.8749 	EXP 	fixation: autoDraw = True
+217.1884 	EXP 	image: autoDraw = False
+217.6736 	EXP 	New trial (rep=0, index=67): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled079.bmp')])
+217.6888 	EXP 	image: autoDraw = False
+217.6888 	EXP 	fixation: autoDraw = False
+217.6888 	EXP 	fixation_null: autoDraw = True
+217.6888 	EXP 	fixation_null: autoDraw = False
+217.6888 	EXP 	fixation_wait_for_t: autoDraw = True
+217.6888 	EXP 	fixation_wait_for_t: autoDraw = False
+217.6888 	EXP 	image: texRes = 128
+217.6888 	EXP 	image: image = 'localizer//stimuli//scrambled079.bmp'
+217.6888 	EXP 	image: autoDraw = True
+217.6888 	EXP 	fixation: autoDraw = True
+218.0047 	EXP 	image: autoDraw = False
+218.4777 	EXP 	New trial (rep=0, index=68): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled018.bmp')])
+218.5045 	EXP 	fixation: autoDraw = False
+218.5045 	EXP 	image: autoDraw = False
+218.5045 	EXP 	fixation: autoDraw = False
+218.5045 	EXP 	fixation_null: autoDraw = True
+218.5045 	EXP 	fixation_null: autoDraw = False
+218.5045 	EXP 	fixation_wait_for_t: autoDraw = True
+218.5045 	EXP 	fixation_wait_for_t: autoDraw = False
+218.5045 	EXP 	image: texRes = 128
+218.5045 	EXP 	image: image = 'localizer//stimuli//scrambled018.bmp'
+218.5045 	EXP 	image: autoDraw = True
+218.5045 	EXP 	fixation: autoDraw = True
+218.8053 	EXP 	image: autoDraw = False
+218.8103 	DATA 	Keypress: t
+219.2902 	EXP 	New trial (rep=0, index=69): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled004.bmp')])
+219.3136 	EXP 	image: autoDraw = False
+219.3136 	EXP 	fixation: autoDraw = False
+219.3136 	EXP 	fixation_null: autoDraw = True
+219.3136 	EXP 	fixation_null: autoDraw = False
+219.3136 	EXP 	fixation_wait_for_t: autoDraw = True
+219.3136 	EXP 	fixation_wait_for_t: autoDraw = False
+219.3136 	EXP 	image: texRes = 128
+219.3136 	EXP 	image: image = 'localizer//stimuli//scrambled004.bmp'
+219.3136 	EXP 	image: autoDraw = True
+219.3136 	EXP 	fixation: autoDraw = True
+219.6210 	EXP 	image: autoDraw = False
+220.1079 	EXP 	New trial (rep=0, index=70): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled036.bmp')])
+220.1226 	EXP 	image: autoDraw = False
+220.1226 	EXP 	fixation: autoDraw = False
+220.1226 	EXP 	fixation_null: autoDraw = True
+220.1226 	EXP 	fixation_null: autoDraw = False
+220.1226 	EXP 	fixation_wait_for_t: autoDraw = True
+220.1226 	EXP 	fixation_wait_for_t: autoDraw = False
+220.1226 	EXP 	image: texRes = 128
+220.1226 	EXP 	image: image = 'localizer//stimuli//scrambled036.bmp'
+220.1226 	EXP 	image: autoDraw = True
+220.1226 	EXP 	fixation: autoDraw = True
+220.4386 	EXP 	image: autoDraw = False
+220.8098 	DATA 	Keypress: t
+220.9238 	EXP 	New trial (rep=0, index=71): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled058.bmp')])
+220.9472 	EXP 	image: autoDraw = False
+220.9472 	EXP 	fixation: autoDraw = False
+220.9472 	EXP 	fixation_null: autoDraw = True
+220.9472 	EXP 	fixation_null: autoDraw = False
+220.9472 	EXP 	fixation_wait_for_t: autoDraw = True
+220.9472 	EXP 	fixation_wait_for_t: autoDraw = False
+220.9472 	EXP 	image: texRes = 128
+220.9472 	EXP 	image: image = 'localizer//stimuli//scrambled058.bmp'
+220.9472 	EXP 	image: autoDraw = True
+220.9472 	EXP 	fixation: autoDraw = True
+221.2581 	EXP 	image: autoDraw = False
+221.7423 	EXP 	New trial (rep=0, index=72): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled045.bmp')])
+221.7708 	EXP 	image: autoDraw = False
+221.7708 	EXP 	fixation: autoDraw = False
+221.7708 	EXP 	fixation_null: autoDraw = True
+221.7708 	EXP 	fixation_null: autoDraw = False
+221.7708 	EXP 	fixation_wait_for_t: autoDraw = True
+221.7708 	EXP 	fixation_wait_for_t: autoDraw = False
+221.7708 	EXP 	image: texRes = 128
+221.7708 	EXP 	image: image = 'localizer//stimuli//scrambled045.bmp'
+221.7708 	EXP 	image: autoDraw = True
+221.7708 	EXP 	fixation: autoDraw = True
+222.0714 	EXP 	image: autoDraw = False
+222.5583 	EXP 	New trial (rep=0, index=73): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled028.bmp')])
+222.5838 	EXP 	image: autoDraw = False
+222.5838 	EXP 	fixation: autoDraw = False
+222.5838 	EXP 	fixation_null: autoDraw = True
+222.5838 	EXP 	fixation_null: autoDraw = False
+222.5838 	EXP 	fixation_wait_for_t: autoDraw = True
+222.5838 	EXP 	fixation_wait_for_t: autoDraw = False
+222.5838 	EXP 	image: texRes = 128
+222.5838 	EXP 	image: image = 'localizer//stimuli//scrambled028.bmp'
+222.5838 	EXP 	image: autoDraw = True
+222.5838 	EXP 	fixation: autoDraw = True
+222.8091 	DATA 	Keypress: t
+222.8946 	EXP 	image: autoDraw = False
+223.3749 	EXP 	New trial (rep=0, index=74): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled064.bmp')])
+223.3991 	EXP 	image: autoDraw = False
+223.3991 	EXP 	fixation: autoDraw = False
+223.3991 	EXP 	fixation_null: autoDraw = True
+223.3991 	EXP 	fixation_null: autoDraw = False
+223.3991 	EXP 	fixation_wait_for_t: autoDraw = True
+223.3991 	EXP 	fixation_wait_for_t: autoDraw = False
+223.3991 	EXP 	image: texRes = 128
+223.3991 	EXP 	image: image = 'localizer//stimuli//scrambled064.bmp'
+223.3991 	EXP 	image: autoDraw = True
+223.3991 	EXP 	fixation: autoDraw = True
+223.7046 	EXP 	image: autoDraw = False
+224.1913 	EXP 	New trial (rep=0, index=75): OrderedDict([('block_type', 'block_end'), ('condition', 'scrambled'), ('img_name', 'scrambled055.bmp')])
+224.2076 	EXP 	image: autoDraw = False
+224.2076 	EXP 	fixation: autoDraw = False
+224.2076 	EXP 	fixation_null: autoDraw = True
+224.2076 	EXP 	fixation_null: autoDraw = False
+224.2076 	EXP 	fixation_wait_for_t: autoDraw = True
+224.2076 	EXP 	fixation_wait_for_t: autoDraw = False
+224.2076 	EXP 	image: texRes = 128
+224.2076 	EXP 	image: image = 'localizer//stimuli//scrambled055.bmp'
+224.2076 	EXP 	image: autoDraw = True
+224.2076 	EXP 	fixation: autoDraw = True
+224.5214 	EXP 	image: autoDraw = False
+224.8097 	DATA 	Keypress: t
+225.0082 	EXP 	New trial (rep=0, index=76): OrderedDict([('block_type', 'null_block'), ('condition', 'null_block'), ('img_name', 'null_block.bmp')])
+225.0221 	EXP 	image: autoDraw = False
+225.0221 	EXP 	fixation: autoDraw = False
+225.0221 	EXP 	fixation_null: autoDraw = True
+225.0221 	EXP 	fixation_null: autoDraw = False
+225.0221 	EXP 	fixation_wait_for_t: autoDraw = True
+226.8204 	DATA 	Keypress: t
+226.8239 	EXP 	fixation_wait_for_t: autoDraw = False
+226.8239 	EXP 	image: texRes = 128
+226.8239 	EXP 	image: image = 'localizer//stimuli//null_block.bmp'
+226.8239 	EXP 	image: texRes = 128
+226.8239 	EXP 	image: autoDraw = True
+226.8239 	EXP 	fixation: autoDraw = True
+226.8239 	EXP 	image: autoDraw = False
+226.8239 	EXP 	fixation: autoDraw = False
+226.8239 	EXP 	fixation_null: autoDraw = True
+228.8071 	DATA 	Keypress: t
+230.8082 	DATA 	Keypress: t
+232.8088 	DATA 	Keypress: t
+234.8087 	DATA 	Keypress: t
+236.8073 	DATA 	Keypress: t
+238.8088 	DATA 	Keypress: t
+238.8251 	EXP 	New trial (rep=0, index=77): OrderedDict([('block_type', 'block_start'), ('condition', 'objects'), ('img_name', 'objects078.bmp')])
+238.8389 	EXP 	fixation_null: autoDraw = False
+238.8389 	EXP 	fixation_null: autoDraw = False
+238.8389 	EXP 	fixation_wait_for_t: autoDraw = True
+240.8291 	DATA 	Keypress: t
+240.8339 	EXP 	fixation_wait_for_t: autoDraw = False
+240.8339 	EXP 	image: texRes = 128
+240.8339 	EXP 	image: image = 'localizer//stimuli//objects078.bmp'
+240.8339 	EXP 	image: autoDraw = True
+240.8339 	EXP 	fixation: autoDraw = True
+241.1382 	EXP 	image: autoDraw = False
+241.6249 	EXP 	New trial (rep=0, index=78): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects085.bmp')])
+241.6507 	EXP 	image: autoDraw = False
+241.6507 	EXP 	fixation: autoDraw = False
+241.6507 	EXP 	fixation_null: autoDraw = True
+241.6507 	EXP 	fixation_null: autoDraw = False
+241.6507 	EXP 	fixation_wait_for_t: autoDraw = True
+241.6507 	EXP 	fixation_wait_for_t: autoDraw = False
+241.6507 	EXP 	image: texRes = 128
+241.6507 	EXP 	image: image = 'localizer//stimuli//objects085.bmp'
+241.6507 	EXP 	image: autoDraw = True
+241.6507 	EXP 	fixation: autoDraw = True
+241.9549 	EXP 	image: autoDraw = False
+242.4408 	EXP 	New trial (rep=0, index=79): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects015.bmp')])
+242.4641 	EXP 	image: autoDraw = False
+242.4641 	EXP 	fixation: autoDraw = False
+242.4641 	EXP 	fixation_null: autoDraw = True
+242.4641 	EXP 	fixation_null: autoDraw = False
+242.4641 	EXP 	fixation_wait_for_t: autoDraw = True
+242.4641 	EXP 	fixation_wait_for_t: autoDraw = False
+242.4641 	EXP 	image: texRes = 128
+242.4641 	EXP 	image: image = 'localizer//stimuli//objects015.bmp'
+242.4641 	EXP 	image: autoDraw = True
+242.4641 	EXP 	fixation: autoDraw = True
+242.7717 	EXP 	image: autoDraw = False
+242.8087 	DATA 	Keypress: t
+243.2574 	EXP 	New trial (rep=0, index=80): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects017.bmp')])
+243.2802 	EXP 	image: autoDraw = False
+243.2802 	EXP 	fixation: autoDraw = False
+243.2802 	EXP 	fixation_null: autoDraw = True
+243.2802 	EXP 	fixation_null: autoDraw = False
+243.2802 	EXP 	fixation_wait_for_t: autoDraw = True
+243.2802 	EXP 	fixation_wait_for_t: autoDraw = False
+243.2802 	EXP 	image: texRes = 128
+243.2802 	EXP 	image: image = 'localizer//stimuli//objects017.bmp'
+243.2802 	EXP 	image: autoDraw = True
+243.2802 	EXP 	fixation: autoDraw = True
+243.5882 	EXP 	image: autoDraw = False
+244.0742 	EXP 	New trial (rep=0, index=81): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects065.bmp')])
+244.0982 	EXP 	image: autoDraw = False
+244.0982 	EXP 	fixation: autoDraw = False
+244.0982 	EXP 	fixation_null: autoDraw = True
+244.0982 	EXP 	fixation_null: autoDraw = False
+244.0982 	EXP 	fixation_wait_for_t: autoDraw = True
+244.0982 	EXP 	fixation_wait_for_t: autoDraw = False
+244.0982 	EXP 	image: texRes = 128
+244.0982 	EXP 	image: image = 'localizer//stimuli//objects065.bmp'
+244.0982 	EXP 	image: autoDraw = True
+244.0982 	EXP 	fixation: autoDraw = True
+244.4048 	EXP 	image: autoDraw = False
+244.8087 	DATA 	Keypress: t
+244.8908 	EXP 	New trial (rep=0, index=82): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects041.bmp')])
+244.9111 	EXP 	image: autoDraw = False
+244.9111 	EXP 	fixation: autoDraw = False
+244.9111 	EXP 	fixation_null: autoDraw = True
+244.9111 	EXP 	fixation_null: autoDraw = False
+244.9111 	EXP 	fixation_wait_for_t: autoDraw = True
+244.9111 	EXP 	fixation_wait_for_t: autoDraw = False
+244.9111 	EXP 	image: texRes = 128
+244.9111 	EXP 	image: image = 'localizer//stimuli//objects041.bmp'
+244.9111 	EXP 	image: autoDraw = True
+244.9111 	EXP 	fixation: autoDraw = True
+245.2092 	EXP 	image: autoDraw = False
+245.7073 	EXP 	New trial (rep=0, index=83): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects005.bmp')])
+245.7305 	EXP 	image: autoDraw = False
+245.7305 	EXP 	fixation: autoDraw = False
+245.7305 	EXP 	fixation_null: autoDraw = True
+245.7305 	EXP 	fixation_null: autoDraw = False
+245.7305 	EXP 	fixation_wait_for_t: autoDraw = True
+245.7305 	EXP 	fixation_wait_for_t: autoDraw = False
+245.7305 	EXP 	image: texRes = 128
+245.7305 	EXP 	image: image = 'localizer//stimuli//objects005.bmp'
+245.7305 	EXP 	image: autoDraw = True
+245.7305 	EXP 	fixation: autoDraw = True
+246.0383 	EXP 	image: autoDraw = False
+246.5257 	EXP 	New trial (rep=0, index=84): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects082.bmp')])
+246.5533 	EXP 	image: autoDraw = False
+246.5533 	EXP 	fixation: autoDraw = False
+246.5533 	EXP 	fixation_null: autoDraw = True
+246.5533 	EXP 	fixation_null: autoDraw = False
+246.5533 	EXP 	fixation_wait_for_t: autoDraw = True
+246.5533 	EXP 	fixation_wait_for_t: autoDraw = False
+246.5533 	EXP 	image: texRes = 128
+246.5533 	EXP 	image: image = 'localizer//stimuli//objects082.bmp'
+246.5533 	EXP 	image: autoDraw = True
+246.5533 	EXP 	fixation: autoDraw = True
+246.8100 	DATA 	Keypress: t
+246.8550 	EXP 	image: autoDraw = False
+247.3402 	EXP 	New trial (rep=0, index=85): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects060.bmp')])
+247.3637 	EXP 	image: autoDraw = False
+247.3637 	EXP 	fixation: autoDraw = False
+247.3637 	EXP 	fixation_null: autoDraw = True
+247.3637 	EXP 	fixation_null: autoDraw = False
+247.3637 	EXP 	fixation_wait_for_t: autoDraw = True
+247.3637 	EXP 	fixation_wait_for_t: autoDraw = False
+247.3637 	EXP 	image: texRes = 128
+247.3637 	EXP 	image: image = 'localizer//stimuli//objects060.bmp'
+247.3637 	EXP 	image: autoDraw = True
+247.3637 	EXP 	fixation: autoDraw = True
+247.6717 	EXP 	image: autoDraw = False
+248.1569 	EXP 	New trial (rep=0, index=86): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects062.bmp')])
+248.1796 	EXP 	image: autoDraw = False
+248.1796 	EXP 	fixation: autoDraw = False
+248.1796 	EXP 	fixation_null: autoDraw = True
+248.1796 	EXP 	fixation_null: autoDraw = False
+248.1796 	EXP 	fixation_wait_for_t: autoDraw = True
+248.1796 	EXP 	fixation_wait_for_t: autoDraw = False
+248.1796 	EXP 	image: texRes = 128
+248.1796 	EXP 	image: image = 'localizer//stimuli//objects062.bmp'
+248.1796 	EXP 	image: autoDraw = True
+248.1796 	EXP 	fixation: autoDraw = True
+248.4885 	EXP 	image: autoDraw = False
+248.8092 	DATA 	Keypress: t
+248.9750 	EXP 	New trial (rep=0, index=87): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects086.bmp')])
+249.0006 	EXP 	image: autoDraw = False
+249.0006 	EXP 	fixation: autoDraw = False
+249.0006 	EXP 	fixation_null: autoDraw = True
+249.0006 	EXP 	fixation_null: autoDraw = False
+249.0006 	EXP 	fixation_wait_for_t: autoDraw = True
+249.0006 	EXP 	fixation_wait_for_t: autoDraw = False
+249.0006 	EXP 	image: texRes = 128
+249.0006 	EXP 	image: image = 'localizer//stimuli//objects086.bmp'
+249.0006 	EXP 	image: autoDraw = True
+249.0006 	EXP 	fixation: autoDraw = True
+249.3051 	EXP 	image: autoDraw = False
+249.7918 	EXP 	New trial (rep=0, index=88): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects084.bmp')])
+249.8175 	EXP 	image: autoDraw = False
+249.8175 	EXP 	fixation: autoDraw = False
+249.8175 	EXP 	fixation_null: autoDraw = True
+249.8175 	EXP 	fixation_null: autoDraw = False
+249.8175 	EXP 	fixation_wait_for_t: autoDraw = True
+249.8175 	EXP 	fixation_wait_for_t: autoDraw = False
+249.8175 	EXP 	image: texRes = 128
+249.8175 	EXP 	image: image = 'localizer//stimuli//objects084.bmp'
+249.8175 	EXP 	image: autoDraw = True
+249.8175 	EXP 	fixation: autoDraw = True
+250.1216 	EXP 	image: autoDraw = False
+250.6137 	EXP 	New trial (rep=0, index=89): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects013.bmp')])
+250.6490 	EXP 	image: autoDraw = False
+250.6490 	EXP 	fixation: autoDraw = False
+250.6490 	EXP 	fixation_null: autoDraw = True
+250.6490 	EXP 	fixation_null: autoDraw = False
+250.6490 	EXP 	fixation_wait_for_t: autoDraw = True
+250.6490 	EXP 	fixation_wait_for_t: autoDraw = False
+250.6490 	EXP 	image: texRes = 128
+250.6490 	EXP 	image: image = 'localizer//stimuli//objects013.bmp'
+250.6490 	EXP 	image: autoDraw = True
+250.6490 	EXP 	fixation: autoDraw = True
+250.8095 	DATA 	Keypress: t
+250.9555 	EXP 	image: autoDraw = False
+251.4242 	EXP 	New trial (rep=0, index=90): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects033.bmp')])
+251.4486 	EXP 	image: autoDraw = False
+251.4486 	EXP 	fixation: autoDraw = False
+251.4486 	EXP 	fixation_null: autoDraw = True
+251.4486 	EXP 	fixation_null: autoDraw = False
+251.4486 	EXP 	fixation_wait_for_t: autoDraw = True
+251.4486 	EXP 	fixation_wait_for_t: autoDraw = False
+251.4486 	EXP 	image: texRes = 128
+251.4486 	EXP 	image: image = 'localizer//stimuli//objects033.bmp'
+251.4486 	EXP 	image: autoDraw = True
+251.4486 	EXP 	fixation: autoDraw = True
+251.7548 	EXP 	image: autoDraw = False
+252.2408 	EXP 	New trial (rep=0, index=91): OrderedDict([('block_type', 'block_end'), ('condition', 'objects'), ('img_name', 'objects002.bmp')])
+252.2652 	EXP 	image: autoDraw = False
+252.2652 	EXP 	fixation: autoDraw = False
+252.2652 	EXP 	fixation_null: autoDraw = True
+252.2652 	EXP 	fixation_null: autoDraw = False
+252.2652 	EXP 	fixation_wait_for_t: autoDraw = True
+252.2652 	EXP 	fixation_wait_for_t: autoDraw = False
+252.2652 	EXP 	image: texRes = 128
+252.2652 	EXP 	image: image = 'localizer//stimuli//objects002.bmp'
+252.2652 	EXP 	image: autoDraw = True
+252.2652 	EXP 	fixation: autoDraw = True
+252.5716 	EXP 	image: autoDraw = False
+252.8084 	DATA 	Keypress: t
+253.0577 	EXP 	New trial (rep=0, index=92): OrderedDict([('block_type', 'block_start'), ('condition', 'faces'), ('img_name', 'faces088.bmp')])
+253.0718 	EXP 	image: autoDraw = False
+253.0718 	EXP 	fixation: autoDraw = False
+253.0718 	EXP 	fixation_null: autoDraw = True
+253.0718 	EXP 	fixation_null: autoDraw = False
+253.0718 	EXP 	fixation_wait_for_t: autoDraw = True
+254.8324 	DATA 	Keypress: t
+254.8374 	EXP 	fixation_wait_for_t: autoDraw = False
+254.8374 	EXP 	image: texRes = 128
+254.8374 	EXP 	image: image = 'localizer//stimuli//faces088.bmp'
+254.8374 	EXP 	image: autoDraw = True
+254.8374 	EXP 	fixation: autoDraw = True
+255.1385 	EXP 	image: autoDraw = False
+255.6241 	EXP 	New trial (rep=0, index=93): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces016.bmp')])
+255.6488 	EXP 	image: autoDraw = False
+255.6488 	EXP 	fixation: autoDraw = False
+255.6488 	EXP 	fixation_null: autoDraw = True
+255.6488 	EXP 	fixation_null: autoDraw = False
+255.6488 	EXP 	fixation_wait_for_t: autoDraw = True
+255.6488 	EXP 	fixation_wait_for_t: autoDraw = False
+255.6488 	EXP 	image: texRes = 128
+255.6488 	EXP 	image: image = 'localizer//stimuli//faces016.bmp'
+255.6488 	EXP 	image: autoDraw = True
+255.6488 	EXP 	fixation: autoDraw = True
+255.9548 	EXP 	image: autoDraw = False
+256.4411 	EXP 	New trial (rep=0, index=94): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces077.bmp')])
+256.4670 	EXP 	image: autoDraw = False
+256.4670 	EXP 	fixation: autoDraw = False
+256.4670 	EXP 	fixation_null: autoDraw = True
+256.4670 	EXP 	fixation_null: autoDraw = False
+256.4670 	EXP 	fixation_wait_for_t: autoDraw = True
+256.4670 	EXP 	fixation_wait_for_t: autoDraw = False
+256.4670 	EXP 	image: texRes = 128
+256.4670 	EXP 	image: image = 'localizer//stimuli//faces077.bmp'
+256.4670 	EXP 	image: autoDraw = True
+256.4670 	EXP 	fixation: autoDraw = True
+256.7716 	EXP 	image: autoDraw = False
+256.8087 	DATA 	Keypress: t
+257.2576 	EXP 	New trial (rep=0, index=95): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces050.bmp')])
+257.2815 	EXP 	image: autoDraw = False
+257.2815 	EXP 	fixation: autoDraw = False
+257.2815 	EXP 	fixation_null: autoDraw = True
+257.2815 	EXP 	fixation_null: autoDraw = False
+257.2815 	EXP 	fixation_wait_for_t: autoDraw = True
+257.2815 	EXP 	fixation_wait_for_t: autoDraw = False
+257.2815 	EXP 	image: texRes = 128
+257.2815 	EXP 	image: image = 'localizer//stimuli//faces050.bmp'
+257.2815 	EXP 	image: autoDraw = True
+257.2815 	EXP 	fixation: autoDraw = True
+257.5885 	EXP 	image: autoDraw = False
+258.0742 	EXP 	New trial (rep=0, index=96): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces040.bmp')])
+258.0986 	EXP 	image: autoDraw = False
+258.0986 	EXP 	fixation: autoDraw = False
+258.0986 	EXP 	fixation_null: autoDraw = True
+258.0986 	EXP 	fixation_null: autoDraw = False
+258.0986 	EXP 	fixation_wait_for_t: autoDraw = True
+258.0986 	EXP 	fixation_wait_for_t: autoDraw = False
+258.0986 	EXP 	image: texRes = 128
+258.0986 	EXP 	image: image = 'localizer//stimuli//faces040.bmp'
+258.0986 	EXP 	image: autoDraw = True
+258.0986 	EXP 	fixation: autoDraw = True
+258.4051 	EXP 	image: autoDraw = False
+258.8090 	DATA 	Keypress: t
+258.8907 	EXP 	New trial (rep=0, index=97): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces070.bmp')])
+258.9166 	EXP 	image: autoDraw = False
+258.9166 	EXP 	fixation: autoDraw = False
+258.9166 	EXP 	fixation_null: autoDraw = True
+258.9166 	EXP 	fixation_null: autoDraw = False
+258.9166 	EXP 	fixation_wait_for_t: autoDraw = True
+258.9166 	EXP 	fixation_wait_for_t: autoDraw = False
+258.9166 	EXP 	image: texRes = 128
+258.9166 	EXP 	image: image = 'localizer//stimuli//faces070.bmp'
+258.9166 	EXP 	image: autoDraw = True
+258.9166 	EXP 	fixation: autoDraw = True
+259.2217 	EXP 	image: autoDraw = False
+259.7080 	EXP 	New trial (rep=0, index=98): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces022.bmp')])
+259.7339 	EXP 	image: autoDraw = False
+259.7339 	EXP 	fixation: autoDraw = False
+259.7339 	EXP 	fixation_null: autoDraw = True
+259.7339 	EXP 	fixation_null: autoDraw = False
+259.7339 	EXP 	fixation_wait_for_t: autoDraw = True
+259.7339 	EXP 	fixation_wait_for_t: autoDraw = False
+259.7339 	EXP 	image: texRes = 128
+259.7339 	EXP 	image: image = 'localizer//stimuli//faces022.bmp'
+259.7339 	EXP 	image: autoDraw = True
+259.7339 	EXP 	fixation: autoDraw = True
+260.0382 	EXP 	image: autoDraw = False
+260.5250 	EXP 	New trial (rep=0, index=99): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces010.bmp')])
+260.5514 	EXP 	image: autoDraw = False
+260.5514 	EXP 	fixation: autoDraw = False
+260.5514 	EXP 	fixation_null: autoDraw = True
+260.5514 	EXP 	fixation_null: autoDraw = False
+260.5514 	EXP 	fixation_wait_for_t: autoDraw = True
+260.5514 	EXP 	fixation_wait_for_t: autoDraw = False
+260.5514 	EXP 	image: texRes = 128
+260.5514 	EXP 	image: image = 'localizer//stimuli//faces010.bmp'
+260.5514 	EXP 	image: autoDraw = True
+260.5514 	EXP 	fixation: autoDraw = True
+260.8097 	DATA 	Keypress: t
+260.8554 	EXP 	image: autoDraw = False
+261.3420 	EXP 	New trial (rep=0, index=100): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces031.bmp')])
+261.3581 	EXP 	image: autoDraw = False
+261.3581 	EXP 	fixation: autoDraw = False
+261.3581 	EXP 	fixation_null: autoDraw = True
+261.3581 	EXP 	fixation_null: autoDraw = False
+261.3581 	EXP 	fixation_wait_for_t: autoDraw = True
+261.3581 	EXP 	fixation_wait_for_t: autoDraw = False
+261.3581 	EXP 	image: texRes = 128
+261.3581 	EXP 	image: image = 'localizer//stimuli//faces031.bmp'
+261.3581 	EXP 	image: autoDraw = True
+261.3581 	EXP 	fixation: autoDraw = True
+261.6556 	EXP 	image: autoDraw = False
+262.1584 	EXP 	New trial (rep=0, index=101): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces030.bmp')])
+262.1843 	EXP 	image: autoDraw = False
+262.1843 	EXP 	fixation: autoDraw = False
+262.1843 	EXP 	fixation_null: autoDraw = True
+262.1843 	EXP 	fixation_null: autoDraw = False
+262.1843 	EXP 	fixation_wait_for_t: autoDraw = True
+262.1843 	EXP 	fixation_wait_for_t: autoDraw = False
+262.1843 	EXP 	image: texRes = 128
+262.1843 	EXP 	image: image = 'localizer//stimuli//faces030.bmp'
+262.1843 	EXP 	image: autoDraw = True
+262.1843 	EXP 	fixation: autoDraw = True
+262.4880 	EXP 	image: autoDraw = False
+262.8082 	DATA 	Keypress: t
+262.9751 	EXP 	New trial (rep=0, index=102): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces086.bmp')])
+263.0026 	EXP 	image: autoDraw = False
+263.0026 	EXP 	fixation: autoDraw = False
+263.0026 	EXP 	fixation_null: autoDraw = True
+263.0026 	EXP 	fixation_null: autoDraw = False
+263.0026 	EXP 	fixation_wait_for_t: autoDraw = True
+263.0026 	EXP 	fixation_wait_for_t: autoDraw = False
+263.0026 	EXP 	image: texRes = 128
+263.0026 	EXP 	image: image = 'localizer//stimuli//faces086.bmp'
+263.0026 	EXP 	image: autoDraw = True
+263.0026 	EXP 	fixation: autoDraw = True
+263.3074 	EXP 	image: autoDraw = False
+263.7919 	EXP 	New trial (rep=0, index=103): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces002.bmp')])
+263.8183 	EXP 	image: autoDraw = False
+263.8183 	EXP 	fixation: autoDraw = False
+263.8183 	EXP 	fixation_null: autoDraw = True
+263.8183 	EXP 	fixation_null: autoDraw = False
+263.8183 	EXP 	fixation_wait_for_t: autoDraw = True
+263.8183 	EXP 	fixation_wait_for_t: autoDraw = False
+263.8183 	EXP 	image: texRes = 128
+263.8183 	EXP 	image: image = 'localizer//stimuli//faces002.bmp'
+263.8183 	EXP 	image: autoDraw = True
+263.8183 	EXP 	fixation: autoDraw = True
+264.1218 	EXP 	image: autoDraw = False
+264.6083 	EXP 	New trial (rep=0, index=104): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces089.bmp')])
+264.6232 	EXP 	image: autoDraw = False
+264.6232 	EXP 	fixation: autoDraw = False
+264.6232 	EXP 	fixation_null: autoDraw = True
+264.6232 	EXP 	fixation_null: autoDraw = False
+264.6232 	EXP 	fixation_wait_for_t: autoDraw = True
+264.6232 	EXP 	fixation_wait_for_t: autoDraw = False
+264.6232 	EXP 	image: texRes = 128
+264.6232 	EXP 	image: image = 'localizer//stimuli//faces089.bmp'
+264.6232 	EXP 	image: autoDraw = True
+264.6232 	EXP 	fixation: autoDraw = True
+264.8093 	DATA 	Keypress: t
+264.9385 	EXP 	image: autoDraw = False
+265.4246 	EXP 	New trial (rep=0, index=105): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces026.bmp')])
+265.4394 	EXP 	image: autoDraw = False
+265.4394 	EXP 	fixation: autoDraw = False
+265.4394 	EXP 	fixation_null: autoDraw = True
+265.4394 	EXP 	fixation_null: autoDraw = False
+265.4394 	EXP 	fixation_wait_for_t: autoDraw = True
+265.4394 	EXP 	fixation_wait_for_t: autoDraw = False
+265.4394 	EXP 	image: texRes = 128
+265.4394 	EXP 	image: image = 'localizer//stimuli//faces026.bmp'
+265.4394 	EXP 	image: autoDraw = True
+265.4394 	EXP 	fixation: autoDraw = True
+265.7552 	EXP 	image: autoDraw = False
+266.2403 	EXP 	New trial (rep=0, index=106): OrderedDict([('block_type', 'block_end'), ('condition', 'faces'), ('img_name', 'faces065.bmp')])
+266.2699 	EXP 	image: autoDraw = False
+266.2699 	EXP 	fixation: autoDraw = False
+266.2699 	EXP 	fixation_null: autoDraw = True
+266.2699 	EXP 	fixation_null: autoDraw = False
+266.2699 	EXP 	fixation_wait_for_t: autoDraw = True
+266.2699 	EXP 	fixation_wait_for_t: autoDraw = False
+266.2699 	EXP 	image: texRes = 128
+266.2699 	EXP 	image: image = 'localizer//stimuli//faces065.bmp'
+266.2699 	EXP 	image: autoDraw = True
+266.2699 	EXP 	fixation: autoDraw = True
+266.5717 	EXP 	image: autoDraw = False
+266.8110 	DATA 	Keypress: t
+267.0586 	EXP 	New trial (rep=0, index=107): OrderedDict([('block_type', 'block_start'), ('condition', 'scenes'), ('img_name', 'scenes004.bmp')])
+267.0724 	EXP 	image: autoDraw = False
+267.0724 	EXP 	fixation: autoDraw = False
+267.0724 	EXP 	fixation_null: autoDraw = True
+267.0724 	EXP 	fixation_null: autoDraw = False
+267.0724 	EXP 	fixation_wait_for_t: autoDraw = True
+268.8377 	DATA 	Keypress: t
+268.8424 	EXP 	fixation_wait_for_t: autoDraw = False
+268.8424 	EXP 	image: texRes = 128
+268.8424 	EXP 	image: image = 'localizer//stimuli//scenes004.bmp'
+268.8424 	EXP 	image: autoDraw = True
+268.8424 	EXP 	fixation: autoDraw = True
+269.1549 	EXP 	image: autoDraw = False
+269.6246 	EXP 	New trial (rep=0, index=108): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes065.bmp')])
+269.6498 	EXP 	image: autoDraw = False
+269.6498 	EXP 	fixation: autoDraw = False
+269.6498 	EXP 	fixation_null: autoDraw = True
+269.6498 	EXP 	fixation_null: autoDraw = False
+269.6498 	EXP 	fixation_wait_for_t: autoDraw = True
+269.6498 	EXP 	fixation_wait_for_t: autoDraw = False
+269.6498 	EXP 	image: texRes = 128
+269.6498 	EXP 	image: image = 'localizer//stimuli//scenes065.bmp'
+269.6498 	EXP 	image: autoDraw = True
+269.6498 	EXP 	fixation: autoDraw = True
+269.9552 	EXP 	image: autoDraw = False
+270.4412 	EXP 	New trial (rep=0, index=109): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes065.bmp')])
+270.4560 	EXP 	image: autoDraw = False
+270.4560 	EXP 	fixation: autoDraw = False
+270.4560 	EXP 	fixation_null: autoDraw = True
+270.4560 	EXP 	fixation_null: autoDraw = False
+270.4560 	EXP 	fixation_wait_for_t: autoDraw = True
+270.4560 	EXP 	fixation_wait_for_t: autoDraw = False
+270.4560 	EXP 	image: texRes = 128
+270.4560 	EXP 	image: image = 'localizer//stimuli//scenes065.bmp'
+270.4560 	EXP 	image: autoDraw = True
+270.4560 	EXP 	fixation: autoDraw = True
+270.7713 	EXP 	image: autoDraw = False
+270.8087 	DATA 	Keypress: t
+271.0416 	DATA 	Keypress: y
+271.2571 	EXP 	New trial (rep=0, index=110): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes078.bmp')])
+271.2817 	EXP 	image: autoDraw = False
+271.2817 	EXP 	fixation: autoDraw = False
+271.2817 	EXP 	fixation_null: autoDraw = True
+271.2817 	EXP 	fixation_null: autoDraw = False
+271.2817 	EXP 	fixation_wait_for_t: autoDraw = True
+271.2817 	EXP 	fixation_wait_for_t: autoDraw = False
+271.2817 	EXP 	image: texRes = 128
+271.2817 	EXP 	image: image = 'localizer//stimuli//scenes078.bmp'
+271.2817 	EXP 	image: autoDraw = True
+271.2817 	EXP 	fixation: autoDraw = True
+271.5887 	EXP 	image: autoDraw = False
+272.0740 	EXP 	New trial (rep=0, index=111): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes003.bmp')])
+272.0991 	EXP 	image: autoDraw = False
+272.0991 	EXP 	fixation: autoDraw = False
+272.0991 	EXP 	fixation_null: autoDraw = True
+272.0991 	EXP 	fixation_null: autoDraw = False
+272.0991 	EXP 	fixation_wait_for_t: autoDraw = True
+272.0991 	EXP 	fixation_wait_for_t: autoDraw = False
+272.0991 	EXP 	image: texRes = 128
+272.0991 	EXP 	image: image = 'localizer//stimuli//scenes003.bmp'
+272.0991 	EXP 	image: autoDraw = True
+272.0991 	EXP 	fixation: autoDraw = True
+272.4049 	EXP 	image: autoDraw = False
+272.8100 	DATA 	Keypress: t
+272.8918 	EXP 	New trial (rep=0, index=112): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes092.bmp')])
+272.9175 	EXP 	image: autoDraw = False
+272.9175 	EXP 	fixation: autoDraw = False
+272.9175 	EXP 	fixation_null: autoDraw = True
+272.9175 	EXP 	fixation_null: autoDraw = False
+272.9175 	EXP 	fixation_wait_for_t: autoDraw = True
+272.9175 	EXP 	fixation_wait_for_t: autoDraw = False
+272.9175 	EXP 	image: texRes = 128
+272.9175 	EXP 	image: image = 'localizer//stimuli//scenes092.bmp'
+272.9175 	EXP 	image: autoDraw = True
+272.9175 	EXP 	fixation: autoDraw = True
+273.2218 	EXP 	image: autoDraw = False
+273.7073 	EXP 	New trial (rep=0, index=113): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes051.bmp')])
+273.7326 	EXP 	image: autoDraw = False
+273.7326 	EXP 	fixation: autoDraw = False
+273.7326 	EXP 	fixation_null: autoDraw = True
+273.7326 	EXP 	fixation_null: autoDraw = False
+273.7326 	EXP 	fixation_wait_for_t: autoDraw = True
+273.7326 	EXP 	fixation_wait_for_t: autoDraw = False
+273.7326 	EXP 	image: texRes = 128
+273.7326 	EXP 	image: image = 'localizer//stimuli//scenes051.bmp'
+273.7326 	EXP 	image: autoDraw = True
+273.7326 	EXP 	fixation: autoDraw = True
+274.0381 	EXP 	image: autoDraw = False
+274.5255 	EXP 	New trial (rep=0, index=114): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes024.bmp')])
+274.5507 	EXP 	image: autoDraw = False
+274.5507 	EXP 	fixation: autoDraw = False
+274.5507 	EXP 	fixation_null: autoDraw = True
+274.5507 	EXP 	fixation_null: autoDraw = False
+274.5507 	EXP 	fixation_wait_for_t: autoDraw = True
+274.5507 	EXP 	fixation_wait_for_t: autoDraw = False
+274.5507 	EXP 	image: texRes = 128
+274.5507 	EXP 	image: image = 'localizer//stimuli//scenes024.bmp'
+274.5507 	EXP 	image: autoDraw = True
+274.5507 	EXP 	fixation: autoDraw = True
+274.8087 	DATA 	Keypress: t
+274.8554 	EXP 	image: autoDraw = False
+275.3409 	EXP 	New trial (rep=0, index=115): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes090.bmp')])
+275.3647 	EXP 	image: autoDraw = False
+275.3647 	EXP 	fixation: autoDraw = False
+275.3647 	EXP 	fixation_null: autoDraw = True
+275.3647 	EXP 	fixation_null: autoDraw = False
+275.3647 	EXP 	fixation_wait_for_t: autoDraw = True
+275.3647 	EXP 	fixation_wait_for_t: autoDraw = False
+275.3647 	EXP 	image: texRes = 128
+275.3647 	EXP 	image: image = 'localizer//stimuli//scenes090.bmp'
+275.3647 	EXP 	image: autoDraw = True
+275.3647 	EXP 	fixation: autoDraw = True
+275.6717 	EXP 	image: autoDraw = False
+276.1571 	EXP 	New trial (rep=0, index=116): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes088.bmp')])
+276.1808 	EXP 	image: autoDraw = False
+276.1808 	EXP 	fixation: autoDraw = False
+276.1808 	EXP 	fixation_null: autoDraw = True
+276.1808 	EXP 	fixation_null: autoDraw = False
+276.1808 	EXP 	fixation_wait_for_t: autoDraw = True
+276.1808 	EXP 	fixation_wait_for_t: autoDraw = False
+276.1808 	EXP 	image: texRes = 128
+276.1808 	EXP 	image: image = 'localizer//stimuli//scenes088.bmp'
+276.1808 	EXP 	image: autoDraw = True
+276.1808 	EXP 	fixation: autoDraw = True
+276.4887 	EXP 	image: autoDraw = False
+276.8108 	DATA 	Keypress: t
+276.9752 	EXP 	New trial (rep=0, index=117): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes023.bmp')])
+277.0009 	EXP 	image: autoDraw = False
+277.0009 	EXP 	fixation: autoDraw = False
+277.0009 	EXP 	fixation_null: autoDraw = True
+277.0009 	EXP 	fixation_null: autoDraw = False
+277.0009 	EXP 	fixation_wait_for_t: autoDraw = True
+277.0009 	EXP 	fixation_wait_for_t: autoDraw = False
+277.0009 	EXP 	image: texRes = 128
+277.0009 	EXP 	image: image = 'localizer//stimuli//scenes023.bmp'
+277.0009 	EXP 	image: autoDraw = True
+277.0009 	EXP 	fixation: autoDraw = True
+277.3048 	EXP 	image: autoDraw = False
+277.7908 	EXP 	New trial (rep=0, index=118): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes081.bmp')])
+277.8060 	EXP 	image: autoDraw = False
+277.8060 	EXP 	fixation: autoDraw = False
+277.8060 	EXP 	fixation_null: autoDraw = True
+277.8060 	EXP 	fixation_null: autoDraw = False
+277.8060 	EXP 	fixation_wait_for_t: autoDraw = True
+277.8060 	EXP 	fixation_wait_for_t: autoDraw = False
+277.8060 	EXP 	image: texRes = 128
+277.8060 	EXP 	image: image = 'localizer//stimuli//scenes081.bmp'
+277.8060 	EXP 	image: autoDraw = True
+277.8060 	EXP 	fixation: autoDraw = True
+278.1217 	EXP 	image: autoDraw = False
+278.6080 	EXP 	New trial (rep=0, index=119): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes089.bmp')])
+278.6320 	EXP 	image: autoDraw = False
+278.6320 	EXP 	fixation: autoDraw = False
+278.6320 	EXP 	fixation_null: autoDraw = True
+278.6320 	EXP 	fixation_null: autoDraw = False
+278.6320 	EXP 	fixation_wait_for_t: autoDraw = True
+278.6320 	EXP 	fixation_wait_for_t: autoDraw = False
+278.6320 	EXP 	image: texRes = 128
+278.6320 	EXP 	image: image = 'localizer//stimuli//scenes089.bmp'
+278.6320 	EXP 	image: autoDraw = True
+278.6320 	EXP 	fixation: autoDraw = True
+278.8086 	DATA 	Keypress: t
+278.9389 	EXP 	image: autoDraw = False
+279.4242 	EXP 	New trial (rep=0, index=120): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes074.bmp')])
+279.4438 	EXP 	image: autoDraw = False
+279.4438 	EXP 	fixation: autoDraw = False
+279.4438 	EXP 	fixation_null: autoDraw = True
+279.4438 	EXP 	fixation_null: autoDraw = False
+279.4438 	EXP 	fixation_wait_for_t: autoDraw = True
+279.4438 	EXP 	fixation_wait_for_t: autoDraw = False
+279.4438 	EXP 	image: texRes = 128
+279.4438 	EXP 	image: image = 'localizer//stimuli//scenes074.bmp'
+279.4438 	EXP 	image: autoDraw = True
+279.4438 	EXP 	fixation: autoDraw = True
+279.7547 	EXP 	image: autoDraw = False
+280.2409 	EXP 	New trial (rep=0, index=121): OrderedDict([('block_type', 'block_end'), ('condition', 'scenes'), ('img_name', 'scenes015.bmp')])
+280.2656 	EXP 	image: autoDraw = False
+280.2656 	EXP 	fixation: autoDraw = False
+280.2656 	EXP 	fixation_null: autoDraw = True
+280.2656 	EXP 	fixation_null: autoDraw = False
+280.2656 	EXP 	fixation_wait_for_t: autoDraw = True
+280.2656 	EXP 	fixation_wait_for_t: autoDraw = False
+280.2656 	EXP 	image: texRes = 128
+280.2656 	EXP 	image: image = 'localizer//stimuli//scenes015.bmp'
+280.2656 	EXP 	image: autoDraw = True
+280.2656 	EXP 	fixation: autoDraw = True
+280.5717 	EXP 	image: autoDraw = False
+280.8096 	DATA 	Keypress: t
+281.0580 	EXP 	New trial (rep=0, index=122): OrderedDict([('block_type', 'block_start'), ('condition', 'scrambled'), ('img_name', 'scrambled070.bmp')])
+281.0718 	EXP 	image: autoDraw = False
+281.0718 	EXP 	fixation: autoDraw = False
+281.0718 	EXP 	fixation_null: autoDraw = True
+281.0718 	EXP 	fixation_null: autoDraw = False
+281.0718 	EXP 	fixation_wait_for_t: autoDraw = True
+282.8149 	DATA 	Keypress: t
+282.8230 	EXP 	fixation_wait_for_t: autoDraw = False
+282.8230 	EXP 	image: texRes = 128
+282.8230 	EXP 	image: image = 'localizer//stimuli//scrambled070.bmp'
+282.8230 	EXP 	image: autoDraw = True
+282.8230 	EXP 	fixation: autoDraw = True
+283.1384 	EXP 	image: autoDraw = False
+283.6239 	EXP 	New trial (rep=0, index=123): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled008.bmp')])
+283.6463 	EXP 	image: autoDraw = False
+283.6463 	EXP 	fixation: autoDraw = False
+283.6463 	EXP 	fixation_null: autoDraw = True
+283.6463 	EXP 	fixation_null: autoDraw = False
+283.6463 	EXP 	fixation_wait_for_t: autoDraw = True
+283.6463 	EXP 	fixation_wait_for_t: autoDraw = False
+283.6463 	EXP 	image: texRes = 128
+283.6463 	EXP 	image: image = 'localizer//stimuli//scrambled008.bmp'
+283.6463 	EXP 	image: autoDraw = True
+283.6463 	EXP 	fixation: autoDraw = True
+283.9550 	EXP 	image: autoDraw = False
+284.4410 	EXP 	New trial (rep=0, index=124): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled007.bmp')])
+284.4654 	EXP 	image: autoDraw = False
+284.4654 	EXP 	fixation: autoDraw = False
+284.4654 	EXP 	fixation_null: autoDraw = True
+284.4654 	EXP 	fixation_null: autoDraw = False
+284.4654 	EXP 	fixation_wait_for_t: autoDraw = True
+284.4654 	EXP 	fixation_wait_for_t: autoDraw = False
+284.4654 	EXP 	image: texRes = 128
+284.4654 	EXP 	image: image = 'localizer//stimuli//scrambled007.bmp'
+284.4654 	EXP 	image: autoDraw = True
+284.4654 	EXP 	fixation: autoDraw = True
+284.7720 	EXP 	image: autoDraw = False
+284.8090 	DATA 	Keypress: t
+285.2576 	EXP 	New trial (rep=0, index=125): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled030.bmp')])
+285.2802 	EXP 	image: autoDraw = False
+285.2802 	EXP 	fixation: autoDraw = False
+285.2802 	EXP 	fixation_null: autoDraw = True
+285.2802 	EXP 	fixation_null: autoDraw = False
+285.2802 	EXP 	fixation_wait_for_t: autoDraw = True
+285.2802 	EXP 	fixation_wait_for_t: autoDraw = False
+285.2802 	EXP 	image: texRes = 128
+285.2802 	EXP 	image: image = 'localizer//stimuli//scrambled030.bmp'
+285.2802 	EXP 	image: autoDraw = True
+285.2802 	EXP 	fixation: autoDraw = True
+285.5886 	EXP 	image: autoDraw = False
+286.0743 	EXP 	New trial (rep=0, index=126): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled015.bmp')])
+286.0982 	EXP 	image: autoDraw = False
+286.0982 	EXP 	fixation: autoDraw = False
+286.0982 	EXP 	fixation_null: autoDraw = True
+286.0982 	EXP 	fixation_null: autoDraw = False
+286.0982 	EXP 	fixation_wait_for_t: autoDraw = True
+286.0982 	EXP 	fixation_wait_for_t: autoDraw = False
+286.0982 	EXP 	image: texRes = 128
+286.0982 	EXP 	image: image = 'localizer//stimuli//scrambled015.bmp'
+286.0982 	EXP 	image: autoDraw = True
+286.0982 	EXP 	fixation: autoDraw = True
+286.4065 	EXP 	image: autoDraw = False
+286.8090 	DATA 	Keypress: t
+286.8910 	EXP 	New trial (rep=0, index=127): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled013.bmp')])
+286.9150 	EXP 	image: autoDraw = False
+286.9150 	EXP 	fixation: autoDraw = False
+286.9150 	EXP 	fixation_null: autoDraw = True
+286.9150 	EXP 	fixation_null: autoDraw = False
+286.9150 	EXP 	fixation_wait_for_t: autoDraw = True
+286.9150 	EXP 	fixation_wait_for_t: autoDraw = False
+286.9150 	EXP 	image: texRes = 128
+286.9150 	EXP 	image: image = 'localizer//stimuli//scrambled013.bmp'
+286.9150 	EXP 	image: autoDraw = True
+286.9150 	EXP 	fixation: autoDraw = True
+287.2226 	EXP 	image: autoDraw = False
+287.7088 	EXP 	New trial (rep=0, index=128): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled033.bmp')])
+287.7250 	EXP 	image: autoDraw = False
+287.7250 	EXP 	fixation: autoDraw = False
+287.7250 	EXP 	fixation_null: autoDraw = True
+287.7250 	EXP 	fixation_null: autoDraw = False
+287.7250 	EXP 	fixation_wait_for_t: autoDraw = True
+287.7250 	EXP 	fixation_wait_for_t: autoDraw = False
+287.7250 	EXP 	image: texRes = 128
+287.7250 	EXP 	image: image = 'localizer//stimuli//scrambled033.bmp'
+287.7250 	EXP 	image: autoDraw = True
+287.7250 	EXP 	fixation: autoDraw = True
+288.0392 	EXP 	image: autoDraw = False
+288.5266 	EXP 	New trial (rep=0, index=129): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled037.bmp')])
+288.5511 	EXP 	image: autoDraw = False
+288.5511 	EXP 	fixation: autoDraw = False
+288.5511 	EXP 	fixation_null: autoDraw = True
+288.5511 	EXP 	fixation_null: autoDraw = False
+288.5511 	EXP 	fixation_wait_for_t: autoDraw = True
+288.5511 	EXP 	fixation_wait_for_t: autoDraw = False
+288.5511 	EXP 	image: texRes = 128
+288.5511 	EXP 	image: image = 'localizer//stimuli//scrambled037.bmp'
+288.5511 	EXP 	image: autoDraw = True
+288.5511 	EXP 	fixation: autoDraw = True
+288.8111 	DATA 	Keypress: t
+288.8558 	EXP 	image: autoDraw = False
+289.3411 	EXP 	New trial (rep=0, index=130): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled003.bmp')])
+289.3563 	EXP 	image: autoDraw = False
+289.3563 	EXP 	fixation: autoDraw = False
+289.3563 	EXP 	fixation_null: autoDraw = True
+289.3563 	EXP 	fixation_null: autoDraw = False
+289.3563 	EXP 	fixation_wait_for_t: autoDraw = True
+289.3563 	EXP 	fixation_wait_for_t: autoDraw = False
+289.3563 	EXP 	image: texRes = 128
+289.3563 	EXP 	image: image = 'localizer//stimuli//scrambled003.bmp'
+289.3563 	EXP 	image: autoDraw = True
+289.3563 	EXP 	fixation: autoDraw = True
+289.6719 	EXP 	image: autoDraw = False
+290.1579 	EXP 	New trial (rep=0, index=131): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled076.bmp')])
+290.1819 	EXP 	image: autoDraw = False
+290.1819 	EXP 	fixation: autoDraw = False
+290.1819 	EXP 	fixation_null: autoDraw = True
+290.1819 	EXP 	fixation_null: autoDraw = False
+290.1819 	EXP 	fixation_wait_for_t: autoDraw = True
+290.1819 	EXP 	fixation_wait_for_t: autoDraw = False
+290.1819 	EXP 	image: texRes = 128
+290.1819 	EXP 	image: image = 'localizer//stimuli//scrambled076.bmp'
+290.1819 	EXP 	image: autoDraw = True
+290.1819 	EXP 	fixation: autoDraw = True
+290.4886 	EXP 	image: autoDraw = False
+290.8110 	DATA 	Keypress: t
+290.9766 	EXP 	New trial (rep=0, index=132): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled002.bmp')])
+291.0072 	EXP 	image: autoDraw = False
+291.0072 	EXP 	fixation: autoDraw = False
+291.0072 	EXP 	fixation_null: autoDraw = True
+291.0072 	EXP 	fixation_null: autoDraw = False
+291.0072 	EXP 	fixation_wait_for_t: autoDraw = True
+291.0072 	EXP 	fixation_wait_for_t: autoDraw = False
+291.0072 	EXP 	image: texRes = 128
+291.0072 	EXP 	image: image = 'localizer//stimuli//scrambled002.bmp'
+291.0072 	EXP 	image: autoDraw = True
+291.0072 	EXP 	fixation: autoDraw = True
+291.3063 	EXP 	image: autoDraw = False
+291.7919 	EXP 	New trial (rep=0, index=133): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled038.bmp')])
+291.8193 	EXP 	image: autoDraw = False
+291.8193 	EXP 	fixation: autoDraw = False
+291.8193 	EXP 	fixation_null: autoDraw = True
+291.8193 	EXP 	fixation_null: autoDraw = False
+291.8193 	EXP 	fixation_wait_for_t: autoDraw = True
+291.8193 	EXP 	fixation_wait_for_t: autoDraw = False
+291.8193 	EXP 	image: texRes = 128
+291.8193 	EXP 	image: image = 'localizer//stimuli//scrambled038.bmp'
+291.8193 	EXP 	image: autoDraw = True
+291.8193 	EXP 	fixation: autoDraw = True
+292.1219 	EXP 	image: autoDraw = False
+292.6079 	EXP 	New trial (rep=0, index=134): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled053.bmp')])
+292.6319 	EXP 	image: autoDraw = False
+292.6319 	EXP 	fixation: autoDraw = False
+292.6319 	EXP 	fixation_null: autoDraw = True
+292.6319 	EXP 	fixation_null: autoDraw = False
+292.6319 	EXP 	fixation_wait_for_t: autoDraw = True
+292.6319 	EXP 	fixation_wait_for_t: autoDraw = False
+292.6319 	EXP 	image: texRes = 128
+292.6319 	EXP 	image: image = 'localizer//stimuli//scrambled053.bmp'
+292.6319 	EXP 	image: autoDraw = True
+292.6319 	EXP 	fixation: autoDraw = True
+292.8094 	DATA 	Keypress: t
+292.9386 	EXP 	image: autoDraw = False
+293.4243 	EXP 	New trial (rep=0, index=135): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled086.bmp')])
+293.4484 	EXP 	image: autoDraw = False
+293.4484 	EXP 	fixation: autoDraw = False
+293.4484 	EXP 	fixation_null: autoDraw = True
+293.4484 	EXP 	fixation_null: autoDraw = False
+293.4484 	EXP 	fixation_wait_for_t: autoDraw = True
+293.4484 	EXP 	fixation_wait_for_t: autoDraw = False
+293.4484 	EXP 	image: texRes = 128
+293.4484 	EXP 	image: image = 'localizer//stimuli//scrambled086.bmp'
+293.4484 	EXP 	image: autoDraw = True
+293.4484 	EXP 	fixation: autoDraw = True
+293.7551 	EXP 	image: autoDraw = False
+294.2408 	EXP 	New trial (rep=0, index=136): OrderedDict([('block_type', 'block_end'), ('condition', 'scrambled'), ('img_name', 'scrambled082.bmp')])
+294.2632 	EXP 	image: autoDraw = False
+294.2632 	EXP 	fixation: autoDraw = False
+294.2632 	EXP 	fixation_null: autoDraw = True
+294.2632 	EXP 	fixation_null: autoDraw = False
+294.2632 	EXP 	fixation_wait_for_t: autoDraw = True
+294.2632 	EXP 	fixation_wait_for_t: autoDraw = False
+294.2632 	EXP 	image: texRes = 128
+294.2632 	EXP 	image: image = 'localizer//stimuli//scrambled082.bmp'
+294.2632 	EXP 	image: autoDraw = True
+294.2632 	EXP 	fixation: autoDraw = True
+294.5719 	EXP 	image: autoDraw = False
+294.8091 	DATA 	Keypress: t
+295.0579 	EXP 	New trial (rep=0, index=137): OrderedDict([('block_type', 'block_start'), ('condition', 'scenes'), ('img_name', 'scenes014.bmp')])
+295.0719 	EXP 	image: autoDraw = False
+295.0719 	EXP 	fixation: autoDraw = False
+295.0719 	EXP 	fixation_null: autoDraw = True
+295.0719 	EXP 	fixation_null: autoDraw = False
+295.0719 	EXP 	fixation_wait_for_t: autoDraw = True
+296.8258 	DATA 	Keypress: t
+296.8307 	EXP 	fixation_wait_for_t: autoDraw = False
+296.8307 	EXP 	image: texRes = 128
+296.8307 	EXP 	image: image = 'localizer//stimuli//scenes014.bmp'
+296.8307 	EXP 	image: autoDraw = True
+296.8307 	EXP 	fixation: autoDraw = True
+297.1385 	EXP 	image: autoDraw = False
+297.6246 	EXP 	New trial (rep=0, index=138): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes018.bmp')])
+297.6493 	EXP 	image: autoDraw = False
+297.6493 	EXP 	fixation: autoDraw = False
+297.6493 	EXP 	fixation_null: autoDraw = True
+297.6493 	EXP 	fixation_null: autoDraw = False
+297.6493 	EXP 	fixation_wait_for_t: autoDraw = True
+297.6493 	EXP 	fixation_wait_for_t: autoDraw = False
+297.6493 	EXP 	image: texRes = 128
+297.6493 	EXP 	image: image = 'localizer//stimuli//scenes018.bmp'
+297.6493 	EXP 	image: autoDraw = True
+297.6493 	EXP 	fixation: autoDraw = True
+297.9553 	EXP 	image: autoDraw = False
+298.4413 	EXP 	New trial (rep=0, index=139): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes002.bmp')])
+298.4663 	EXP 	image: autoDraw = False
+298.4663 	EXP 	fixation: autoDraw = False
+298.4663 	EXP 	fixation_null: autoDraw = True
+298.4663 	EXP 	fixation_null: autoDraw = False
+298.4663 	EXP 	fixation_wait_for_t: autoDraw = True
+298.4663 	EXP 	fixation_wait_for_t: autoDraw = False
+298.4663 	EXP 	image: texRes = 128
+298.4663 	EXP 	image: image = 'localizer//stimuli//scenes002.bmp'
+298.4663 	EXP 	image: autoDraw = True
+298.4663 	EXP 	fixation: autoDraw = True
+298.7723 	EXP 	image: autoDraw = False
+298.8107 	DATA 	Keypress: t
+299.2581 	EXP 	New trial (rep=0, index=140): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes074.bmp')])
+299.2731 	EXP 	image: autoDraw = False
+299.2731 	EXP 	fixation: autoDraw = False
+299.2731 	EXP 	fixation_null: autoDraw = True
+299.2731 	EXP 	fixation_null: autoDraw = False
+299.2731 	EXP 	fixation_wait_for_t: autoDraw = True
+299.2731 	EXP 	fixation_wait_for_t: autoDraw = False
+299.2731 	EXP 	image: texRes = 128
+299.2731 	EXP 	image: image = 'localizer//stimuli//scenes074.bmp'
+299.2731 	EXP 	image: autoDraw = True
+299.2731 	EXP 	fixation: autoDraw = True
+299.5890 	EXP 	image: autoDraw = False
+300.0745 	EXP 	New trial (rep=0, index=141): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes050.bmp')])
+300.1000 	EXP 	image: autoDraw = False
+300.1000 	EXP 	fixation: autoDraw = False
+300.1000 	EXP 	fixation_null: autoDraw = True
+300.1000 	EXP 	fixation_null: autoDraw = False
+300.1000 	EXP 	fixation_wait_for_t: autoDraw = True
+300.1000 	EXP 	fixation_wait_for_t: autoDraw = False
+300.1000 	EXP 	image: texRes = 128
+300.1000 	EXP 	image: image = 'localizer//stimuli//scenes050.bmp'
+300.1000 	EXP 	image: autoDraw = True
+300.1000 	EXP 	fixation: autoDraw = True
+300.4054 	EXP 	image: autoDraw = False
+300.8086 	DATA 	Keypress: t
+300.8913 	EXP 	New trial (rep=0, index=142): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes069.bmp')])
+300.9165 	EXP 	image: autoDraw = False
+300.9165 	EXP 	fixation: autoDraw = False
+300.9165 	EXP 	fixation_null: autoDraw = True
+300.9165 	EXP 	fixation_null: autoDraw = False
+300.9165 	EXP 	fixation_wait_for_t: autoDraw = True
+300.9165 	EXP 	fixation_wait_for_t: autoDraw = False
+300.9165 	EXP 	image: texRes = 128
+300.9165 	EXP 	image: image = 'localizer//stimuli//scenes069.bmp'
+300.9165 	EXP 	image: autoDraw = True
+300.9165 	EXP 	fixation: autoDraw = True
+301.2216 	EXP 	image: autoDraw = False
+301.7079 	EXP 	New trial (rep=0, index=143): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes020.bmp')])
+301.7229 	EXP 	image: autoDraw = False
+301.7229 	EXP 	fixation: autoDraw = False
+301.7229 	EXP 	fixation_null: autoDraw = True
+301.7229 	EXP 	fixation_null: autoDraw = False
+301.7229 	EXP 	fixation_wait_for_t: autoDraw = True
+301.7229 	EXP 	fixation_wait_for_t: autoDraw = False
+301.7229 	EXP 	image: texRes = 128
+301.7229 	EXP 	image: image = 'localizer//stimuli//scenes020.bmp'
+301.7229 	EXP 	image: autoDraw = True
+301.7229 	EXP 	fixation: autoDraw = True
+302.0387 	EXP 	image: autoDraw = False
+302.5246 	EXP 	New trial (rep=0, index=144): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes068.bmp')])
+302.5490 	EXP 	image: autoDraw = False
+302.5490 	EXP 	fixation: autoDraw = False
+302.5490 	EXP 	fixation_null: autoDraw = True
+302.5490 	EXP 	fixation_null: autoDraw = False
+302.5490 	EXP 	fixation_wait_for_t: autoDraw = True
+302.5490 	EXP 	fixation_wait_for_t: autoDraw = False
+302.5490 	EXP 	image: texRes = 128
+302.5490 	EXP 	image: image = 'localizer//stimuli//scenes068.bmp'
+302.5490 	EXP 	image: autoDraw = True
+302.5490 	EXP 	fixation: autoDraw = True
+302.8102 	DATA 	Keypress: t
+302.8551 	EXP 	image: autoDraw = False
+303.3410 	EXP 	New trial (rep=0, index=145): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes058.bmp')])
+303.3621 	EXP 	image: autoDraw = False
+303.3621 	EXP 	fixation: autoDraw = False
+303.3621 	EXP 	fixation_null: autoDraw = True
+303.3621 	EXP 	fixation_null: autoDraw = False
+303.3621 	EXP 	fixation_wait_for_t: autoDraw = True
+303.3621 	EXP 	fixation_wait_for_t: autoDraw = False
+303.3621 	EXP 	image: texRes = 128
+303.3621 	EXP 	image: image = 'localizer//stimuli//scenes058.bmp'
+303.3621 	EXP 	image: autoDraw = True
+303.3621 	EXP 	fixation: autoDraw = True
+303.6721 	EXP 	image: autoDraw = False
+304.1469 	EXP 	New trial (rep=0, index=146): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes054.bmp')])
+304.1759 	EXP 	image: autoDraw = False
+304.1759 	EXP 	fixation: autoDraw = False
+304.1759 	EXP 	fixation_null: autoDraw = True
+304.1759 	EXP 	fixation_null: autoDraw = False
+304.1759 	EXP 	fixation_wait_for_t: autoDraw = True
+304.1759 	EXP 	fixation_wait_for_t: autoDraw = False
+304.1759 	EXP 	image: texRes = 128
+304.1759 	EXP 	image: image = 'localizer//stimuli//scenes054.bmp'
+304.1759 	EXP 	image: autoDraw = True
+304.1759 	EXP 	fixation: autoDraw = True
+304.4889 	EXP 	image: autoDraw = False
+304.8124 	DATA 	Keypress: t
+304.9580 	EXP 	New trial (rep=0, index=147): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes010.bmp')])
+304.9823 	EXP 	image: autoDraw = False
+304.9823 	EXP 	fixation: autoDraw = False
+304.9823 	EXP 	fixation_null: autoDraw = True
+304.9823 	EXP 	fixation_null: autoDraw = False
+304.9823 	EXP 	fixation_wait_for_t: autoDraw = True
+304.9823 	EXP 	fixation_wait_for_t: autoDraw = False
+304.9823 	EXP 	image: texRes = 128
+304.9823 	EXP 	image: image = 'localizer//stimuli//scenes010.bmp'
+304.9823 	EXP 	image: autoDraw = True
+304.9823 	EXP 	fixation: autoDraw = True
+305.2888 	EXP 	image: autoDraw = False
+305.7780 	EXP 	New trial (rep=0, index=148): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes078.bmp')])
+305.7954 	EXP 	image: autoDraw = False
+305.7954 	EXP 	fixation: autoDraw = False
+305.7954 	EXP 	fixation_null: autoDraw = True
+305.7954 	EXP 	fixation_null: autoDraw = False
+305.7954 	EXP 	fixation_wait_for_t: autoDraw = True
+305.7954 	EXP 	fixation_wait_for_t: autoDraw = False
+305.7954 	EXP 	image: texRes = 128
+305.7954 	EXP 	image: image = 'localizer//stimuli//scenes078.bmp'
+305.7954 	EXP 	image: autoDraw = True
+305.7954 	EXP 	fixation: autoDraw = True
+306.1060 	EXP 	image: autoDraw = False
+306.5917 	EXP 	New trial (rep=0, index=149): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes081.bmp')])
+306.6063 	EXP 	image: autoDraw = False
+306.6063 	EXP 	fixation: autoDraw = False
+306.6063 	EXP 	fixation_null: autoDraw = True
+306.6063 	EXP 	fixation_null: autoDraw = False
+306.6063 	EXP 	fixation_wait_for_t: autoDraw = True
+306.6063 	EXP 	fixation_wait_for_t: autoDraw = False
+306.6063 	EXP 	image: texRes = 128
+306.6063 	EXP 	image: image = 'localizer//stimuli//scenes081.bmp'
+306.6063 	EXP 	image: autoDraw = True
+306.6063 	EXP 	fixation: autoDraw = True
+306.8084 	DATA 	Keypress: t
+306.9055 	EXP 	image: autoDraw = False
+307.4080 	EXP 	New trial (rep=0, index=150): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes072.bmp')])
+307.4329 	EXP 	image: autoDraw = False
+307.4329 	EXP 	fixation: autoDraw = False
+307.4329 	EXP 	fixation_null: autoDraw = True
+307.4329 	EXP 	fixation_null: autoDraw = False
+307.4329 	EXP 	fixation_wait_for_t: autoDraw = True
+307.4329 	EXP 	fixation_wait_for_t: autoDraw = False
+307.4329 	EXP 	image: texRes = 128
+307.4329 	EXP 	image: image = 'localizer//stimuli//scenes072.bmp'
+307.4329 	EXP 	image: autoDraw = True
+307.4329 	EXP 	fixation: autoDraw = True
+307.7389 	EXP 	image: autoDraw = False
+308.2248 	EXP 	New trial (rep=0, index=151): OrderedDict([('block_type', 'block_end'), ('condition', 'scenes'), ('img_name', 'scenes045.bmp')])
+308.2500 	EXP 	image: autoDraw = False
+308.2500 	EXP 	fixation: autoDraw = False
+308.2500 	EXP 	fixation_null: autoDraw = True
+308.2500 	EXP 	fixation_null: autoDraw = False
+308.2500 	EXP 	fixation_wait_for_t: autoDraw = True
+308.2500 	EXP 	fixation_wait_for_t: autoDraw = False
+308.2500 	EXP 	image: texRes = 128
+308.2500 	EXP 	image: image = 'localizer//stimuli//scenes045.bmp'
+308.2500 	EXP 	image: autoDraw = True
+308.2500 	EXP 	fixation: autoDraw = True
+308.5554 	EXP 	image: autoDraw = False
+308.8085 	DATA 	Keypress: t
+309.0409 	EXP 	New trial (rep=0, index=152): OrderedDict([('block_type', 'block_start'), ('condition', 'faces'), ('img_name', 'faces066.bmp')])
+309.0553 	EXP 	image: autoDraw = False
+309.0553 	EXP 	fixation: autoDraw = False
+309.0553 	EXP 	fixation_null: autoDraw = True
+309.0553 	EXP 	fixation_null: autoDraw = False
+309.0553 	EXP 	fixation_wait_for_t: autoDraw = True
+310.8277 	DATA 	Keypress: t
+310.8326 	EXP 	fixation_wait_for_t: autoDraw = False
+310.8326 	EXP 	image: texRes = 128
+310.8326 	EXP 	image: image = 'localizer//stimuli//faces066.bmp'
+310.8326 	EXP 	image: autoDraw = True
+310.8326 	EXP 	fixation: autoDraw = True
+311.1388 	EXP 	image: autoDraw = False
+311.6249 	EXP 	New trial (rep=0, index=153): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces087.bmp')])
+311.6519 	EXP 	image: autoDraw = False
+311.6519 	EXP 	fixation: autoDraw = False
+311.6519 	EXP 	fixation_null: autoDraw = True
+311.6519 	EXP 	fixation_null: autoDraw = False
+311.6519 	EXP 	fixation_wait_for_t: autoDraw = True
+311.6519 	EXP 	fixation_wait_for_t: autoDraw = False
+311.6519 	EXP 	image: texRes = 128
+311.6519 	EXP 	image: image = 'localizer//stimuli//faces087.bmp'
+311.6519 	EXP 	image: autoDraw = True
+311.6519 	EXP 	fixation: autoDraw = True
+311.9555 	EXP 	image: autoDraw = False
+312.4415 	EXP 	New trial (rep=0, index=154): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces052.bmp')])
+312.4674 	EXP 	image: autoDraw = False
+312.4674 	EXP 	fixation: autoDraw = False
+312.4674 	EXP 	fixation_null: autoDraw = True
+312.4674 	EXP 	fixation_null: autoDraw = False
+312.4674 	EXP 	fixation_wait_for_t: autoDraw = True
+312.4674 	EXP 	fixation_wait_for_t: autoDraw = False
+312.4674 	EXP 	image: texRes = 128
+312.4674 	EXP 	image: image = 'localizer//stimuli//faces052.bmp'
+312.4674 	EXP 	image: autoDraw = True
+312.4674 	EXP 	fixation: autoDraw = True
+312.7727 	EXP 	image: autoDraw = False
+312.8112 	DATA 	Keypress: t
+313.2587 	EXP 	New trial (rep=0, index=155): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces009.bmp')])
+313.2845 	EXP 	image: autoDraw = False
+313.2845 	EXP 	fixation: autoDraw = False
+313.2845 	EXP 	fixation_null: autoDraw = True
+313.2845 	EXP 	fixation_null: autoDraw = False
+313.2845 	EXP 	fixation_wait_for_t: autoDraw = True
+313.2845 	EXP 	fixation_wait_for_t: autoDraw = False
+313.2845 	EXP 	image: texRes = 128
+313.2845 	EXP 	image: image = 'localizer//stimuli//faces009.bmp'
+313.2845 	EXP 	image: autoDraw = True
+313.2845 	EXP 	fixation: autoDraw = True
+313.5887 	EXP 	image: autoDraw = False
+314.0753 	EXP 	New trial (rep=0, index=156): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces067.bmp')])
+314.1061 	EXP 	image: autoDraw = False
+314.1061 	EXP 	fixation: autoDraw = False
+314.1061 	EXP 	fixation_null: autoDraw = True
+314.1061 	EXP 	fixation_null: autoDraw = False
+314.1061 	EXP 	fixation_wait_for_t: autoDraw = True
+314.1061 	EXP 	fixation_wait_for_t: autoDraw = False
+314.1061 	EXP 	image: texRes = 128
+314.1061 	EXP 	image: image = 'localizer//stimuli//faces067.bmp'
+314.1061 	EXP 	image: autoDraw = True
+314.1061 	EXP 	fixation: autoDraw = True
+314.4218 	EXP 	image: autoDraw = False
+314.8093 	DATA 	Keypress: t
+314.8917 	EXP 	New trial (rep=0, index=157): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces080.bmp')])
+314.9085 	EXP 	image: autoDraw = False
+314.9085 	EXP 	fixation: autoDraw = False
+314.9085 	EXP 	fixation_null: autoDraw = True
+314.9085 	EXP 	fixation_null: autoDraw = False
+314.9085 	EXP 	fixation_wait_for_t: autoDraw = True
+314.9085 	EXP 	fixation_wait_for_t: autoDraw = False
+314.9085 	EXP 	image: texRes = 128
+314.9085 	EXP 	image: image = 'localizer//stimuli//faces080.bmp'
+314.9085 	EXP 	image: autoDraw = True
+314.9085 	EXP 	fixation: autoDraw = True
+315.2220 	EXP 	image: autoDraw = False
+315.7076 	EXP 	New trial (rep=0, index=158): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces028.bmp')])
+315.7318 	EXP 	image: autoDraw = False
+315.7318 	EXP 	fixation: autoDraw = False
+315.7318 	EXP 	fixation_null: autoDraw = True
+315.7318 	EXP 	fixation_null: autoDraw = False
+315.7318 	EXP 	fixation_wait_for_t: autoDraw = True
+315.7318 	EXP 	fixation_wait_for_t: autoDraw = False
+315.7318 	EXP 	image: texRes = 128
+315.7318 	EXP 	image: image = 'localizer//stimuli//faces028.bmp'
+315.7318 	EXP 	image: autoDraw = True
+315.7318 	EXP 	fixation: autoDraw = True
+316.0390 	EXP 	image: autoDraw = False
+316.5245 	EXP 	New trial (rep=0, index=159): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces065.bmp')])
+316.5396 	EXP 	image: autoDraw = False
+316.5396 	EXP 	fixation: autoDraw = False
+316.5396 	EXP 	fixation_null: autoDraw = True
+316.5396 	EXP 	fixation_null: autoDraw = False
+316.5396 	EXP 	fixation_wait_for_t: autoDraw = True
+316.5396 	EXP 	fixation_wait_for_t: autoDraw = False
+316.5396 	EXP 	image: texRes = 128
+316.5396 	EXP 	image: image = 'localizer//stimuli//faces065.bmp'
+316.5396 	EXP 	image: autoDraw = True
+316.5396 	EXP 	fixation: autoDraw = True
+316.8083 	DATA 	Keypress: t
+316.8554 	EXP 	image: autoDraw = False
+317.3412 	EXP 	New trial (rep=0, index=160): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces048.bmp')])
+317.3665 	EXP 	image: autoDraw = False
+317.3665 	EXP 	fixation: autoDraw = False
+317.3665 	EXP 	fixation_null: autoDraw = True
+317.3665 	EXP 	fixation_null: autoDraw = False
+317.3665 	EXP 	fixation_wait_for_t: autoDraw = True
+317.3665 	EXP 	fixation_wait_for_t: autoDraw = False
+317.3665 	EXP 	image: texRes = 128
+317.3665 	EXP 	image: image = 'localizer//stimuli//faces048.bmp'
+317.3665 	EXP 	image: autoDraw = True
+317.3665 	EXP 	fixation: autoDraw = True
+317.6721 	EXP 	image: autoDraw = False
+318.1581 	EXP 	New trial (rep=0, index=161): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces048.bmp')])
+318.1730 	EXP 	image: autoDraw = False
+318.1730 	EXP 	fixation: autoDraw = False
+318.1730 	EXP 	fixation_null: autoDraw = True
+318.1730 	EXP 	fixation_null: autoDraw = False
+318.1730 	EXP 	fixation_wait_for_t: autoDraw = True
+318.1730 	EXP 	fixation_wait_for_t: autoDraw = False
+318.1730 	EXP 	image: texRes = 128
+318.1730 	EXP 	image: image = 'localizer//stimuli//faces048.bmp'
+318.1730 	EXP 	image: autoDraw = True
+318.1730 	EXP 	fixation: autoDraw = True
+318.4885 	EXP 	image: autoDraw = False
+318.8107 	DATA 	Keypress: t
+318.9747 	EXP 	New trial (rep=0, index=162): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces074.bmp')])
+318.9967 	DATA 	Keypress: y
+319.0017 	EXP 	image: autoDraw = False
+319.0017 	EXP 	fixation: autoDraw = False
+319.0017 	EXP 	fixation_null: autoDraw = True
+319.0017 	EXP 	fixation_null: autoDraw = False
+319.0017 	EXP 	fixation_wait_for_t: autoDraw = True
+319.0017 	EXP 	fixation_wait_for_t: autoDraw = False
+319.0017 	EXP 	image: texRes = 128
+319.0017 	EXP 	image: image = 'localizer//stimuli//faces074.bmp'
+319.0017 	EXP 	image: autoDraw = True
+319.0017 	EXP 	fixation: autoDraw = True
+319.3056 	EXP 	image: autoDraw = False
+319.7920 	EXP 	New trial (rep=0, index=163): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces070.bmp')])
+319.8065 	EXP 	image: autoDraw = False
+319.8065 	EXP 	fixation: autoDraw = False
+319.8065 	EXP 	fixation_null: autoDraw = True
+319.8065 	EXP 	fixation_null: autoDraw = False
+319.8065 	EXP 	fixation_wait_for_t: autoDraw = True
+319.8065 	EXP 	fixation_wait_for_t: autoDraw = False
+319.8065 	EXP 	image: texRes = 128
+319.8065 	EXP 	image: image = 'localizer//stimuli//faces070.bmp'
+319.8065 	EXP 	image: autoDraw = True
+319.8065 	EXP 	fixation: autoDraw = True
+320.1217 	EXP 	image: autoDraw = False
+320.6080 	EXP 	New trial (rep=0, index=164): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces033.bmp')])
+320.6414 	EXP 	image: autoDraw = False
+320.6414 	EXP 	fixation: autoDraw = False
+320.6414 	EXP 	fixation_null: autoDraw = True
+320.6414 	EXP 	fixation_null: autoDraw = False
+320.6414 	EXP 	fixation_wait_for_t: autoDraw = True
+320.6414 	EXP 	fixation_wait_for_t: autoDraw = False
+320.6414 	EXP 	image: texRes = 128
+320.6414 	EXP 	image: image = 'localizer//stimuli//faces033.bmp'
+320.6414 	EXP 	image: autoDraw = True
+320.6414 	EXP 	fixation: autoDraw = True
+320.8089 	DATA 	Keypress: t
+320.9554 	EXP 	image: autoDraw = False
+321.4247 	EXP 	New trial (rep=0, index=165): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces050.bmp')])
+321.4399 	EXP 	image: autoDraw = False
+321.4399 	EXP 	fixation: autoDraw = False
+321.4399 	EXP 	fixation_null: autoDraw = True
+321.4399 	EXP 	fixation_null: autoDraw = False
+321.4399 	EXP 	fixation_wait_for_t: autoDraw = True
+321.4399 	EXP 	fixation_wait_for_t: autoDraw = False
+321.4399 	EXP 	image: texRes = 128
+321.4399 	EXP 	image: image = 'localizer//stimuli//faces050.bmp'
+321.4399 	EXP 	image: autoDraw = True
+321.4399 	EXP 	fixation: autoDraw = True
+321.7552 	EXP 	image: autoDraw = False
+322.2415 	EXP 	New trial (rep=0, index=166): OrderedDict([('block_type', 'block_end'), ('condition', 'faces'), ('img_name', 'faces024.bmp')])
+322.2672 	EXP 	image: autoDraw = False
+322.2672 	EXP 	fixation: autoDraw = False
+322.2672 	EXP 	fixation_null: autoDraw = True
+322.2672 	EXP 	fixation_null: autoDraw = False
+322.2672 	EXP 	fixation_wait_for_t: autoDraw = True
+322.2672 	EXP 	fixation_wait_for_t: autoDraw = False
+322.2672 	EXP 	image: texRes = 128
+322.2672 	EXP 	image: image = 'localizer//stimuli//faces024.bmp'
+322.2672 	EXP 	image: autoDraw = True
+322.2672 	EXP 	fixation: autoDraw = True
+322.5722 	EXP 	image: autoDraw = False
+322.8115 	DATA 	Keypress: t
+323.0582 	EXP 	New trial (rep=0, index=167): OrderedDict([('block_type', 'block_start'), ('condition', 'objects'), ('img_name', 'objects079.bmp')])
+323.0721 	EXP 	image: autoDraw = False
+323.0721 	EXP 	fixation: autoDraw = False
+323.0721 	EXP 	fixation_null: autoDraw = True
+323.0721 	EXP 	fixation_null: autoDraw = False
+323.0721 	EXP 	fixation_wait_for_t: autoDraw = True
+324.8258 	DATA 	Keypress: t
+324.8306 	EXP 	fixation_wait_for_t: autoDraw = False
+324.8306 	EXP 	image: texRes = 128
+324.8306 	EXP 	image: image = 'localizer//stimuli//objects079.bmp'
+324.8306 	EXP 	image: autoDraw = True
+324.8306 	EXP 	fixation: autoDraw = True
+325.1384 	EXP 	image: autoDraw = False
+325.6169 	EXP 	New trial (rep=0, index=168): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects010.bmp')])
+325.6379 	EXP 	image: autoDraw = False
+325.6379 	EXP 	fixation: autoDraw = False
+325.6379 	EXP 	fixation_null: autoDraw = True
+325.6379 	EXP 	fixation_null: autoDraw = False
+325.6379 	EXP 	fixation_wait_for_t: autoDraw = True
+325.6379 	EXP 	fixation_wait_for_t: autoDraw = False
+325.6379 	EXP 	image: texRes = 128
+325.6379 	EXP 	image: image = 'localizer//stimuli//objects010.bmp'
+325.6379 	EXP 	image: autoDraw = True
+325.6379 	EXP 	fixation: autoDraw = True
+325.9395 	EXP 	image: autoDraw = False
+326.4244 	EXP 	New trial (rep=0, index=169): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects040.bmp')])
+326.4484 	EXP 	image: autoDraw = False
+326.4484 	EXP 	fixation: autoDraw = False
+326.4484 	EXP 	fixation_null: autoDraw = True
+326.4484 	EXP 	fixation_null: autoDraw = False
+326.4484 	EXP 	fixation_wait_for_t: autoDraw = True
+326.4484 	EXP 	fixation_wait_for_t: autoDraw = False
+326.4484 	EXP 	image: texRes = 128
+326.4484 	EXP 	image: image = 'localizer//stimuli//objects040.bmp'
+326.4484 	EXP 	image: autoDraw = True
+326.4484 	EXP 	fixation: autoDraw = True
+326.7554 	EXP 	image: autoDraw = False
+326.8094 	DATA 	Keypress: t
+327.2412 	EXP 	New trial (rep=0, index=170): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects063.bmp')])
+327.2653 	EXP 	image: autoDraw = False
+327.2653 	EXP 	fixation: autoDraw = False
+327.2653 	EXP 	fixation_null: autoDraw = True
+327.2653 	EXP 	fixation_null: autoDraw = False
+327.2653 	EXP 	fixation_wait_for_t: autoDraw = True
+327.2653 	EXP 	fixation_wait_for_t: autoDraw = False
+327.2653 	EXP 	image: texRes = 128
+327.2653 	EXP 	image: image = 'localizer//stimuli//objects063.bmp'
+327.2653 	EXP 	image: autoDraw = True
+327.2653 	EXP 	fixation: autoDraw = True
+327.5721 	EXP 	image: autoDraw = False
+328.0589 	EXP 	New trial (rep=0, index=171): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects065.bmp')])
+328.0748 	EXP 	image: autoDraw = False
+328.0748 	EXP 	fixation: autoDraw = False
+328.0748 	EXP 	fixation_null: autoDraw = True
+328.0748 	EXP 	fixation_null: autoDraw = False
+328.0748 	EXP 	fixation_wait_for_t: autoDraw = True
+328.0748 	EXP 	fixation_wait_for_t: autoDraw = False
+328.0748 	EXP 	image: texRes = 128
+328.0748 	EXP 	image: image = 'localizer//stimuli//objects065.bmp'
+328.0748 	EXP 	image: autoDraw = True
+328.0748 	EXP 	fixation: autoDraw = True
+328.3896 	EXP 	image: autoDraw = False
+328.8143 	DATA 	Keypress: t
+328.8638 	EXP 	New trial (rep=0, index=172): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects028.bmp')])
+328.8945 	EXP 	fixation: autoDraw = False
+328.8945 	EXP 	image: autoDraw = False
+328.8945 	EXP 	fixation: autoDraw = False
+328.8945 	EXP 	fixation_null: autoDraw = True
+328.8945 	EXP 	fixation_null: autoDraw = False
+328.8945 	EXP 	fixation_wait_for_t: autoDraw = True
+328.8945 	EXP 	fixation_wait_for_t: autoDraw = False
+328.8945 	EXP 	image: texRes = 128
+328.8945 	EXP 	image: image = 'localizer//stimuli//objects028.bmp'
+328.8945 	EXP 	image: autoDraw = True
+328.8945 	EXP 	fixation: autoDraw = True
+329.2054 	EXP 	image: autoDraw = False
+329.6746 	EXP 	New trial (rep=0, index=173): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects020.bmp')])
+329.6983 	EXP 	image: autoDraw = False
+329.6983 	EXP 	fixation: autoDraw = False
+329.6983 	EXP 	fixation_null: autoDraw = True
+329.6983 	EXP 	fixation_null: autoDraw = False
+329.6983 	EXP 	fixation_wait_for_t: autoDraw = True
+329.6983 	EXP 	fixation_wait_for_t: autoDraw = False
+329.6983 	EXP 	image: texRes = 128
+329.6983 	EXP 	image: image = 'localizer//stimuli//objects020.bmp'
+329.6983 	EXP 	image: autoDraw = True
+329.6983 	EXP 	fixation: autoDraw = True
+330.0054 	EXP 	image: autoDraw = False
+330.4929 	EXP 	New trial (rep=0, index=174): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects006.bmp')])
+330.5225 	EXP 	image: autoDraw = False
+330.5225 	EXP 	fixation: autoDraw = False
+330.5225 	EXP 	fixation_null: autoDraw = True
+330.5225 	EXP 	fixation_null: autoDraw = False
+330.5225 	EXP 	fixation_wait_for_t: autoDraw = True
+330.5225 	EXP 	fixation_wait_for_t: autoDraw = False
+330.5225 	EXP 	image: texRes = 128
+330.5225 	EXP 	image: image = 'localizer//stimuli//objects006.bmp'
+330.5225 	EXP 	image: autoDraw = True
+330.5225 	EXP 	fixation: autoDraw = True
+330.8102 	DATA 	Keypress: t
+330.8223 	EXP 	image: autoDraw = False
+331.3080 	EXP 	New trial (rep=0, index=175): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects007.bmp')])
+331.3229 	EXP 	image: autoDraw = False
+331.3229 	EXP 	fixation: autoDraw = False
+331.3229 	EXP 	fixation_null: autoDraw = True
+331.3229 	EXP 	fixation_null: autoDraw = False
+331.3229 	EXP 	fixation_wait_for_t: autoDraw = True
+331.3229 	EXP 	fixation_wait_for_t: autoDraw = False
+331.3229 	EXP 	image: texRes = 128
+331.3229 	EXP 	image: image = 'localizer//stimuli//objects007.bmp'
+331.3229 	EXP 	image: autoDraw = True
+331.3229 	EXP 	fixation: autoDraw = True
+331.6386 	EXP 	image: autoDraw = False
+332.1237 	EXP 	New trial (rep=0, index=176): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects035.bmp')])
+332.1470 	EXP 	image: autoDraw = False
+332.1470 	EXP 	fixation: autoDraw = False
+332.1470 	EXP 	fixation_null: autoDraw = True
+332.1470 	EXP 	fixation_null: autoDraw = False
+332.1470 	EXP 	fixation_wait_for_t: autoDraw = True
+332.1470 	EXP 	fixation_wait_for_t: autoDraw = False
+332.1470 	EXP 	image: texRes = 128
+332.1470 	EXP 	image: image = 'localizer//stimuli//objects035.bmp'
+332.1470 	EXP 	image: autoDraw = True
+332.1470 	EXP 	fixation: autoDraw = True
+332.4561 	EXP 	image: autoDraw = False
+332.8105 	DATA 	Keypress: t
+332.9422 	EXP 	New trial (rep=0, index=177): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects060.bmp')])
+332.9581 	EXP 	image: autoDraw = False
+332.9581 	EXP 	fixation: autoDraw = False
+332.9581 	EXP 	fixation_null: autoDraw = True
+332.9581 	EXP 	fixation_null: autoDraw = False
+332.9581 	EXP 	fixation_wait_for_t: autoDraw = True
+332.9581 	EXP 	fixation_wait_for_t: autoDraw = False
+332.9581 	EXP 	image: texRes = 128
+332.9581 	EXP 	image: image = 'localizer//stimuli//objects060.bmp'
+332.9581 	EXP 	image: autoDraw = True
+332.9581 	EXP 	fixation: autoDraw = True
+333.2620 	EXP 	image: autoDraw = False
+333.7600 	EXP 	New trial (rep=0, index=178): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects016.bmp')])
+333.7827 	EXP 	image: autoDraw = False
+333.7827 	EXP 	fixation: autoDraw = False
+333.7827 	EXP 	fixation_null: autoDraw = True
+333.7827 	EXP 	fixation_null: autoDraw = False
+333.7827 	EXP 	fixation_wait_for_t: autoDraw = True
+333.7827 	EXP 	fixation_wait_for_t: autoDraw = False
+333.7827 	EXP 	image: texRes = 128
+333.7827 	EXP 	image: image = 'localizer//stimuli//objects016.bmp'
+333.7827 	EXP 	image: autoDraw = True
+333.7827 	EXP 	fixation: autoDraw = True
+334.0888 	EXP 	image: autoDraw = False
+334.5744 	EXP 	New trial (rep=0, index=179): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects031.bmp')])
+334.5969 	EXP 	image: autoDraw = False
+334.5969 	EXP 	fixation: autoDraw = False
+334.5969 	EXP 	fixation_null: autoDraw = True
+334.5969 	EXP 	fixation_null: autoDraw = False
+334.5969 	EXP 	fixation_wait_for_t: autoDraw = True
+334.5969 	EXP 	fixation_wait_for_t: autoDraw = False
+334.5969 	EXP 	image: texRes = 128
+334.5969 	EXP 	image: image = 'localizer//stimuli//objects031.bmp'
+334.5969 	EXP 	image: autoDraw = True
+334.5969 	EXP 	fixation: autoDraw = True
+334.8105 	DATA 	Keypress: t
+334.9055 	EXP 	image: autoDraw = False
+335.3912 	EXP 	New trial (rep=0, index=180): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects037.bmp')])
+335.4148 	EXP 	image: autoDraw = False
+335.4148 	EXP 	fixation: autoDraw = False
+335.4148 	EXP 	fixation_null: autoDraw = True
+335.4148 	EXP 	fixation_null: autoDraw = False
+335.4148 	EXP 	fixation_wait_for_t: autoDraw = True
+335.4148 	EXP 	fixation_wait_for_t: autoDraw = False
+335.4148 	EXP 	image: texRes = 128
+335.4148 	EXP 	image: image = 'localizer//stimuli//objects037.bmp'
+335.4148 	EXP 	image: autoDraw = True
+335.4148 	EXP 	fixation: autoDraw = True
+335.7223 	EXP 	image: autoDraw = False
+336.2083 	EXP 	New trial (rep=0, index=181): OrderedDict([('block_type', 'block_end'), ('condition', 'objects'), ('img_name', 'objects055.bmp')])
+336.2333 	EXP 	image: autoDraw = False
+336.2333 	EXP 	fixation: autoDraw = False
+336.2333 	EXP 	fixation_null: autoDraw = True
+336.2333 	EXP 	fixation_null: autoDraw = False
+336.2333 	EXP 	fixation_wait_for_t: autoDraw = True
+336.2333 	EXP 	fixation_wait_for_t: autoDraw = False
+336.2333 	EXP 	image: texRes = 128
+336.2333 	EXP 	image: image = 'localizer//stimuli//objects055.bmp'
+336.2333 	EXP 	image: autoDraw = True
+336.2333 	EXP 	fixation: autoDraw = True
+336.5388 	EXP 	image: autoDraw = False
+336.8131 	DATA 	Keypress: t
+337.0247 	EXP 	New trial (rep=0, index=182): OrderedDict([('block_type', 'null_block'), ('condition', 'null_block'), ('img_name', 'null_block.bmp')])
+337.0387 	EXP 	image: autoDraw = False
+337.0387 	EXP 	fixation: autoDraw = False
+337.0387 	EXP 	fixation_null: autoDraw = True
+337.0387 	EXP 	fixation_null: autoDraw = False
+337.0387 	EXP 	fixation_wait_for_t: autoDraw = True
+338.8259 	DATA 	Keypress: t
+338.8296 	EXP 	fixation_wait_for_t: autoDraw = False
+338.8296 	EXP 	image: texRes = 128
+338.8296 	EXP 	image: image = 'localizer//stimuli//null_block.bmp'
+338.8296 	EXP 	image: texRes = 128
+338.8296 	EXP 	image: autoDraw = True
+338.8296 	EXP 	fixation: autoDraw = True
+338.8296 	EXP 	image: autoDraw = False
+338.8296 	EXP 	fixation: autoDraw = False
+338.8296 	EXP 	fixation_null: autoDraw = True
+340.8095 	DATA 	Keypress: t
+342.8076 	DATA 	Keypress: t
+344.8075 	DATA 	Keypress: t
+346.8096 	DATA 	Keypress: t
+348.8091 	DATA 	Keypress: t
+350.8103 	DATA 	Keypress: t
+350.8264 	EXP 	New trial (rep=0, index=183): OrderedDict([('block_type', 'block_start'), ('condition', 'scenes'), ('img_name', 'scenes059.bmp')])
+350.8401 	EXP 	fixation_null: autoDraw = False
+350.8401 	EXP 	fixation_null: autoDraw = False
+350.8401 	EXP 	fixation_wait_for_t: autoDraw = True
+352.8310 	DATA 	Keypress: t
+352.8358 	EXP 	fixation_wait_for_t: autoDraw = False
+352.8358 	EXP 	image: texRes = 128
+352.8358 	EXP 	image: image = 'localizer//stimuli//scenes059.bmp'
+352.8358 	EXP 	image: autoDraw = True
+352.8358 	EXP 	fixation: autoDraw = True
+353.1387 	EXP 	image: autoDraw = False
+353.6171 	EXP 	New trial (rep=0, index=184): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes051.bmp')])
+353.6356 	EXP 	image: autoDraw = False
+353.6356 	EXP 	fixation: autoDraw = False
+353.6356 	EXP 	fixation_null: autoDraw = True
+353.6356 	EXP 	fixation_null: autoDraw = False
+353.6356 	EXP 	fixation_wait_for_t: autoDraw = True
+353.6356 	EXP 	fixation_wait_for_t: autoDraw = False
+353.6356 	EXP 	image: texRes = 128
+353.6356 	EXP 	image: image = 'localizer//stimuli//scenes051.bmp'
+353.6356 	EXP 	image: autoDraw = True
+353.6356 	EXP 	fixation: autoDraw = True
+353.9388 	EXP 	image: autoDraw = False
+354.4251 	EXP 	New trial (rep=0, index=185): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes009.bmp')])
+354.4400 	EXP 	image: autoDraw = False
+354.4400 	EXP 	fixation: autoDraw = False
+354.4400 	EXP 	fixation_null: autoDraw = True
+354.4400 	EXP 	fixation_null: autoDraw = False
+354.4400 	EXP 	fixation_wait_for_t: autoDraw = True
+354.4400 	EXP 	fixation_wait_for_t: autoDraw = False
+354.4400 	EXP 	image: texRes = 128
+354.4400 	EXP 	image: image = 'localizer//stimuli//scenes009.bmp'
+354.4400 	EXP 	image: autoDraw = True
+354.4400 	EXP 	fixation: autoDraw = True
+354.7555 	EXP 	image: autoDraw = False
+354.8089 	DATA 	Keypress: t
+355.2416 	EXP 	New trial (rep=0, index=186): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes077.bmp')])
+355.2667 	EXP 	image: autoDraw = False
+355.2667 	EXP 	fixation: autoDraw = False
+355.2667 	EXP 	fixation_null: autoDraw = True
+355.2667 	EXP 	fixation_null: autoDraw = False
+355.2667 	EXP 	fixation_wait_for_t: autoDraw = True
+355.2667 	EXP 	fixation_wait_for_t: autoDraw = False
+355.2667 	EXP 	image: texRes = 128
+355.2667 	EXP 	image: image = 'localizer//stimuli//scenes077.bmp'
+355.2667 	EXP 	image: autoDraw = True
+355.2667 	EXP 	fixation: autoDraw = True
+355.5724 	EXP 	image: autoDraw = False
+356.0580 	EXP 	New trial (rep=0, index=187): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes045.bmp')])
+356.0731 	EXP 	image: autoDraw = False
+356.0731 	EXP 	fixation: autoDraw = False
+356.0731 	EXP 	fixation_null: autoDraw = True
+356.0731 	EXP 	fixation_null: autoDraw = False
+356.0731 	EXP 	fixation_wait_for_t: autoDraw = True
+356.0731 	EXP 	fixation_wait_for_t: autoDraw = False
+356.0731 	EXP 	image: texRes = 128
+356.0731 	EXP 	image: image = 'localizer//stimuli//scenes045.bmp'
+356.0731 	EXP 	image: autoDraw = True
+356.0731 	EXP 	fixation: autoDraw = True
+356.3889 	EXP 	image: autoDraw = False
+356.8097 	DATA 	Keypress: t
+356.8750 	EXP 	New trial (rep=0, index=188): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes072.bmp')])
+356.8899 	EXP 	image: autoDraw = False
+356.8899 	EXP 	fixation: autoDraw = False
+356.8899 	EXP 	fixation_null: autoDraw = True
+356.8899 	EXP 	fixation_null: autoDraw = False
+356.8899 	EXP 	fixation_wait_for_t: autoDraw = True
+356.8899 	EXP 	fixation_wait_for_t: autoDraw = False
+356.8899 	EXP 	image: texRes = 128
+356.8899 	EXP 	image: image = 'localizer//stimuli//scenes072.bmp'
+356.8899 	EXP 	image: autoDraw = True
+356.8899 	EXP 	fixation: autoDraw = True
+357.2055 	EXP 	image: autoDraw = False
+357.6912 	EXP 	New trial (rep=0, index=189): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes085.bmp')])
+357.7067 	EXP 	image: autoDraw = False
+357.7067 	EXP 	fixation: autoDraw = False
+357.7067 	EXP 	fixation_null: autoDraw = True
+357.7067 	EXP 	fixation_null: autoDraw = False
+357.7067 	EXP 	fixation_wait_for_t: autoDraw = True
+357.7067 	EXP 	fixation_wait_for_t: autoDraw = False
+357.7067 	EXP 	image: texRes = 128
+357.7067 	EXP 	image: image = 'localizer//stimuli//scenes085.bmp'
+357.7067 	EXP 	image: autoDraw = True
+357.7067 	EXP 	fixation: autoDraw = True
+358.0222 	EXP 	image: autoDraw = False
+358.5085 	EXP 	New trial (rep=0, index=190): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes084.bmp')])
+358.5324 	EXP 	image: autoDraw = False
+358.5324 	EXP 	fixation: autoDraw = False
+358.5324 	EXP 	fixation_null: autoDraw = True
+358.5324 	EXP 	fixation_null: autoDraw = False
+358.5324 	EXP 	fixation_wait_for_t: autoDraw = True
+358.5324 	EXP 	fixation_wait_for_t: autoDraw = False
+358.5324 	EXP 	image: texRes = 128
+358.5324 	EXP 	image: image = 'localizer//stimuli//scenes084.bmp'
+358.5324 	EXP 	image: autoDraw = True
+358.5324 	EXP 	fixation: autoDraw = True
+358.8104 	DATA 	Keypress: t
+358.8389 	EXP 	image: autoDraw = False
+359.3269 	EXP 	New trial (rep=0, index=191): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes054.bmp')])
+359.3440 	EXP 	image: autoDraw = False
+359.3440 	EXP 	fixation: autoDraw = False
+359.3440 	EXP 	fixation_null: autoDraw = True
+359.3440 	EXP 	fixation_null: autoDraw = False
+359.3440 	EXP 	fixation_wait_for_t: autoDraw = True
+359.3440 	EXP 	fixation_wait_for_t: autoDraw = False
+359.3440 	EXP 	image: texRes = 128
+359.3440 	EXP 	image: image = 'localizer//stimuli//scenes054.bmp'
+359.3440 	EXP 	image: autoDraw = True
+359.3440 	EXP 	fixation: autoDraw = True
+359.6418 	EXP 	image: autoDraw = False
+360.1415 	EXP 	New trial (rep=0, index=192): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes033.bmp')])
+360.1654 	EXP 	image: autoDraw = False
+360.1654 	EXP 	fixation: autoDraw = False
+360.1654 	EXP 	fixation_null: autoDraw = True
+360.1654 	EXP 	fixation_null: autoDraw = False
+360.1654 	EXP 	fixation_wait_for_t: autoDraw = True
+360.1654 	EXP 	fixation_wait_for_t: autoDraw = False
+360.1654 	EXP 	image: texRes = 128
+360.1654 	EXP 	image: image = 'localizer//stimuli//scenes033.bmp'
+360.1654 	EXP 	image: autoDraw = True
+360.1654 	EXP 	fixation: autoDraw = True
+360.4725 	EXP 	image: autoDraw = False
+360.8095 	DATA 	Keypress: t
+360.9583 	EXP 	New trial (rep=0, index=193): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes001.bmp')])
+360.9832 	EXP 	image: autoDraw = False
+360.9832 	EXP 	fixation: autoDraw = False
+360.9832 	EXP 	fixation_null: autoDraw = True
+360.9832 	EXP 	fixation_null: autoDraw = False
+360.9832 	EXP 	fixation_wait_for_t: autoDraw = True
+360.9832 	EXP 	fixation_wait_for_t: autoDraw = False
+360.9832 	EXP 	image: texRes = 128
+360.9832 	EXP 	image: image = 'localizer//stimuli//scenes001.bmp'
+360.9832 	EXP 	image: autoDraw = True
+360.9832 	EXP 	fixation: autoDraw = True
+361.2886 	EXP 	image: autoDraw = False
+361.7752 	EXP 	New trial (rep=0, index=194): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes074.bmp')])
+361.7899 	EXP 	image: autoDraw = False
+361.7899 	EXP 	fixation: autoDraw = False
+361.7899 	EXP 	fixation_null: autoDraw = True
+361.7899 	EXP 	fixation_null: autoDraw = False
+361.7899 	EXP 	fixation_wait_for_t: autoDraw = True
+361.7899 	EXP 	fixation_wait_for_t: autoDraw = False
+361.7899 	EXP 	image: texRes = 128
+361.7899 	EXP 	image: image = 'localizer//stimuli//scenes074.bmp'
+361.7899 	EXP 	image: autoDraw = True
+361.7899 	EXP 	fixation: autoDraw = True
+362.1095 	EXP 	image: autoDraw = False
+362.5915 	EXP 	New trial (rep=0, index=195): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes022.bmp')])
+362.6163 	EXP 	image: autoDraw = False
+362.6163 	EXP 	fixation: autoDraw = False
+362.6163 	EXP 	fixation_null: autoDraw = True
+362.6163 	EXP 	fixation_null: autoDraw = False
+362.6163 	EXP 	fixation_wait_for_t: autoDraw = True
+362.6163 	EXP 	fixation_wait_for_t: autoDraw = False
+362.6163 	EXP 	image: texRes = 128
+362.6163 	EXP 	image: image = 'localizer//stimuli//scenes022.bmp'
+362.6163 	EXP 	image: autoDraw = True
+362.6163 	EXP 	fixation: autoDraw = True
+362.8095 	DATA 	Keypress: t
+362.9221 	EXP 	image: autoDraw = False
+363.4089 	EXP 	New trial (rep=0, index=196): OrderedDict([('block_type', 'block'), ('condition', 'scenes'), ('img_name', 'scenes021.bmp')])
+363.4364 	EXP 	image: autoDraw = False
+363.4364 	EXP 	fixation: autoDraw = False
+363.4364 	EXP 	fixation_null: autoDraw = True
+363.4364 	EXP 	fixation_null: autoDraw = False
+363.4364 	EXP 	fixation_wait_for_t: autoDraw = True
+363.4364 	EXP 	fixation_wait_for_t: autoDraw = False
+363.4364 	EXP 	image: texRes = 128
+363.4364 	EXP 	image: image = 'localizer//stimuli//scenes021.bmp'
+363.4364 	EXP 	image: autoDraw = True
+363.4364 	EXP 	fixation: autoDraw = True
+363.7390 	EXP 	image: autoDraw = False
+364.2250 	EXP 	New trial (rep=0, index=197): OrderedDict([('block_type', 'block_end'), ('condition', 'scenes'), ('img_name', 'scenes012.bmp')])
+364.2505 	EXP 	image: autoDraw = False
+364.2505 	EXP 	fixation: autoDraw = False
+364.2505 	EXP 	fixation_null: autoDraw = True
+364.2505 	EXP 	fixation_null: autoDraw = False
+364.2505 	EXP 	fixation_wait_for_t: autoDraw = True
+364.2505 	EXP 	fixation_wait_for_t: autoDraw = False
+364.2505 	EXP 	image: texRes = 128
+364.2505 	EXP 	image: image = 'localizer//stimuli//scenes012.bmp'
+364.2505 	EXP 	image: autoDraw = True
+364.2505 	EXP 	fixation: autoDraw = True
+364.5559 	EXP 	image: autoDraw = False
+364.8100 	DATA 	Keypress: t
+365.0416 	EXP 	New trial (rep=0, index=198): OrderedDict([('block_type', 'block_start'), ('condition', 'objects'), ('img_name', 'objects015.bmp')])
+365.0558 	EXP 	image: autoDraw = False
+365.0558 	EXP 	fixation: autoDraw = False
+365.0558 	EXP 	fixation_null: autoDraw = True
+365.0558 	EXP 	fixation_null: autoDraw = False
+365.0558 	EXP 	fixation_wait_for_t: autoDraw = True
+366.8184 	DATA 	Keypress: t
+366.8234 	EXP 	fixation_wait_for_t: autoDraw = False
+366.8234 	EXP 	image: texRes = 128
+366.8234 	EXP 	image: image = 'localizer//stimuli//objects015.bmp'
+366.8234 	EXP 	image: autoDraw = True
+366.8234 	EXP 	fixation: autoDraw = True
+367.1391 	EXP 	image: autoDraw = False
+367.6171 	EXP 	New trial (rep=0, index=199): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects056.bmp')])
+367.6516 	EXP 	image: autoDraw = False
+367.6516 	EXP 	fixation: autoDraw = False
+367.6516 	EXP 	fixation_null: autoDraw = True
+367.6516 	EXP 	fixation_null: autoDraw = False
+367.6516 	EXP 	fixation_wait_for_t: autoDraw = True
+367.6516 	EXP 	fixation_wait_for_t: autoDraw = False
+367.6516 	EXP 	image: texRes = 128
+367.6516 	EXP 	image: image = 'localizer//stimuli//objects056.bmp'
+367.6516 	EXP 	image: autoDraw = True
+367.6516 	EXP 	fixation: autoDraw = True
+367.9560 	EXP 	image: autoDraw = False
+368.4248 	EXP 	New trial (rep=0, index=200): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects049.bmp')])
+368.4482 	EXP 	image: autoDraw = False
+368.4482 	EXP 	fixation: autoDraw = False
+368.4482 	EXP 	fixation_null: autoDraw = True
+368.4482 	EXP 	fixation_null: autoDraw = False
+368.4482 	EXP 	fixation_wait_for_t: autoDraw = True
+368.4482 	EXP 	fixation_wait_for_t: autoDraw = False
+368.4482 	EXP 	image: texRes = 128
+368.4482 	EXP 	image: image = 'localizer//stimuli//objects049.bmp'
+368.4482 	EXP 	image: autoDraw = True
+368.4482 	EXP 	fixation: autoDraw = True
+368.7557 	EXP 	image: autoDraw = False
+368.8090 	DATA 	Keypress: t
+369.2482 	EXP 	New trial (rep=0, index=201): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects035.bmp')])
+369.2720 	EXP 	image: autoDraw = False
+369.2720 	EXP 	fixation: autoDraw = False
+369.2720 	EXP 	fixation_null: autoDraw = True
+369.2720 	EXP 	fixation_null: autoDraw = False
+369.2720 	EXP 	fixation_wait_for_t: autoDraw = True
+369.2720 	EXP 	fixation_wait_for_t: autoDraw = False
+369.2720 	EXP 	image: texRes = 128
+369.2720 	EXP 	image: image = 'localizer//stimuli//objects035.bmp'
+369.2720 	EXP 	image: autoDraw = True
+369.2720 	EXP 	fixation: autoDraw = True
+369.5727 	EXP 	image: autoDraw = False
+370.0587 	EXP 	New trial (rep=0, index=202): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects011.bmp')])
+370.0835 	EXP 	image: autoDraw = False
+370.0835 	EXP 	fixation: autoDraw = False
+370.0835 	EXP 	fixation_null: autoDraw = True
+370.0835 	EXP 	fixation_null: autoDraw = False
+370.0835 	EXP 	fixation_wait_for_t: autoDraw = True
+370.0835 	EXP 	fixation_wait_for_t: autoDraw = False
+370.0835 	EXP 	image: texRes = 128
+370.0835 	EXP 	image: image = 'localizer//stimuli//objects011.bmp'
+370.0835 	EXP 	image: autoDraw = True
+370.0835 	EXP 	fixation: autoDraw = True
+370.3890 	EXP 	image: autoDraw = False
+370.8090 	DATA 	Keypress: t
+370.8655 	EXP 	New trial (rep=0, index=203): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects050.bmp')])
+370.8826 	EXP 	image: autoDraw = False
+370.8826 	EXP 	fixation: autoDraw = False
+370.8826 	EXP 	fixation_null: autoDraw = True
+370.8826 	EXP 	fixation_null: autoDraw = False
+370.8826 	EXP 	fixation_wait_for_t: autoDraw = True
+370.8826 	EXP 	fixation_wait_for_t: autoDraw = False
+370.8826 	EXP 	image: texRes = 128
+370.8826 	EXP 	image: image = 'localizer//stimuli//objects050.bmp'
+370.8826 	EXP 	image: autoDraw = True
+370.8826 	EXP 	fixation: autoDraw = True
+371.1890 	EXP 	image: autoDraw = False
+371.6745 	EXP 	New trial (rep=0, index=204): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects041.bmp')])
+371.6899 	EXP 	image: autoDraw = False
+371.6899 	EXP 	fixation: autoDraw = False
+371.6899 	EXP 	fixation_null: autoDraw = True
+371.6899 	EXP 	fixation_null: autoDraw = False
+371.6899 	EXP 	fixation_wait_for_t: autoDraw = True
+371.6899 	EXP 	fixation_wait_for_t: autoDraw = False
+371.6899 	EXP 	image: texRes = 128
+371.6899 	EXP 	image: image = 'localizer//stimuli//objects041.bmp'
+371.6899 	EXP 	image: autoDraw = True
+371.6899 	EXP 	fixation: autoDraw = True
+372.0056 	EXP 	image: autoDraw = False
+372.4918 	EXP 	New trial (rep=0, index=205): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects042.bmp')])
+372.5158 	EXP 	image: autoDraw = False
+372.5158 	EXP 	fixation: autoDraw = False
+372.5158 	EXP 	fixation_null: autoDraw = True
+372.5158 	EXP 	fixation_null: autoDraw = False
+372.5158 	EXP 	fixation_wait_for_t: autoDraw = True
+372.5158 	EXP 	fixation_wait_for_t: autoDraw = False
+372.5158 	EXP 	image: texRes = 128
+372.5158 	EXP 	image: image = 'localizer//stimuli//objects042.bmp'
+372.5158 	EXP 	image: autoDraw = True
+372.5158 	EXP 	fixation: autoDraw = True
+372.8097 	DATA 	Keypress: t
+372.8225 	EXP 	image: autoDraw = False
+373.3085 	EXP 	New trial (rep=0, index=206): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects009.bmp')])
+373.3336 	EXP 	image: autoDraw = False
+373.3336 	EXP 	fixation: autoDraw = False
+373.3336 	EXP 	fixation_null: autoDraw = True
+373.3336 	EXP 	fixation_null: autoDraw = False
+373.3336 	EXP 	fixation_wait_for_t: autoDraw = True
+373.3336 	EXP 	fixation_wait_for_t: autoDraw = False
+373.3336 	EXP 	image: texRes = 128
+373.3336 	EXP 	image: image = 'localizer//stimuli//objects009.bmp'
+373.3336 	EXP 	image: autoDraw = True
+373.3336 	EXP 	fixation: autoDraw = True
+373.6392 	EXP 	image: autoDraw = False
+374.1252 	EXP 	New trial (rep=0, index=207): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects027.bmp')])
+374.1496 	EXP 	image: autoDraw = False
+374.1496 	EXP 	fixation: autoDraw = False
+374.1496 	EXP 	fixation_null: autoDraw = True
+374.1496 	EXP 	fixation_null: autoDraw = False
+374.1496 	EXP 	fixation_wait_for_t: autoDraw = True
+374.1496 	EXP 	fixation_wait_for_t: autoDraw = False
+374.1496 	EXP 	image: texRes = 128
+374.1496 	EXP 	image: image = 'localizer//stimuli//objects027.bmp'
+374.1496 	EXP 	image: autoDraw = True
+374.1496 	EXP 	fixation: autoDraw = True
+374.4558 	EXP 	image: autoDraw = False
+374.8110 	DATA 	Keypress: t
+374.9415 	EXP 	New trial (rep=0, index=208): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects046.bmp')])
+374.9655 	EXP 	image: autoDraw = False
+374.9655 	EXP 	fixation: autoDraw = False
+374.9655 	EXP 	fixation_null: autoDraw = True
+374.9655 	EXP 	fixation_null: autoDraw = False
+374.9655 	EXP 	fixation_wait_for_t: autoDraw = True
+374.9655 	EXP 	fixation_wait_for_t: autoDraw = False
+374.9655 	EXP 	image: texRes = 128
+374.9655 	EXP 	image: image = 'localizer//stimuli//objects046.bmp'
+374.9655 	EXP 	image: autoDraw = True
+374.9655 	EXP 	fixation: autoDraw = True
+375.2724 	EXP 	image: autoDraw = False
+375.7585 	EXP 	New trial (rep=0, index=209): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects071.bmp')])
+375.7842 	EXP 	image: autoDraw = False
+375.7842 	EXP 	fixation: autoDraw = False
+375.7842 	EXP 	fixation_null: autoDraw = True
+375.7842 	EXP 	fixation_null: autoDraw = False
+375.7842 	EXP 	fixation_wait_for_t: autoDraw = True
+375.7842 	EXP 	fixation_wait_for_t: autoDraw = False
+375.7842 	EXP 	image: texRes = 128
+375.7842 	EXP 	image: image = 'localizer//stimuli//objects071.bmp'
+375.7842 	EXP 	image: autoDraw = True
+375.7842 	EXP 	fixation: autoDraw = True
+376.0890 	EXP 	image: autoDraw = False
+376.5752 	EXP 	New trial (rep=0, index=210): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects006.bmp')])
+376.5901 	EXP 	image: autoDraw = False
+376.5901 	EXP 	fixation: autoDraw = False
+376.5901 	EXP 	fixation_null: autoDraw = True
+376.5901 	EXP 	fixation_null: autoDraw = False
+376.5901 	EXP 	fixation_wait_for_t: autoDraw = True
+376.5901 	EXP 	fixation_wait_for_t: autoDraw = False
+376.5901 	EXP 	image: texRes = 128
+376.5901 	EXP 	image: image = 'localizer//stimuli//objects006.bmp'
+376.5901 	EXP 	image: autoDraw = True
+376.5901 	EXP 	fixation: autoDraw = True
+376.8092 	DATA 	Keypress: t
+376.9060 	EXP 	image: autoDraw = False
+377.3916 	EXP 	New trial (rep=0, index=211): OrderedDict([('block_type', 'block'), ('condition', 'objects'), ('img_name', 'objects076.bmp')])
+377.4159 	EXP 	image: autoDraw = False
+377.4159 	EXP 	fixation: autoDraw = False
+377.4159 	EXP 	fixation_null: autoDraw = True
+377.4159 	EXP 	fixation_null: autoDraw = False
+377.4159 	EXP 	fixation_wait_for_t: autoDraw = True
+377.4159 	EXP 	fixation_wait_for_t: autoDraw = False
+377.4159 	EXP 	image: texRes = 128
+377.4159 	EXP 	image: image = 'localizer//stimuli//objects076.bmp'
+377.4159 	EXP 	image: autoDraw = True
+377.4159 	EXP 	fixation: autoDraw = True
+377.7225 	EXP 	image: autoDraw = False
+378.2083 	EXP 	New trial (rep=0, index=212): OrderedDict([('block_type', 'block_end'), ('condition', 'objects'), ('img_name', 'objects080.bmp')])
+378.2324 	EXP 	image: autoDraw = False
+378.2324 	EXP 	fixation: autoDraw = False
+378.2324 	EXP 	fixation_null: autoDraw = True
+378.2324 	EXP 	fixation_null: autoDraw = False
+378.2324 	EXP 	fixation_wait_for_t: autoDraw = True
+378.2324 	EXP 	fixation_wait_for_t: autoDraw = False
+378.2324 	EXP 	image: texRes = 128
+378.2324 	EXP 	image: image = 'localizer//stimuli//objects080.bmp'
+378.2324 	EXP 	image: autoDraw = True
+378.2324 	EXP 	fixation: autoDraw = True
+378.5393 	EXP 	image: autoDraw = False
+378.8105 	DATA 	Keypress: t
+379.0248 	EXP 	New trial (rep=0, index=213): OrderedDict([('block_type', 'block_start'), ('condition', 'scrambled'), ('img_name', 'scrambled027.bmp')])
+379.0389 	EXP 	image: autoDraw = False
+379.0389 	EXP 	fixation: autoDraw = False
+379.0389 	EXP 	fixation_null: autoDraw = True
+379.0389 	EXP 	fixation_null: autoDraw = False
+379.0389 	EXP 	fixation_wait_for_t: autoDraw = True
+380.8311 	DATA 	Keypress: t
+380.8359 	EXP 	fixation_wait_for_t: autoDraw = False
+380.8359 	EXP 	image: texRes = 128
+380.8359 	EXP 	image: image = 'localizer//stimuli//scrambled027.bmp'
+380.8359 	EXP 	image: autoDraw = True
+380.8359 	EXP 	fixation: autoDraw = True
+381.1457 	EXP 	image: autoDraw = False
+381.6250 	EXP 	New trial (rep=0, index=214): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled054.bmp')])
+381.6475 	EXP 	image: autoDraw = False
+381.6475 	EXP 	fixation: autoDraw = False
+381.6475 	EXP 	fixation_null: autoDraw = True
+381.6475 	EXP 	fixation_null: autoDraw = False
+381.6475 	EXP 	fixation_wait_for_t: autoDraw = True
+381.6475 	EXP 	fixation_wait_for_t: autoDraw = False
+381.6475 	EXP 	image: texRes = 128
+381.6475 	EXP 	image: image = 'localizer//stimuli//scrambled054.bmp'
+381.6475 	EXP 	image: autoDraw = True
+381.6475 	EXP 	fixation: autoDraw = True
+381.9558 	EXP 	image: autoDraw = False
+382.4436 	EXP 	New trial (rep=0, index=215): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled021.bmp')])
+382.4684 	EXP 	image: autoDraw = False
+382.4684 	EXP 	fixation: autoDraw = False
+382.4684 	EXP 	fixation_null: autoDraw = True
+382.4684 	EXP 	fixation_null: autoDraw = False
+382.4684 	EXP 	fixation_wait_for_t: autoDraw = True
+382.4684 	EXP 	fixation_wait_for_t: autoDraw = False
+382.4684 	EXP 	image: texRes = 128
+382.4684 	EXP 	image: image = 'localizer//stimuli//scrambled021.bmp'
+382.4684 	EXP 	image: autoDraw = True
+382.4684 	EXP 	fixation: autoDraw = True
+382.7731 	EXP 	image: autoDraw = False
+382.8116 	DATA 	Keypress: t
+383.2591 	EXP 	New trial (rep=0, index=216): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled065.bmp')])
+383.2857 	EXP 	image: autoDraw = False
+383.2857 	EXP 	fixation: autoDraw = False
+383.2857 	EXP 	fixation_null: autoDraw = True
+383.2857 	EXP 	fixation_null: autoDraw = False
+383.2857 	EXP 	fixation_wait_for_t: autoDraw = True
+383.2857 	EXP 	fixation_wait_for_t: autoDraw = False
+383.2857 	EXP 	image: texRes = 128
+383.2857 	EXP 	image: image = 'localizer//stimuli//scrambled065.bmp'
+383.2857 	EXP 	image: autoDraw = True
+383.2857 	EXP 	fixation: autoDraw = True
+383.5891 	EXP 	image: autoDraw = False
+384.0753 	EXP 	New trial (rep=0, index=217): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled056.bmp')])
+384.1009 	EXP 	image: autoDraw = False
+384.1009 	EXP 	fixation: autoDraw = False
+384.1009 	EXP 	fixation_null: autoDraw = True
+384.1009 	EXP 	fixation_null: autoDraw = False
+384.1009 	EXP 	fixation_wait_for_t: autoDraw = True
+384.1009 	EXP 	fixation_wait_for_t: autoDraw = False
+384.1009 	EXP 	image: texRes = 128
+384.1009 	EXP 	image: image = 'localizer//stimuli//scrambled056.bmp'
+384.1009 	EXP 	image: autoDraw = True
+384.1009 	EXP 	fixation: autoDraw = True
+384.4060 	EXP 	image: autoDraw = False
+384.8092 	DATA 	Keypress: t
+384.8916 	EXP 	New trial (rep=0, index=218): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled056.bmp')])
+384.9065 	EXP 	image: autoDraw = False
+384.9065 	EXP 	fixation: autoDraw = False
+384.9065 	EXP 	fixation_null: autoDraw = True
+384.9065 	EXP 	fixation_null: autoDraw = False
+384.9065 	EXP 	fixation_wait_for_t: autoDraw = True
+384.9065 	EXP 	fixation_wait_for_t: autoDraw = False
+384.9065 	EXP 	image: texRes = 128
+384.9065 	EXP 	image: image = 'localizer//stimuli//scrambled056.bmp'
+384.9065 	EXP 	image: autoDraw = True
+384.9065 	EXP 	fixation: autoDraw = True
+385.2220 	EXP 	image: autoDraw = False
+385.4097 	DATA 	Keypress: y
+385.7083 	EXP 	New trial (rep=0, index=219): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled019.bmp')])
+385.7324 	EXP 	image: autoDraw = False
+385.7324 	EXP 	fixation: autoDraw = False
+385.7324 	EXP 	fixation_null: autoDraw = True
+385.7324 	EXP 	fixation_null: autoDraw = False
+385.7324 	EXP 	fixation_wait_for_t: autoDraw = True
+385.7324 	EXP 	fixation_wait_for_t: autoDraw = False
+385.7324 	EXP 	image: texRes = 128
+385.7324 	EXP 	image: image = 'localizer//stimuli//scrambled019.bmp'
+385.7324 	EXP 	image: autoDraw = True
+385.7324 	EXP 	fixation: autoDraw = True
+386.0390 	EXP 	image: autoDraw = False
+386.5250 	EXP 	New trial (rep=0, index=220): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled073.bmp')])
+386.5492 	EXP 	image: autoDraw = False
+386.5492 	EXP 	fixation: autoDraw = False
+386.5492 	EXP 	fixation_null: autoDraw = True
+386.5492 	EXP 	fixation_null: autoDraw = False
+386.5492 	EXP 	fixation_wait_for_t: autoDraw = True
+386.5492 	EXP 	fixation_wait_for_t: autoDraw = False
+386.5492 	EXP 	image: texRes = 128
+386.5492 	EXP 	image: image = 'localizer//stimuli//scrambled073.bmp'
+386.5492 	EXP 	image: autoDraw = True
+386.5492 	EXP 	fixation: autoDraw = True
+386.8099 	DATA 	Keypress: t
+386.8558 	EXP 	image: autoDraw = False
+387.3420 	EXP 	New trial (rep=0, index=221): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled008.bmp')])
+387.3566 	EXP 	image: autoDraw = False
+387.3566 	EXP 	fixation: autoDraw = False
+387.3566 	EXP 	fixation_null: autoDraw = True
+387.3566 	EXP 	fixation_null: autoDraw = False
+387.3566 	EXP 	fixation_wait_for_t: autoDraw = True
+387.3566 	EXP 	fixation_wait_for_t: autoDraw = False
+387.3566 	EXP 	image: texRes = 128
+387.3566 	EXP 	image: image = 'localizer//stimuli//scrambled008.bmp'
+387.3566 	EXP 	image: autoDraw = True
+387.3566 	EXP 	fixation: autoDraw = True
+387.6724 	EXP 	image: autoDraw = False
+388.1580 	EXP 	New trial (rep=0, index=222): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled024.bmp')])
+388.1837 	EXP 	image: autoDraw = False
+388.1837 	EXP 	fixation: autoDraw = False
+388.1837 	EXP 	fixation_null: autoDraw = True
+388.1837 	EXP 	fixation_null: autoDraw = False
+388.1837 	EXP 	fixation_wait_for_t: autoDraw = True
+388.1837 	EXP 	fixation_wait_for_t: autoDraw = False
+388.1837 	EXP 	image: texRes = 128
+388.1837 	EXP 	image: image = 'localizer//stimuli//scrambled024.bmp'
+388.1837 	EXP 	image: autoDraw = True
+388.1837 	EXP 	fixation: autoDraw = True
+388.4889 	EXP 	image: autoDraw = False
+388.8090 	DATA 	Keypress: t
+388.9750 	EXP 	New trial (rep=0, index=223): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled079.bmp')])
+388.9901 	EXP 	image: autoDraw = False
+388.9901 	EXP 	fixation: autoDraw = False
+388.9901 	EXP 	fixation_null: autoDraw = True
+388.9901 	EXP 	fixation_null: autoDraw = False
+388.9901 	EXP 	fixation_wait_for_t: autoDraw = True
+388.9901 	EXP 	fixation_wait_for_t: autoDraw = False
+388.9901 	EXP 	image: texRes = 128
+388.9901 	EXP 	image: image = 'localizer//stimuli//scrambled079.bmp'
+388.9901 	EXP 	image: autoDraw = True
+388.9901 	EXP 	fixation: autoDraw = True
+389.3056 	EXP 	image: autoDraw = False
+389.7920 	EXP 	New trial (rep=0, index=224): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled039.bmp')])
+389.8158 	EXP 	image: autoDraw = False
+389.8158 	EXP 	fixation: autoDraw = False
+389.8158 	EXP 	fixation_null: autoDraw = True
+389.8158 	EXP 	fixation_null: autoDraw = False
+389.8158 	EXP 	fixation_wait_for_t: autoDraw = True
+389.8158 	EXP 	fixation_wait_for_t: autoDraw = False
+389.8158 	EXP 	image: texRes = 128
+389.8158 	EXP 	image: image = 'localizer//stimuli//scrambled039.bmp'
+389.8158 	EXP 	image: autoDraw = True
+389.8158 	EXP 	fixation: autoDraw = True
+390.1223 	EXP 	image: autoDraw = False
+390.6081 	EXP 	New trial (rep=0, index=225): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled082.bmp')])
+390.6232 	EXP 	image: autoDraw = False
+390.6232 	EXP 	fixation: autoDraw = False
+390.6232 	EXP 	fixation_null: autoDraw = True
+390.6232 	EXP 	fixation_null: autoDraw = False
+390.6232 	EXP 	fixation_wait_for_t: autoDraw = True
+390.6232 	EXP 	fixation_wait_for_t: autoDraw = False
+390.6232 	EXP 	image: texRes = 128
+390.6232 	EXP 	image: image = 'localizer//stimuli//scrambled082.bmp'
+390.6232 	EXP 	image: autoDraw = True
+390.6232 	EXP 	fixation: autoDraw = True
+390.8097 	DATA 	Keypress: t
+390.9391 	EXP 	image: autoDraw = False
+391.4120 	EXP 	New trial (rep=0, index=226): OrderedDict([('block_type', 'block'), ('condition', 'scrambled'), ('img_name', 'scrambled078.bmp')])
+391.4394 	EXP 	fixation: autoDraw = False
+391.4394 	EXP 	image: autoDraw = False
+391.4394 	EXP 	fixation: autoDraw = False
+391.4394 	EXP 	fixation_null: autoDraw = True
+391.4394 	EXP 	fixation_null: autoDraw = False
+391.4394 	EXP 	fixation_wait_for_t: autoDraw = True
+391.4394 	EXP 	fixation_wait_for_t: autoDraw = False
+391.4394 	EXP 	image: texRes = 128
+391.4394 	EXP 	image: image = 'localizer//stimuli//scrambled078.bmp'
+391.4394 	EXP 	image: autoDraw = True
+391.4394 	EXP 	fixation: autoDraw = True
+391.7396 	EXP 	image: autoDraw = False
+392.2233 	EXP 	New trial (rep=0, index=227): OrderedDict([('block_type', 'block_end'), ('condition', 'scrambled'), ('img_name', 'scrambled085.bmp')])
+392.2464 	EXP 	image: autoDraw = False
+392.2464 	EXP 	fixation: autoDraw = False
+392.2464 	EXP 	fixation_null: autoDraw = True
+392.2464 	EXP 	fixation_null: autoDraw = False
+392.2464 	EXP 	fixation_wait_for_t: autoDraw = True
+392.2464 	EXP 	fixation_wait_for_t: autoDraw = False
+392.2464 	EXP 	image: texRes = 128
+392.2464 	EXP 	image: image = 'localizer//stimuli//scrambled085.bmp'
+392.2464 	EXP 	image: autoDraw = True
+392.2464 	EXP 	fixation: autoDraw = True
+392.5557 	EXP 	image: autoDraw = False
+392.8136 	DATA 	Keypress: t
+393.0416 	EXP 	New trial (rep=0, index=228): OrderedDict([('block_type', 'block_start'), ('condition', 'faces'), ('img_name', 'faces035.bmp')])
+393.0557 	EXP 	image: autoDraw = False
+393.0557 	EXP 	fixation: autoDraw = False
+393.0557 	EXP 	fixation_null: autoDraw = True
+393.0557 	EXP 	fixation_null: autoDraw = False
+393.0557 	EXP 	fixation_wait_for_t: autoDraw = True
+394.8287 	DATA 	Keypress: t
+394.8336 	EXP 	fixation_wait_for_t: autoDraw = False
+394.8336 	EXP 	image: texRes = 128
+394.8336 	EXP 	image: image = 'localizer//stimuli//faces035.bmp'
+394.8336 	EXP 	image: autoDraw = True
+394.8336 	EXP 	fixation: autoDraw = True
+395.1393 	EXP 	image: autoDraw = False
+395.6341 	EXP 	New trial (rep=0, index=229): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces040.bmp')])
+395.6574 	EXP 	image: autoDraw = False
+395.6574 	EXP 	fixation: autoDraw = False
+395.6574 	EXP 	fixation_null: autoDraw = True
+395.6574 	EXP 	fixation_null: autoDraw = False
+395.6574 	EXP 	fixation_wait_for_t: autoDraw = True
+395.6574 	EXP 	fixation_wait_for_t: autoDraw = False
+395.6574 	EXP 	image: texRes = 128
+395.6574 	EXP 	image: image = 'localizer//stimuli//faces040.bmp'
+395.6574 	EXP 	image: autoDraw = True
+395.6574 	EXP 	fixation: autoDraw = True
+395.9732 	EXP 	image: autoDraw = False
+396.4414 	EXP 	New trial (rep=0, index=230): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces075.bmp')])
+396.4642 	EXP 	image: autoDraw = False
+396.4642 	EXP 	fixation: autoDraw = False
+396.4642 	EXP 	fixation_null: autoDraw = True
+396.4642 	EXP 	fixation_null: autoDraw = False
+396.4642 	EXP 	fixation_wait_for_t: autoDraw = True
+396.4642 	EXP 	fixation_wait_for_t: autoDraw = False
+396.4642 	EXP 	image: texRes = 128
+396.4642 	EXP 	image: image = 'localizer//stimuli//faces075.bmp'
+396.4642 	EXP 	image: autoDraw = True
+396.4642 	EXP 	fixation: autoDraw = True
+396.7724 	EXP 	image: autoDraw = False
+396.8096 	DATA 	Keypress: t
+397.2654 	EXP 	New trial (rep=0, index=231): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces074.bmp')])
+397.2893 	EXP 	image: autoDraw = False
+397.2893 	EXP 	fixation: autoDraw = False
+397.2893 	EXP 	fixation_null: autoDraw = True
+397.2893 	EXP 	fixation_null: autoDraw = False
+397.2893 	EXP 	fixation_wait_for_t: autoDraw = True
+397.2893 	EXP 	fixation_wait_for_t: autoDraw = False
+397.2893 	EXP 	image: texRes = 128
+397.2893 	EXP 	image: image = 'localizer//stimuli//faces074.bmp'
+397.2893 	EXP 	image: autoDraw = True
+397.2893 	EXP 	fixation: autoDraw = True
+397.5892 	EXP 	image: autoDraw = False
+398.0752 	EXP 	New trial (rep=0, index=232): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces066.bmp')])
+398.0902 	EXP 	image: autoDraw = False
+398.0902 	EXP 	fixation: autoDraw = False
+398.0902 	EXP 	fixation_null: autoDraw = True
+398.0902 	EXP 	fixation_null: autoDraw = False
+398.0902 	EXP 	fixation_wait_for_t: autoDraw = True
+398.0902 	EXP 	fixation_wait_for_t: autoDraw = False
+398.0902 	EXP 	image: texRes = 128
+398.0902 	EXP 	image: image = 'localizer//stimuli//faces066.bmp'
+398.0902 	EXP 	image: autoDraw = True
+398.0902 	EXP 	fixation: autoDraw = True
+398.4061 	EXP 	image: autoDraw = False
+398.8100 	DATA 	Keypress: t
+398.8920 	EXP 	New trial (rep=0, index=233): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces022.bmp')])
+398.9068 	EXP 	image: autoDraw = False
+398.9068 	EXP 	fixation: autoDraw = False
+398.9068 	EXP 	fixation_null: autoDraw = True
+398.9068 	EXP 	fixation_null: autoDraw = False
+398.9068 	EXP 	fixation_wait_for_t: autoDraw = True
+398.9068 	EXP 	fixation_wait_for_t: autoDraw = False
+398.9068 	EXP 	image: texRes = 128
+398.9068 	EXP 	image: image = 'localizer//stimuli//faces022.bmp'
+398.9068 	EXP 	image: autoDraw = True
+398.9068 	EXP 	fixation: autoDraw = True
+399.2223 	EXP 	image: autoDraw = False
+399.6946 	EXP 	New trial (rep=0, index=234): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces038.bmp')])
+399.7096 	EXP 	fixation: autoDraw = False
+399.7096 	EXP 	image: autoDraw = False
+399.7096 	EXP 	fixation: autoDraw = False
+399.7096 	EXP 	fixation_null: autoDraw = True
+399.7096 	EXP 	fixation_null: autoDraw = False
+399.7096 	EXP 	fixation_wait_for_t: autoDraw = True
+399.7096 	EXP 	fixation_wait_for_t: autoDraw = False
+399.7096 	EXP 	image: texRes = 128
+399.7096 	EXP 	image: image = 'localizer//stimuli//faces038.bmp'
+399.7096 	EXP 	image: autoDraw = True
+399.7096 	EXP 	fixation: autoDraw = True
+400.0232 	EXP 	image: autoDraw = False
+400.5091 	EXP 	New trial (rep=0, index=235): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces041.bmp')])
+400.5358 	EXP 	image: autoDraw = False
+400.5358 	EXP 	fixation: autoDraw = False
+400.5358 	EXP 	fixation_null: autoDraw = True
+400.5358 	EXP 	fixation_null: autoDraw = False
+400.5358 	EXP 	fixation_wait_for_t: autoDraw = True
+400.5358 	EXP 	fixation_wait_for_t: autoDraw = False
+400.5358 	EXP 	image: texRes = 128
+400.5358 	EXP 	image: image = 'localizer//stimuli//faces041.bmp'
+400.5358 	EXP 	image: autoDraw = True
+400.5358 	EXP 	fixation: autoDraw = True
+400.8103 	DATA 	Keypress: t
+400.8386 	EXP 	image: autoDraw = False
+401.3245 	EXP 	New trial (rep=0, index=236): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces008.bmp')])
+401.3490 	EXP 	image: autoDraw = False
+401.3490 	EXP 	fixation: autoDraw = False
+401.3490 	EXP 	fixation_null: autoDraw = True
+401.3490 	EXP 	fixation_null: autoDraw = False
+401.3490 	EXP 	fixation_wait_for_t: autoDraw = True
+401.3490 	EXP 	fixation_wait_for_t: autoDraw = False
+401.3490 	EXP 	image: texRes = 128
+401.3490 	EXP 	image: image = 'localizer//stimuli//faces008.bmp'
+401.3490 	EXP 	image: autoDraw = True
+401.3490 	EXP 	fixation: autoDraw = True
+401.6589 	EXP 	image: autoDraw = False
+402.1318 	EXP 	New trial (rep=0, index=237): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces010.bmp')])
+402.1556 	EXP 	image: autoDraw = False
+402.1556 	EXP 	fixation: autoDraw = False
+402.1556 	EXP 	fixation_null: autoDraw = True
+402.1556 	EXP 	fixation_null: autoDraw = False
+402.1556 	EXP 	fixation_wait_for_t: autoDraw = True
+402.1556 	EXP 	fixation_wait_for_t: autoDraw = False
+402.1556 	EXP 	image: texRes = 128
+402.1556 	EXP 	image: image = 'localizer//stimuli//faces010.bmp'
+402.1556 	EXP 	image: autoDraw = True
+402.1556 	EXP 	fixation: autoDraw = True
+402.4565 	EXP 	image: autoDraw = False
+402.8115 	DATA 	Keypress: t
+402.9425 	EXP 	New trial (rep=0, index=238): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces023.bmp')])
+402.9683 	EXP 	image: autoDraw = False
+402.9683 	EXP 	fixation: autoDraw = False
+402.9683 	EXP 	fixation_null: autoDraw = True
+402.9683 	EXP 	fixation_null: autoDraw = False
+402.9683 	EXP 	fixation_wait_for_t: autoDraw = True
+402.9683 	EXP 	fixation_wait_for_t: autoDraw = False
+402.9683 	EXP 	image: texRes = 128
+402.9683 	EXP 	image: image = 'localizer//stimuli//faces023.bmp'
+402.9683 	EXP 	image: autoDraw = True
+402.9683 	EXP 	fixation: autoDraw = True
+403.2725 	EXP 	image: autoDraw = False
+403.7583 	EXP 	New trial (rep=0, index=239): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces058.bmp')])
+403.7734 	EXP 	image: autoDraw = False
+403.7734 	EXP 	fixation: autoDraw = False
+403.7734 	EXP 	fixation_null: autoDraw = True
+403.7734 	EXP 	fixation_null: autoDraw = False
+403.7734 	EXP 	fixation_wait_for_t: autoDraw = True
+403.7734 	EXP 	fixation_wait_for_t: autoDraw = False
+403.7734 	EXP 	image: texRes = 128
+403.7734 	EXP 	image: image = 'localizer//stimuli//faces058.bmp'
+403.7734 	EXP 	image: autoDraw = True
+403.7734 	EXP 	fixation: autoDraw = True
+404.0890 	EXP 	image: autoDraw = False
+404.5613 	EXP 	New trial (rep=0, index=240): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces031.bmp')])
+404.5763 	EXP 	fixation: autoDraw = False
+404.5763 	EXP 	image: autoDraw = False
+404.5763 	EXP 	fixation: autoDraw = False
+404.5763 	EXP 	fixation_null: autoDraw = True
+404.5763 	EXP 	fixation_null: autoDraw = False
+404.5763 	EXP 	fixation_wait_for_t: autoDraw = True
+404.5763 	EXP 	fixation_wait_for_t: autoDraw = False
+404.5763 	EXP 	image: texRes = 128
+404.5763 	EXP 	image: image = 'localizer//stimuli//faces031.bmp'
+404.5763 	EXP 	image: autoDraw = True
+404.5763 	EXP 	fixation: autoDraw = True
+404.8121 	DATA 	Keypress: t
+404.8900 	EXP 	image: autoDraw = False
+405.3758 	EXP 	New trial (rep=0, index=241): OrderedDict([('block_type', 'block'), ('condition', 'faces'), ('img_name', 'faces047.bmp')])
+405.4069 	EXP 	image: autoDraw = False
+405.4069 	EXP 	fixation: autoDraw = False
+405.4069 	EXP 	fixation_null: autoDraw = True
+405.4069 	EXP 	fixation_null: autoDraw = False
+405.4069 	EXP 	fixation_wait_for_t: autoDraw = True
+405.4069 	EXP 	fixation_wait_for_t: autoDraw = False
+405.4069 	EXP 	image: texRes = 128
+405.4069 	EXP 	image: image = 'localizer//stimuli//faces047.bmp'
+405.4069 	EXP 	image: autoDraw = True
+405.4069 	EXP 	fixation: autoDraw = True
+405.7224 	EXP 	image: autoDraw = False
+406.2008 	EXP 	New trial (rep=0, index=242): OrderedDict([('block_type', 'block_end'), ('condition', 'faces'), ('img_name', 'faces052.bmp')])
+406.2194 	EXP 	image: autoDraw = False
+406.2194 	EXP 	fixation: autoDraw = False
+406.2194 	EXP 	fixation_null: autoDraw = True
+406.2194 	EXP 	fixation_null: autoDraw = False
+406.2194 	EXP 	fixation_wait_for_t: autoDraw = True
+406.2194 	EXP 	fixation_wait_for_t: autoDraw = False
+406.2194 	EXP 	image: texRes = 128
+406.2194 	EXP 	image: image = 'localizer//stimuli//faces052.bmp'
+406.2194 	EXP 	image: autoDraw = True
+406.2194 	EXP 	fixation: autoDraw = True
+406.5226 	EXP 	image: autoDraw = False
+406.8108 	DATA 	Keypress: t
+407.0099 	EXP 	New trial (rep=0, index=243): OrderedDict([('block_type', 'null_block'), ('condition', 'null_block'), ('img_name', 'null_block.bmp')])
+407.0238 	EXP 	image: autoDraw = False
+407.0238 	EXP 	fixation: autoDraw = False
+407.0238 	EXP 	fixation_null: autoDraw = True
+407.0238 	EXP 	fixation_null: autoDraw = False
+407.0238 	EXP 	fixation_wait_for_t: autoDraw = True
+408.8217 	DATA 	Keypress: t
+408.8253 	EXP 	fixation_wait_for_t: autoDraw = False
+408.8253 	EXP 	image: texRes = 128
+408.8253 	EXP 	image: image = 'localizer//stimuli//null_block.bmp'
+408.8253 	EXP 	image: texRes = 128
+408.8253 	EXP 	image: autoDraw = True
+408.8253 	EXP 	fixation: autoDraw = True
+408.8253 	EXP 	image: autoDraw = False
+408.8253 	EXP 	fixation: autoDraw = False
+408.8253 	EXP 	fixation_null: autoDraw = True
+410.8107 	DATA 	Keypress: t
+412.8076 	DATA 	Keypress: t
+414.8086 	DATA 	Keypress: t
+416.8117 	DATA 	Keypress: t
+418.8116 	DATA 	Keypress: t
+420.8109 	DATA 	Keypress: t
+420.8403 	EXP 	fixation_null: autoDraw = False
+420.8403 	EXP 	fixation_null: autoDraw = False
+420.8403 	EXP 	end_text: autoDraw = True
+422.8117 	DATA 	Keypress: t
+424.8085 	DATA 	Keypress: t
+425.8403 	EXP 	end_text: autoDraw = False
+425.8403 	EXP 	end_text: autoDraw = False
+425.9030 	EXP 	window1: mouseVisible = True
