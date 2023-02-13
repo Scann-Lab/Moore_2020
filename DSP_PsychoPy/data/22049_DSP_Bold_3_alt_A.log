@@ -1,0 +1,964 @@
+1.1922 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+14.3641 	INFO 	Loaded monitor calibration from ['2021_09_24 13:53']
+14.3670 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+15.8282 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.4, 0.4, 0.4]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000188E8C027B8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000188E89DF080>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.8288 	EXP 	window1: mouseVisible = True
+15.8288 	EXP 	window1: recordFrameIntervals = False
+15.9975 	EXP 	window1: recordFrameIntervals = True
+16.1848 	WARNING 	t of last frame was 23.72ms (=1/42)
+16.4129 	DEBUG 	Screen (0) actual frame rate measured at 59.54
+16.4129 	EXP 	window1: recordFrameIntervals = False
+16.5994 	EXP 	Created Ready_experimenter_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Ready_experimenter_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Waiting for the experimenter…', units='height', win=Window(...), wrapWidth=1.5)
+16.5995 	EXP 	window1: mouseVisible = False
+16.6002 	EXP 	Created Alignment_background = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='Alignment_background', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([2., 2.]), units='height', vertices=ndarray(...), win=Window(...))
+16.6088 	EXP 	Created Alignment_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='Alignment.png', interpolate=True, mask=None, maskParams=None, name='Alignment_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.4, 1. ]), texRes=512, units='height', win=Window(...))
+16.6142 	EXP 	Created Button_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Button_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Button check.', units='height', win=Window(...), wrapWidth=1)
+16.6206 	EXP 	Created Index_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Index_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Press the button under your index finger.', units='height', win=Window(...), wrapWidth=1.5)
+16.6254 	EXP 	Created Middle_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Middle_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Press the button under your middle finger.', units='height', win=Window(...), wrapWidth=1.5)
+16.6334 	EXP 	Created Repeat_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Repeat_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.6386 	EXP 	Created Ready_scanner_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Ready_scanner_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Waiting for the scanner…', units='height', win=Window(...), wrapWidth=1.5)
+16.6447 	EXP 	Created Learning_1_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+16.6465 	EXP 	Created Learning_1_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+16.6483 	EXP 	Created Learning_1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+16.6501 	EXP 	Created Learning_1_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+16.7363 	EXP 	Created Learning_1_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_1_video', noAudio=True, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+16.8377 	EXP 	Created Learning_1_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_1_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.8382 	EXP 	Created Learning_1_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_1_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.8456 	EXP 	Created Control_1_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.8468 	EXP 	Created Control_1_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+16.8478 	EXP 	Created Control_1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+16.8489 	EXP 	Created Control_1_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+16.8491 	EXP 	Created Control_1_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-6.0, filename=str(...), flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Control_1_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+17.0190 	EXP 	Created Control_1_same_different_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_same_different_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Same or different color?', units='height', win=Window(...), wrapWidth=1)
+17.0226 	EXP 	Created Control_1_resp_recorded_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_resp_recorded_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Response recorded!', units='height', win=Window(...), wrapWidth=1)
+17.0231 	EXP 	Created Control_1_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-10.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_1_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.0235 	EXP 	Created Control_1_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-11.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_1_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.0283 	EXP 	Created Learning_2_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+17.0294 	EXP 	Created Learning_2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+17.0304 	EXP 	Created Learning_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+17.0315 	EXP 	Created Learning_2_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+17.0317 	EXP 	Created Learning_2_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_2_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+17.1346 	EXP 	Created Learning_2_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_2_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1350 	EXP 	Created Learning_2_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_2_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.1403 	EXP 	Created Control_2_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+17.1414 	EXP 	Created Control_2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+17.1425 	EXP 	Created Control_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+17.1436 	EXP 	Created Control_2_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+17.1437 	EXP 	Created Control_2_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-6.0, filename=str(...), flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Control_2_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+17.2583 	EXP 	Created Control_2_same_different_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_same_different_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Same or different color?', units='height', win=Window(...), wrapWidth=1)
+17.2617 	EXP 	Created Control_2_resp_recorded_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_resp_recorded_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Response recorded!', units='height', win=Window(...), wrapWidth=1)
+17.2622 	EXP 	Created Control_2_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-10.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_2_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.2626 	EXP 	Created Control_2_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-11.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_2_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.2665 	EXP 	Created Learning_3_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+17.2676 	EXP 	Created Learning_3_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+17.2687 	EXP 	Created Learning_3_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+17.2698 	EXP 	Created Learning_3_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+17.2700 	EXP 	Created Learning_3_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_3_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+17.3683 	EXP 	Created Learning_3_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_3_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.3688 	EXP 	Created Learning_3_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_3_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+17.3709 	EXP 	Created Done_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Done_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Done!', units='height', win=Window(...), wrapWidth=1.5)
+17.4047 	EXP 	Learning_1_video: autoLog = True
+17.4047 	EXP 	Learning_1_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+17.4047 	EXP 	Learning_1_video: size = array([1920., 1080.])
+17.4047 	EXP 	Learning_1_video: ori = 0
+17.4047 	EXP 	Control_1_video: autoLog = True
+17.4047 	EXP 	Control_1_video: movie = './DSP_Videos/Control/Alternate/Videos/Control_Route_3_Alternate_B_001_same.mp4'
+17.4047 	EXP 	Control_1_video: size = array([1920., 1080.])
+17.4047 	EXP 	Control_1_video: ori = 0
+17.4047 	EXP 	Learning_2_video: autoLog = True
+17.4047 	EXP 	Learning_2_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+17.4047 	EXP 	Learning_2_video: size = array([1920., 1080.])
+17.4047 	EXP 	Learning_2_video: ori = 0
+17.4047 	EXP 	Control_2_video: autoLog = True
+17.4047 	EXP 	Control_2_video: movie = './DSP_Videos/Control/Alternate/Videos/Control_Route_1_Alternate_A_001_different.mp4'
+17.4047 	EXP 	Control_2_video: size = array([1920., 1080.])
+17.4047 	EXP 	Control_2_video: ori = 0
+17.4047 	EXP 	Learning_3_video: autoLog = True
+17.4047 	EXP 	Learning_3_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+17.4047 	EXP 	Learning_3_video: size = array([1920., 1080.])
+17.4047 	EXP 	Learning_3_video: ori = 0
+17.4047 	EXP 	Ready_experimenter_text: autoDraw = True
+18.0014 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+18.0016 	EXP 	New trial (rep=0, index=0): None
+18.0044 	DATA 	Keypress: return
+18.0146 	EXP 	Ready_experimenter_text: autoDraw = False
+18.0146 	EXP 	Alignment_background: autoDraw = True
+18.0146 	EXP 	Alignment_image: autoDraw = True
+18.0146 	EXP 	Alignment_background: autoDraw = False
+18.0146 	EXP 	Alignment_image: autoDraw = False
+18.0146 	EXP 	Button_text: autoDraw = True
+19.0349 	EXP 	Button_text: autoDraw = False
+19.0349 	EXP 	Index_text: autoDraw = True
+20.0688 	DATA 	Keypress: y
+20.0807 	EXP 	Index_text: autoDraw = False
+20.0807 	EXP 	Middle_text: autoDraw = True
+21.8532 	DATA 	Keypress: b
+21.8641 	EXP 	Middle_text: autoDraw = False
+21.8641 	EXP 	Repeat_text: autoDraw = True
+22.7564 	DATA 	Keypress: n
+22.7647 	EXP 	Repeat_text: autoDraw = False
+22.7647 	EXP 	Ready_scanner_text: autoDraw = True
+100.4214 	DATA 	Keypress: t
+100.4321 	EXP 	Ready_scanner_text: autoDraw = False
+100.4321 	EXP 	Learning_1_instruction: autoDraw = True
+101.9155 	DATA 	Keypress: t
+103.4123 	EXP 	Learning_1_3: autoDraw = True
+103.4155 	DATA 	Keypress: t
+103.4457 	EXP 	Learning_1_instruction: autoDraw = False
+104.4184 	EXP 	Learning_1_3: autoDraw = False
+104.4184 	EXP 	Learning_1_2: autoDraw = True
+104.9161 	DATA 	Keypress: t
+105.4126 	EXP 	Learning_1_1: autoDraw = True
+105.4293 	EXP 	Learning_1_2: autoDraw = False
+106.4152 	EXP 	Learning_1_1: autoDraw = False
+106.4152 	EXP 	Learning_1_video: autoDraw = True
+106.4179 	DATA 	Keypress: t
+107.9237 	DATA 	Keypress: t
+109.4236 	DATA 	Keypress: t
+110.9245 	DATA 	Keypress: t
+112.4242 	DATA 	Keypress: t
+113.9237 	DATA 	Keypress: t
+115.4249 	DATA 	Keypress: t
+116.9256 	DATA 	Keypress: t
+118.4237 	DATA 	Keypress: t
+119.9238 	DATA 	Keypress: t
+121.4237 	DATA 	Keypress: t
+122.9236 	DATA 	Keypress: t
+124.4238 	DATA 	Keypress: t
+125.9251 	DATA 	Keypress: t
+127.4241 	DATA 	Keypress: t
+128.9237 	DATA 	Keypress: t
+130.4245 	DATA 	Keypress: t
+131.9246 	DATA 	Keypress: t
+133.4244 	DATA 	Keypress: t
+134.9236 	DATA 	Keypress: t
+136.4254 	DATA 	Keypress: t
+137.9249 	DATA 	Keypress: t
+139.4241 	DATA 	Keypress: t
+140.9245 	DATA 	Keypress: t
+142.4243 	DATA 	Keypress: t
+143.9095 	DATA 	Keypress: t
+145.4105 	DATA 	Keypress: t
+146.9255 	DATA 	Keypress: t
+148.4256 	DATA 	Keypress: t
+149.9238 	DATA 	Keypress: t
+151.4096 	DATA 	Keypress: t
+152.9255 	DATA 	Keypress: t
+154.4250 	DATA 	Keypress: t
+155.9243 	DATA 	Keypress: t
+157.4252 	DATA 	Keypress: t
+158.9241 	DATA 	Keypress: t
+160.4249 	DATA 	Keypress: t
+161.9243 	DATA 	Keypress: t
+163.4241 	DATA 	Keypress: t
+164.9248 	DATA 	Keypress: t
+166.4146 	EXP 	Learning_1_video: autoDraw = False
+166.4146 	EXP 	Learning_1_fixation_horz: autoDraw = True
+166.4146 	EXP 	Learning_1_fixation_vert: autoDraw = True
+166.4174 	DATA 	Keypress: t
+167.9235 	DATA 	Keypress: t
+169.4165 	DATA 	Keypress: t
+170.9162 	DATA 	Keypress: t
+172.4202 	DATA 	Keypress: t
+173.9178 	DATA 	Keypress: t
+175.4150 	DATA 	Keypress: t
+176.9177 	DATA 	Keypress: t
+178.4164 	DATA 	Keypress: t
+179.9183 	DATA 	Keypress: t
+181.4157 	DATA 	Keypress: t
+181.4314 	EXP 	Learning_1_fixation_horz: autoDraw = False
+181.4314 	EXP 	Learning_1_fixation_vert: autoDraw = False
+181.4314 	EXP 	Learning_1_instruction: autoDraw = False
+181.4314 	EXP 	Learning_1_3: autoDraw = False
+181.4314 	EXP 	Learning_1_2: autoDraw = False
+181.4314 	EXP 	Learning_1_1: autoDraw = False
+181.4314 	EXP 	Learning_1_video: autoDraw = False
+181.4314 	EXP 	Learning_1_fixation_horz: autoDraw = False
+181.4314 	EXP 	Learning_1_fixation_vert: autoDraw = False
+181.4314 	EXP 	Control_1_instruction: autoDraw = True
+182.9177 	DATA 	Keypress: t
+184.4196 	EXP 	Control_1_3: autoDraw = True
+184.4235 	DATA 	Keypress: t
+184.4394 	EXP 	Control_1_instruction: autoDraw = False
+185.4145 	EXP 	Control_1_2: autoDraw = True
+185.4311 	EXP 	Control_1_3: autoDraw = False
+185.9162 	DATA 	Keypress: t
+186.4135 	EXP 	Control_1_1: autoDraw = True
+186.4301 	EXP 	Control_1_2: autoDraw = False
+187.4132 	EXP 	Control_1_1: autoDraw = False
+187.4132 	EXP 	Control_1_video: autoDraw = True
+187.4159 	DATA 	Keypress: t
+188.9266 	DATA 	Keypress: t
+190.4250 	DATA 	Keypress: t
+191.9244 	DATA 	Keypress: t
+193.4246 	DATA 	Keypress: t
+194.9241 	DATA 	Keypress: t
+196.4245 	DATA 	Keypress: t
+197.9247 	DATA 	Keypress: t
+199.4256 	DATA 	Keypress: t
+200.9093 	DATA 	Keypress: t
+202.4085 	DATA 	Keypress: t
+203.9243 	DATA 	Keypress: t
+205.4107 	DATA 	Keypress: t
+206.9255 	DATA 	Keypress: t
+208.4241 	DATA 	Keypress: t
+209.9250 	DATA 	Keypress: t
+211.4095 	DATA 	Keypress: t
+212.9247 	DATA 	Keypress: t
+214.4084 	DATA 	Keypress: t
+215.9247 	DATA 	Keypress: t
+217.4089 	DATA 	Keypress: t
+218.9255 	DATA 	Keypress: t
+220.4097 	DATA 	Keypress: t
+221.9247 	DATA 	Keypress: t
+223.4088 	DATA 	Keypress: t
+224.9086 	DATA 	Keypress: t
+226.4086 	DATA 	Keypress: t
+227.9093 	DATA 	Keypress: t
+229.4255 	DATA 	Keypress: t
+230.9254 	DATA 	Keypress: t
+232.4094 	DATA 	Keypress: t
+233.9089 	DATA 	Keypress: t
+235.4255 	DATA 	Keypress: t
+236.9097 	DATA 	Keypress: t
+238.4250 	DATA 	Keypress: t
+239.9250 	DATA 	Keypress: t
+241.4087 	DATA 	Keypress: t
+242.9086 	DATA 	Keypress: t
+244.4091 	DATA 	Keypress: t
+245.9093 	DATA 	Keypress: t
+247.4028 	EXP 	Control_1_same_different_text: autoDraw = True
+247.4099 	DATA 	Keypress: t
+247.4171 	EXP 	Control_1_video: autoDraw = False
+248.6510 	DATA 	Keypress: y
+248.6801 	EXP 	Control_1_same_different_text: autoDraw = False
+248.6801 	EXP 	Control_1_resp_recorded_text: autoDraw = True
+248.9166 	DATA 	Keypress: t
+250.4179 	DATA 	Keypress: t
+251.9169 	DATA 	Keypress: t
+253.4177 	DATA 	Keypress: t
+254.9177 	DATA 	Keypress: t
+256.4183 	DATA 	Keypress: t
+257.4149 	EXP 	Control_1_resp_recorded_text: autoDraw = False
+257.4149 	EXP 	Control_1_fixation_horz: autoDraw = True
+257.4149 	EXP 	Control_1_fixation_vert: autoDraw = True
+257.9159 	DATA 	Keypress: t
+259.4163 	DATA 	Keypress: t
+260.9190 	DATA 	Keypress: t
+262.4225 	DATA 	Keypress: t
+263.9189 	DATA 	Keypress: t
+265.4173 	DATA 	Keypress: t
+266.9157 	DATA 	Keypress: t
+268.4167 	DATA 	Keypress: t
+269.9177 	DATA 	Keypress: t
+271.4167 	DATA 	Keypress: t
+272.4155 	EXP 	Control_1_fixation_horz: autoDraw = False
+272.4155 	EXP 	Control_1_fixation_vert: autoDraw = False
+272.4155 	EXP 	Control_1_instruction: autoDraw = False
+272.4155 	EXP 	Control_1_3: autoDraw = False
+272.4155 	EXP 	Control_1_2: autoDraw = False
+272.4155 	EXP 	Control_1_1: autoDraw = False
+272.4155 	EXP 	Control_1_video: autoDraw = False
+272.4155 	EXP 	Control_1_same_different_text: autoDraw = False
+272.4155 	EXP 	Control_1_resp_recorded_text: autoDraw = False
+272.4155 	EXP 	Control_1_fixation_horz: autoDraw = False
+272.4155 	EXP 	Control_1_fixation_vert: autoDraw = False
+272.4155 	EXP 	Learning_2_instruction: autoDraw = True
+272.9155 	DATA 	Keypress: t
+274.4155 	DATA 	Keypress: t
+275.3969 	EXP 	Learning_2_3: autoDraw = True
+275.4304 	EXP 	Learning_2_instruction: autoDraw = False
+275.9156 	DATA 	Keypress: t
+276.3970 	EXP 	Learning_2_3: autoDraw = False
+276.3970 	EXP 	Learning_2_2: autoDraw = True
+277.3970 	EXP 	Learning_2_2: autoDraw = False
+277.3970 	EXP 	Learning_2_1: autoDraw = True
+277.4162 	DATA 	Keypress: t
+278.3970 	EXP 	Learning_2_1: autoDraw = False
+278.3970 	EXP 	Learning_2_video: autoDraw = True
+278.9094 	DATA 	Keypress: t
+280.4115 	DATA 	Keypress: t
+281.9092 	DATA 	Keypress: t
+283.4095 	DATA 	Keypress: t
+284.9102 	DATA 	Keypress: t
+286.4094 	DATA 	Keypress: t
+287.9085 	DATA 	Keypress: t
+289.4248 	DATA 	Keypress: t
+290.9085 	DATA 	Keypress: t
+292.4086 	DATA 	Keypress: t
+293.9086 	DATA 	Keypress: t
+295.4093 	DATA 	Keypress: t
+296.9086 	DATA 	Keypress: t
+298.4093 	DATA 	Keypress: t
+299.9085 	DATA 	Keypress: t
+301.4097 	DATA 	Keypress: t
+302.9087 	DATA 	Keypress: t
+304.4090 	DATA 	Keypress: t
+305.9087 	DATA 	Keypress: t
+307.4086 	DATA 	Keypress: t
+308.9098 	DATA 	Keypress: t
+310.4094 	DATA 	Keypress: t
+311.9088 	DATA 	Keypress: t
+313.4092 	DATA 	Keypress: t
+314.9107 	DATA 	Keypress: t
+316.4096 	DATA 	Keypress: t
+317.9087 	DATA 	Keypress: t
+319.4086 	DATA 	Keypress: t
+320.9104 	DATA 	Keypress: t
+322.4086 	DATA 	Keypress: t
+323.9101 	DATA 	Keypress: t
+325.4100 	DATA 	Keypress: t
+326.9091 	DATA 	Keypress: t
+328.4088 	DATA 	Keypress: t
+329.9088 	DATA 	Keypress: t
+331.4092 	DATA 	Keypress: t
+332.9089 	DATA 	Keypress: t
+334.4091 	DATA 	Keypress: t
+335.9090 	DATA 	Keypress: t
+337.4089 	DATA 	Keypress: t
+338.3848 	EXP 	Learning_2_fixation_horz: autoDraw = True
+338.3848 	EXP 	Learning_2_fixation_vert: autoDraw = True
+338.3986 	EXP 	Learning_2_video: autoDraw = False
+338.9160 	DATA 	Keypress: t
+340.4175 	DATA 	Keypress: t
+341.9173 	DATA 	Keypress: t
+343.4164 	DATA 	Keypress: t
+344.9195 	DATA 	Keypress: t
+346.4197 	DATA 	Keypress: t
+347.9196 	DATA 	Keypress: t
+349.4175 	DATA 	Keypress: t
+350.9161 	DATA 	Keypress: t
+352.4174 	DATA 	Keypress: t
+353.4009 	EXP 	Learning_2_fixation_horz: autoDraw = False
+353.4009 	EXP 	Learning_2_fixation_vert: autoDraw = False
+353.4009 	EXP 	Learning_2_instruction: autoDraw = False
+353.4009 	EXP 	Learning_2_3: autoDraw = False
+353.4009 	EXP 	Learning_2_2: autoDraw = False
+353.4009 	EXP 	Learning_2_1: autoDraw = False
+353.4009 	EXP 	Learning_2_video: autoDraw = False
+353.4009 	EXP 	Learning_2_fixation_horz: autoDraw = False
+353.4009 	EXP 	Learning_2_fixation_vert: autoDraw = False
+353.4009 	EXP 	Control_2_instruction: autoDraw = True
+353.9169 	DATA 	Keypress: t
+355.4171 	DATA 	Keypress: t
+356.3814 	EXP 	Control_2_3: autoDraw = True
+356.4145 	EXP 	Control_2_instruction: autoDraw = False
+356.9159 	DATA 	Keypress: t
+357.3810 	EXP 	Control_2_3: autoDraw = False
+357.3810 	EXP 	Control_2_2: autoDraw = True
+358.3841 	EXP 	Control_2_2: autoDraw = False
+358.3841 	EXP 	Control_2_1: autoDraw = True
+358.4202 	DATA 	Keypress: t
+359.3807 	EXP 	Control_2_video: autoDraw = True
+359.3974 	EXP 	Control_2_1: autoDraw = False
+359.9089 	DATA 	Keypress: t
+361.4109 	DATA 	Keypress: t
+362.9098 	DATA 	Keypress: t
+364.4089 	DATA 	Keypress: t
+365.9091 	DATA 	Keypress: t
+367.4096 	DATA 	Keypress: t
+368.9086 	DATA 	Keypress: t
+370.4090 	DATA 	Keypress: t
+371.9099 	DATA 	Keypress: t
+373.4090 	DATA 	Keypress: t
+374.9095 	DATA 	Keypress: t
+376.4100 	DATA 	Keypress: t
+377.9088 	DATA 	Keypress: t
+379.4088 	DATA 	Keypress: t
+380.9101 	DATA 	Keypress: t
+382.4090 	DATA 	Keypress: t
+383.9133 	DATA 	Keypress: t
+385.4090 	DATA 	Keypress: t
+386.9095 	DATA 	Keypress: t
+388.4093 	DATA 	Keypress: t
+389.9112 	DATA 	Keypress: t
+391.4097 	DATA 	Keypress: t
+392.9094 	DATA 	Keypress: t
+394.4108 	DATA 	Keypress: t
+395.9101 	DATA 	Keypress: t
+397.4098 	DATA 	Keypress: t
+398.9096 	DATA 	Keypress: t
+400.4092 	DATA 	Keypress: t
+401.9098 	DATA 	Keypress: t
+403.4098 	DATA 	Keypress: t
+404.9118 	DATA 	Keypress: t
+406.4103 	DATA 	Keypress: t
+407.9096 	DATA 	Keypress: t
+409.4090 	DATA 	Keypress: t
+410.9097 	DATA 	Keypress: t
+412.4112 	DATA 	Keypress: t
+413.9094 	DATA 	Keypress: t
+415.4091 	DATA 	Keypress: t
+416.9092 	DATA 	Keypress: t
+418.4097 	DATA 	Keypress: t
+419.3838 	EXP 	Control_2_video: autoDraw = False
+419.3838 	EXP 	Control_2_same_different_text: autoDraw = True
+419.9199 	DATA 	Keypress: t
+420.8358 	DATA 	Keypress: b
+420.8661 	EXP 	Control_2_same_different_text: autoDraw = False
+420.8661 	EXP 	Control_2_resp_recorded_text: autoDraw = True
+421.4193 	DATA 	Keypress: t
+422.9189 	DATA 	Keypress: t
+424.4176 	DATA 	Keypress: t
+425.9195 	DATA 	Keypress: t
+427.4199 	DATA 	Keypress: t
+428.9198 	DATA 	Keypress: t
+429.3812 	EXP 	Control_2_resp_recorded_text: autoDraw = False
+429.3812 	EXP 	Control_2_fixation_horz: autoDraw = True
+429.3812 	EXP 	Control_2_fixation_vert: autoDraw = True
+430.4182 	DATA 	Keypress: t
+431.9180 	DATA 	Keypress: t
+433.4189 	DATA 	Keypress: t
+434.9164 	DATA 	Keypress: t
+436.4178 	DATA 	Keypress: t
+437.9178 	DATA 	Keypress: t
+439.4167 	DATA 	Keypress: t
+440.9180 	DATA 	Keypress: t
+442.4176 	DATA 	Keypress: t
+443.9177 	DATA 	Keypress: t
+444.3867 	EXP 	Control_2_fixation_horz: autoDraw = False
+444.3867 	EXP 	Control_2_fixation_vert: autoDraw = False
+444.3867 	EXP 	Control_2_instruction: autoDraw = False
+444.3867 	EXP 	Control_2_3: autoDraw = False
+444.3867 	EXP 	Control_2_2: autoDraw = False
+444.3867 	EXP 	Control_2_1: autoDraw = False
+444.3867 	EXP 	Control_2_video: autoDraw = False
+444.3867 	EXP 	Control_2_same_different_text: autoDraw = False
+444.3867 	EXP 	Control_2_resp_recorded_text: autoDraw = False
+444.3867 	EXP 	Control_2_fixation_horz: autoDraw = False
+444.3867 	EXP 	Control_2_fixation_vert: autoDraw = False
+444.3867 	EXP 	Learning_3_instruction: autoDraw = True
+445.4178 	DATA 	Keypress: t
+446.9172 	DATA 	Keypress: t
+447.2679 	DATA 	Keypress: return
+447.3638 	EXP 	Learning_3_3: autoDraw = True
+447.3975 	EXP 	Learning_3_instruction: autoDraw = False
+448.3638 	EXP 	Learning_3_3: autoDraw = False
+448.3638 	EXP 	Learning_3_2: autoDraw = True
+448.4153 	DATA 	Keypress: t
+449.3641 	EXP 	Learning_3_2: autoDraw = False
+449.3641 	EXP 	Learning_3_1: autoDraw = True
+449.9165 	DATA 	Keypress: t
+450.3677 	EXP 	Learning_3_1: autoDraw = False
+450.3677 	EXP 	Learning_3_video: autoDraw = True
+452.2440 	DATA 	Keypress: return
+452.9275 	DATA 	Keypress: lwindows
+457.6691 	EXP 	window1: mouseVisible = True
+457.6691 	DEBUG 	Saving data for DSP_Bold ExperimentHandler
+457.6700 	INFO 	saved data to C:\Users\Public\Moore_fMRI\DSP_PsychoPy\data/22049_DSP_Bold_3_alt_A.psydat
+457.6714 	INFO 	saved data to 'C:\\Users\\Public\\Moore_fMRI\\DSP_PsychoPy\\data/22049_DSP_Bold_3_alt_A.csv'
+1.1153 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+27.7489 	INFO 	Loaded monitor calibration from ['2021_09_24 13:53']
+27.7520 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+28.9641 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.4, 0.4, 0.4]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DFBA1427B8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001DFBA05F080>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.9646 	EXP 	window1: mouseVisible = True
+28.9647 	EXP 	window1: recordFrameIntervals = False
+29.1301 	EXP 	window1: recordFrameIntervals = True
+29.3122 	DEBUG 	Screen (0) actual frame rate measured at 60.44
+29.3122 	EXP 	window1: recordFrameIntervals = False
+29.5057 	EXP 	Created Ready_experimenter_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Ready_experimenter_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Waiting for the experimenter…', units='height', win=Window(...), wrapWidth=1.5)
+29.5058 	EXP 	window1: mouseVisible = False
+29.5065 	EXP 	Created Alignment_background = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='Alignment_background', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([2., 2.]), units='height', vertices=ndarray(...), win=Window(...))
+29.5153 	EXP 	Created Alignment_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='Alignment.png', interpolate=True, mask=None, maskParams=None, name='Alignment_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.4, 1. ]), texRes=512, units='height', win=Window(...))
+29.5208 	EXP 	Created Button_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Button_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Button check.', units='height', win=Window(...), wrapWidth=1)
+29.5273 	EXP 	Created Index_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Index_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Press the button under your index finger.', units='height', win=Window(...), wrapWidth=1.5)
+29.5321 	EXP 	Created Middle_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Middle_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Press the button under your middle finger.', units='height', win=Window(...), wrapWidth=1.5)
+29.5401 	EXP 	Created Repeat_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Repeat_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.5453 	EXP 	Created Ready_scanner_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Ready_scanner_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Waiting for the scanner…', units='height', win=Window(...), wrapWidth=1.5)
+29.5514 	EXP 	Created Learning_1_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+29.5531 	EXP 	Created Learning_1_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+29.5549 	EXP 	Created Learning_1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+29.5567 	EXP 	Created Learning_1_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_1_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+29.6439 	EXP 	Created Learning_1_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_1_video', noAudio=True, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+29.7445 	EXP 	Created Learning_1_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_1_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.7450 	EXP 	Created Learning_1_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_1_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.7527 	EXP 	Created Control_1_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.7538 	EXP 	Created Control_1_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+29.7549 	EXP 	Created Control_1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+29.7561 	EXP 	Created Control_1_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+29.7563 	EXP 	Created Control_1_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-6.0, filename=str(...), flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Control_1_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+29.8513 	EXP 	Created Control_1_same_different_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_same_different_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Same or different color?', units='height', win=Window(...), wrapWidth=1)
+29.8549 	EXP 	Created Control_1_resp_recorded_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_1_resp_recorded_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Response recorded!', units='height', win=Window(...), wrapWidth=1)
+29.8554 	EXP 	Created Control_1_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-10.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_1_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.8558 	EXP 	Created Control_1_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-11.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_1_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.8605 	EXP 	Created Learning_2_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+29.8616 	EXP 	Created Learning_2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+29.8627 	EXP 	Created Learning_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+29.8638 	EXP 	Created Learning_2_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_2_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+29.8640 	EXP 	Created Learning_2_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_2_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+29.9613 	EXP 	Created Learning_2_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_2_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.9618 	EXP 	Created Learning_2_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_2_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+29.9669 	EXP 	Created Control_2_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.9679 	EXP 	Created Control_2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+29.9691 	EXP 	Created Control_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+29.9702 	EXP 	Created Control_2_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+29.9703 	EXP 	Created Control_2_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-6.0, filename=str(...), flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Control_2_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+30.0719 	EXP 	Created Control_2_same_different_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_same_different_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Same or different color?', units='height', win=Window(...), wrapWidth=1)
+30.0751 	EXP 	Created Control_2_resp_recorded_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Control_2_resp_recorded_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Response recorded!', units='height', win=Window(...), wrapWidth=1)
+30.0756 	EXP 	Created Control_2_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-10.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_2_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+30.0760 	EXP 	Created Control_2_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-11.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Control_2_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+30.0798 	EXP 	Created Learning_3_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_instruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Spatial Video!\n\nLearn the layout.', units='height', win=Window(...), wrapWidth=1)
+30.0810 	EXP 	Created Learning_3_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='3', units='height', win=Window(...), wrapWidth=1)
+30.0820 	EXP 	Created Learning_3_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='2', units='height', win=Window(...), wrapWidth=1)
+30.0831 	EXP 	Created Learning_3_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Learning_3_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='1', units='height', win=Window(...), wrapWidth=1)
+30.0833 	EXP 	Created Learning_3_video = MovieStim3(__class__=<class 'psychopy.visual.movie3.MovieStim3'>, autoLog=True, color=UNKNOWN, colorSpace=UNKNOWN, depth=-5.0, filename='./DSP_Videos/Learning/Learning_Alternate.mp4', flipHoriz=False, flipVert=False, fps=UNKNOWN, interpolate=True, loop=False, name='Learning_3_video', noAudio=False, opacity=1.0, ori=method-wrapper(...), pos=array([0., 0.]), size=method-wrapper(...), units='pix', vframe_callback=UNKNOWN, volume=UNKNOWN, win=Window(...))
+30.1791 	EXP 	Created Learning_3_fixation_horz = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_3_fixation_horz', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+30.1795 	EXP 	Created Learning_3_fixation_vert = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-7.0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='black', lineColorSpace='named', lineWidth=5, name='Learning_3_fixation_vert', opacity=1.0, ori=array(90.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+30.1816 	EXP 	Created Done_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.075, italic=False, languageStyle='LTR', name='Done_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Done!', units='height', win=Window(...), wrapWidth=1.5)
+30.2147 	EXP 	Learning_1_video: autoLog = True
+30.2147 	EXP 	Learning_1_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+30.2147 	EXP 	Learning_1_video: size = array([1920., 1080.])
+30.2147 	EXP 	Learning_1_video: ori = 0
+30.2147 	EXP 	Control_1_video: autoLog = True
+30.2147 	EXP 	Control_1_video: movie = './DSP_Videos/Control/Alternate/Videos/Control_Route_3_Alternate_B_001_same.mp4'
+30.2147 	EXP 	Control_1_video: size = array([1920., 1080.])
+30.2147 	EXP 	Control_1_video: ori = 0
+30.2147 	EXP 	Learning_2_video: autoLog = True
+30.2147 	EXP 	Learning_2_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+30.2147 	EXP 	Learning_2_video: size = array([1920., 1080.])
+30.2147 	EXP 	Learning_2_video: ori = 0
+30.2147 	EXP 	Control_2_video: autoLog = True
+30.2147 	EXP 	Control_2_video: movie = './DSP_Videos/Control/Alternate/Videos/Control_Route_1_Alternate_A_001_different.mp4'
+30.2147 	EXP 	Control_2_video: size = array([1920., 1080.])
+30.2147 	EXP 	Control_2_video: ori = 0
+30.2147 	EXP 	Learning_3_video: autoLog = True
+30.2147 	EXP 	Learning_3_video: movie = './DSP_Videos/Learning/Learning_Alternate.mp4'
+30.2147 	EXP 	Learning_3_video: size = array([1920., 1080.])
+30.2147 	EXP 	Learning_3_video: ori = 0
+30.2147 	EXP 	Ready_experimenter_text: autoDraw = True
+50.0899 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+50.0902 	EXP 	New trial (rep=0, index=0): None
+50.0934 	DATA 	Keypress: return
+50.1003 	EXP 	Ready_experimenter_text: autoDraw = False
+50.1003 	EXP 	Alignment_background: autoDraw = True
+50.1003 	EXP 	Alignment_image: autoDraw = True
+50.1003 	EXP 	Alignment_background: autoDraw = False
+50.1003 	EXP 	Alignment_image: autoDraw = False
+50.1003 	EXP 	Button_text: autoDraw = True
+51.1023 	EXP 	Button_text: autoDraw = False
+51.1023 	EXP 	Button_text: autoDraw = False
+51.1023 	EXP 	Index_text: autoDraw = True
+52.0664 	DATA 	Keypress: y
+52.0988 	EXP 	Index_text: autoDraw = False
+52.0988 	EXP 	Middle_text: autoDraw = True
+53.1859 	DATA 	Keypress: b
+53.1972 	EXP 	Middle_text: autoDraw = False
+53.1972 	EXP 	Repeat_text: autoDraw = True
+54.1551 	DATA 	Keypress: n
+54.1653 	EXP 	Repeat_text: autoDraw = False
+54.1653 	EXP 	Ready_scanner_text: autoDraw = True
+73.2397 	DATA 	Keypress: t
+73.2510 	EXP 	Ready_scanner_text: autoDraw = False
+73.2510 	EXP 	Learning_1_instruction: autoDraw = True
+74.7328 	DATA 	Keypress: t
+76.2290 	EXP 	Learning_1_3: autoDraw = True
+76.2322 	DATA 	Keypress: t
+76.2624 	EXP 	Learning_1_instruction: autoDraw = False
+77.2305 	EXP 	Learning_1_3: autoDraw = False
+77.2305 	EXP 	Learning_1_2: autoDraw = True
+77.7327 	DATA 	Keypress: t
+78.2324 	EXP 	Learning_1_2: autoDraw = False
+78.2324 	EXP 	Learning_1_1: autoDraw = True
+79.2340 	EXP 	Learning_1_video: autoDraw = True
+79.2365 	DATA 	Keypress: t
+79.2528 	EXP 	Learning_1_1: autoDraw = False
+80.7420 	DATA 	Keypress: t
+82.2411 	DATA 	Keypress: t
+83.7409 	DATA 	Keypress: t
+85.2412 	DATA 	Keypress: t
+86.7405 	DATA 	Keypress: t
+88.2409 	DATA 	Keypress: t
+89.7418 	DATA 	Keypress: t
+91.2412 	DATA 	Keypress: t
+92.7425 	DATA 	Keypress: t
+94.2410 	DATA 	Keypress: t
+95.7407 	DATA 	Keypress: t
+97.2419 	DATA 	Keypress: t
+98.7408 	DATA 	Keypress: t
+100.2417 	DATA 	Keypress: t
+101.7406 	DATA 	Keypress: t
+103.2423 	DATA 	Keypress: t
+104.7410 	DATA 	Keypress: t
+106.2414 	DATA 	Keypress: t
+107.7423 	DATA 	Keypress: t
+109.2416 	DATA 	Keypress: t
+110.7411 	DATA 	Keypress: t
+112.2412 	DATA 	Keypress: t
+113.7412 	DATA 	Keypress: t
+115.2415 	DATA 	Keypress: t
+116.7410 	DATA 	Keypress: t
+118.2411 	DATA 	Keypress: t
+119.7424 	DATA 	Keypress: t
+121.2415 	DATA 	Keypress: t
+122.7426 	DATA 	Keypress: t
+124.2421 	DATA 	Keypress: t
+125.7424 	DATA 	Keypress: t
+127.2410 	DATA 	Keypress: t
+128.7423 	DATA 	Keypress: t
+130.2412 	DATA 	Keypress: t
+131.7417 	DATA 	Keypress: t
+133.2412 	DATA 	Keypress: t
+134.7413 	DATA 	Keypress: t
+136.2411 	DATA 	Keypress: t
+137.7408 	DATA 	Keypress: t
+139.2318 	EXP 	Learning_1_video: autoDraw = False
+139.2318 	EXP 	Learning_1_fixation_horz: autoDraw = True
+139.2318 	EXP 	Learning_1_fixation_vert: autoDraw = True
+139.2345 	DATA 	Keypress: t
+140.7325 	DATA 	Keypress: t
+142.2317 	DATA 	Keypress: t
+143.7318 	DATA 	Keypress: t
+145.2322 	DATA 	Keypress: t
+146.7316 	DATA 	Keypress: t
+148.2315 	DATA 	Keypress: t
+149.7327 	DATA 	Keypress: t
+151.2316 	DATA 	Keypress: t
+152.7330 	DATA 	Keypress: t
+154.2325 	DATA 	Keypress: t
+154.2488 	EXP 	Learning_1_fixation_horz: autoDraw = False
+154.2488 	EXP 	Learning_1_fixation_vert: autoDraw = False
+154.2488 	EXP 	Learning_1_instruction: autoDraw = False
+154.2488 	EXP 	Learning_1_3: autoDraw = False
+154.2488 	EXP 	Learning_1_2: autoDraw = False
+154.2488 	EXP 	Learning_1_1: autoDraw = False
+154.2488 	EXP 	Learning_1_video: autoDraw = False
+154.2488 	EXP 	Learning_1_fixation_horz: autoDraw = False
+154.2488 	EXP 	Learning_1_fixation_vert: autoDraw = False
+154.2488 	EXP 	Control_1_instruction: autoDraw = True
+155.7343 	DATA 	Keypress: t
+157.2298 	EXP 	Control_1_3: autoDraw = True
+157.2325 	DATA 	Keypress: t
+157.2723 	EXP 	Control_1_instruction: autoDraw = False
+158.2291 	EXP 	Control_1_3: autoDraw = False
+158.2291 	EXP 	Control_1_2: autoDraw = True
+158.7342 	DATA 	Keypress: t
+159.2301 	EXP 	Control_1_2: autoDraw = False
+159.2301 	EXP 	Control_1_1: autoDraw = True
+160.2300 	EXP 	Control_1_1: autoDraw = False
+160.2300 	EXP 	Control_1_video: autoDraw = True
+160.2327 	DATA 	Keypress: t
+161.7414 	DATA 	Keypress: t
+163.2425 	DATA 	Keypress: t
+164.7415 	DATA 	Keypress: t
+166.2398 	DATA 	Keypress: t
+167.7416 	DATA 	Keypress: t
+169.2414 	DATA 	Keypress: t
+170.7420 	DATA 	Keypress: t
+172.2416 	DATA 	Keypress: t
+173.7408 	DATA 	Keypress: t
+175.2412 	DATA 	Keypress: t
+176.7414 	DATA 	Keypress: t
+178.2425 	DATA 	Keypress: t
+179.7412 	DATA 	Keypress: t
+181.2420 	DATA 	Keypress: t
+182.7402 	DATA 	Keypress: t
+184.2433 	DATA 	Keypress: t
+185.7425 	DATA 	Keypress: t
+187.2429 	DATA 	Keypress: t
+188.7428 	DATA 	Keypress: t
+190.2415 	DATA 	Keypress: t
+191.7418 	DATA 	Keypress: t
+193.2414 	DATA 	Keypress: t
+194.7427 	DATA 	Keypress: t
+196.2426 	DATA 	Keypress: t
+197.7425 	DATA 	Keypress: t
+199.2415 	DATA 	Keypress: t
+200.7428 	DATA 	Keypress: t
+202.2405 	DATA 	Keypress: t
+203.7430 	DATA 	Keypress: t
+205.2424 	DATA 	Keypress: t
+206.7419 	DATA 	Keypress: t
+208.2422 	DATA 	Keypress: t
+209.7425 	DATA 	Keypress: t
+211.2424 	DATA 	Keypress: t
+212.7424 	DATA 	Keypress: t
+214.2423 	DATA 	Keypress: t
+215.7404 	DATA 	Keypress: t
+217.2433 	DATA 	Keypress: t
+218.7416 	DATA 	Keypress: t
+220.2193 	EXP 	Control_1_same_different_text: autoDraw = True
+220.2331 	EXP 	Control_1_video: autoDraw = False
+220.2362 	DATA 	Keypress: t
+221.0851 	DATA 	Keypress: y
+221.1150 	EXP 	Control_1_same_different_text: autoDraw = False
+221.1150 	EXP 	Control_1_resp_recorded_text: autoDraw = True
+221.7367 	DATA 	Keypress: t
+223.2336 	DATA 	Keypress: t
+224.7351 	DATA 	Keypress: t
+226.2339 	DATA 	Keypress: t
+227.7359 	DATA 	Keypress: t
+229.2344 	DATA 	Keypress: t
+230.2297 	EXP 	Control_1_resp_recorded_text: autoDraw = False
+230.2297 	EXP 	Control_1_fixation_horz: autoDraw = True
+230.2297 	EXP 	Control_1_fixation_vert: autoDraw = True
+230.7319 	DATA 	Keypress: t
+232.2356 	DATA 	Keypress: t
+233.7333 	DATA 	Keypress: t
+235.2326 	DATA 	Keypress: t
+236.7332 	DATA 	Keypress: t
+238.2324 	DATA 	Keypress: t
+239.7336 	DATA 	Keypress: t
+241.2335 	DATA 	Keypress: t
+242.7335 	DATA 	Keypress: t
+244.2336 	DATA 	Keypress: t
+245.2314 	EXP 	Control_1_fixation_horz: autoDraw = False
+245.2314 	EXP 	Control_1_fixation_vert: autoDraw = False
+245.2314 	EXP 	Control_1_instruction: autoDraw = False
+245.2314 	EXP 	Control_1_3: autoDraw = False
+245.2314 	EXP 	Control_1_2: autoDraw = False
+245.2314 	EXP 	Control_1_1: autoDraw = False
+245.2314 	EXP 	Control_1_video: autoDraw = False
+245.2314 	EXP 	Control_1_same_different_text: autoDraw = False
+245.2314 	EXP 	Control_1_resp_recorded_text: autoDraw = False
+245.2314 	EXP 	Control_1_fixation_horz: autoDraw = False
+245.2314 	EXP 	Control_1_fixation_vert: autoDraw = False
+245.2314 	EXP 	Learning_2_instruction: autoDraw = True
+245.7340 	DATA 	Keypress: t
+247.2333 	DATA 	Keypress: t
+248.2135 	EXP 	Learning_2_3: autoDraw = True
+248.2472 	EXP 	Learning_2_instruction: autoDraw = False
+248.7321 	DATA 	Keypress: t
+249.2138 	EXP 	Learning_2_3: autoDraw = False
+249.2138 	EXP 	Learning_2_2: autoDraw = True
+250.2141 	EXP 	Learning_2_2: autoDraw = False
+250.2141 	EXP 	Learning_2_1: autoDraw = True
+250.2337 	DATA 	Keypress: t
+251.2137 	EXP 	Learning_2_1: autoDraw = False
+251.2137 	EXP 	Learning_2_video: autoDraw = True
+251.7418 	DATA 	Keypress: t
+253.2428 	DATA 	Keypress: t
+254.7418 	DATA 	Keypress: t
+256.2423 	DATA 	Keypress: t
+257.7418 	DATA 	Keypress: t
+259.2416 	DATA 	Keypress: t
+260.7421 	DATA 	Keypress: t
+262.2412 	DATA 	Keypress: t
+263.7411 	DATA 	Keypress: t
+265.2407 	DATA 	Keypress: t
+266.7430 	DATA 	Keypress: t
+268.2433 	DATA 	Keypress: t
+269.7429 	DATA 	Keypress: t
+271.2434 	DATA 	Keypress: t
+272.7421 	DATA 	Keypress: t
+274.2418 	DATA 	Keypress: t
+275.7415 	DATA 	Keypress: t
+277.2429 	DATA 	Keypress: t
+278.7437 	DATA 	Keypress: t
+280.2434 	DATA 	Keypress: t
+281.7426 	DATA 	Keypress: t
+283.2418 	DATA 	Keypress: t
+284.7428 	DATA 	Keypress: t
+286.2422 	DATA 	Keypress: t
+287.7270 	DATA 	Keypress: t
+289.2404 	DATA 	Keypress: t
+290.7422 	DATA 	Keypress: t
+292.2419 	DATA 	Keypress: t
+293.7434 	DATA 	Keypress: t
+295.2422 	DATA 	Keypress: t
+296.7420 	DATA 	Keypress: t
+298.2432 	DATA 	Keypress: t
+299.7432 	DATA 	Keypress: t
+301.2420 	DATA 	Keypress: t
+302.7430 	DATA 	Keypress: t
+304.2421 	DATA 	Keypress: t
+305.7405 	DATA 	Keypress: t
+307.2278 	DATA 	Keypress: t
+308.7417 	DATA 	Keypress: t
+310.2433 	DATA 	Keypress: t
+311.2013 	EXP 	Learning_2_fixation_horz: autoDraw = True
+311.2013 	EXP 	Learning_2_fixation_vert: autoDraw = True
+311.2146 	EXP 	Learning_2_video: autoDraw = False
+311.7350 	DATA 	Keypress: t
+313.2339 	DATA 	Keypress: t
+314.7361 	DATA 	Keypress: t
+316.2339 	DATA 	Keypress: t
+317.7362 	DATA 	Keypress: t
+319.2338 	DATA 	Keypress: t
+320.7328 	DATA 	Keypress: t
+322.2344 	DATA 	Keypress: t
+323.7339 	DATA 	Keypress: t
+325.2343 	DATA 	Keypress: t
+326.2199 	EXP 	Learning_2_fixation_horz: autoDraw = False
+326.2199 	EXP 	Learning_2_fixation_vert: autoDraw = False
+326.2199 	EXP 	Learning_2_instruction: autoDraw = False
+326.2199 	EXP 	Learning_2_3: autoDraw = False
+326.2199 	EXP 	Learning_2_2: autoDraw = False
+326.2199 	EXP 	Learning_2_1: autoDraw = False
+326.2199 	EXP 	Learning_2_video: autoDraw = False
+326.2199 	EXP 	Learning_2_fixation_horz: autoDraw = False
+326.2199 	EXP 	Learning_2_fixation_vert: autoDraw = False
+326.2199 	EXP 	Control_2_instruction: autoDraw = True
+326.7329 	DATA 	Keypress: t
+328.2335 	DATA 	Keypress: t
+329.1993 	EXP 	Control_2_3: autoDraw = True
+329.2308 	EXP 	Control_2_instruction: autoDraw = False
+329.7339 	DATA 	Keypress: t
+330.2001 	EXP 	Control_2_3: autoDraw = False
+330.2001 	EXP 	Control_2_2: autoDraw = True
+331.1981 	EXP 	Control_2_1: autoDraw = True
+331.2147 	EXP 	Control_2_2: autoDraw = False
+331.2343 	DATA 	Keypress: t
+332.1972 	EXP 	Control_2_1: autoDraw = False
+332.1972 	EXP 	Control_2_video: autoDraw = True
+332.7425 	DATA 	Keypress: t
+334.2425 	DATA 	Keypress: t
+335.7430 	DATA 	Keypress: t
+337.2278 	DATA 	Keypress: t
+338.7424 	DATA 	Keypress: t
+340.2418 	DATA 	Keypress: t
+341.7272 	DATA 	Keypress: t
+343.2445 	DATA 	Keypress: t
+344.7436 	DATA 	Keypress: t
+346.2428 	DATA 	Keypress: t
+347.7273 	DATA 	Keypress: t
+349.2432 	DATA 	Keypress: t
+350.7426 	DATA 	Keypress: t
+352.2433 	DATA 	Keypress: t
+353.7262 	DATA 	Keypress: t
+355.2274 	DATA 	Keypress: t
+356.7261 	DATA 	Keypress: t
+358.2261 	DATA 	Keypress: t
+359.7260 	DATA 	Keypress: t
+361.2268 	DATA 	Keypress: t
+362.7435 	DATA 	Keypress: t
+364.2274 	DATA 	Keypress: t
+365.7452 	DATA 	Keypress: t
+367.2264 	DATA 	Keypress: t
+368.7270 	DATA 	Keypress: t
+370.2264 	DATA 	Keypress: t
+371.7431 	DATA 	Keypress: t
+373.2265 	DATA 	Keypress: t
+374.7430 	DATA 	Keypress: t
+376.2277 	DATA 	Keypress: t
+377.7274 	DATA 	Keypress: t
+379.2279 	DATA 	Keypress: t
+380.7264 	DATA 	Keypress: t
+382.2263 	DATA 	Keypress: t
+383.7266 	DATA 	Keypress: t
+385.2259 	DATA 	Keypress: t
+386.7268 	DATA 	Keypress: t
+388.2267 	DATA 	Keypress: t
+389.7276 	DATA 	Keypress: t
+391.2280 	DATA 	Keypress: t
+392.1877 	EXP 	Control_2_same_different_text: autoDraw = True
+392.2013 	EXP 	Control_2_video: autoDraw = False
+392.7364 	DATA 	Keypress: t
+393.3185 	DATA 	Keypress: b
+393.3481 	EXP 	Control_2_same_different_text: autoDraw = False
+393.3481 	EXP 	Control_2_resp_recorded_text: autoDraw = True
+394.2343 	DATA 	Keypress: t
+395.7273 	DATA 	Keypress: t
+397.2349 	DATA 	Keypress: t
+398.7350 	DATA 	Keypress: t
+400.2363 	DATA 	Keypress: t
+401.7364 	DATA 	Keypress: t
+402.1979 	EXP 	Control_2_resp_recorded_text: autoDraw = False
+402.1979 	EXP 	Control_2_fixation_horz: autoDraw = True
+402.1979 	EXP 	Control_2_fixation_vert: autoDraw = True
+403.2344 	DATA 	Keypress: t
+404.7361 	DATA 	Keypress: t
+406.2362 	DATA 	Keypress: t
+407.7333 	DATA 	Keypress: t
+409.2341 	DATA 	Keypress: t
+410.7345 	DATA 	Keypress: t
+412.2347 	DATA 	Keypress: t
+413.7336 	DATA 	Keypress: t
+415.2357 	DATA 	Keypress: t
+416.7329 	DATA 	Keypress: t
+417.2013 	EXP 	Control_2_fixation_horz: autoDraw = False
+417.2013 	EXP 	Control_2_fixation_vert: autoDraw = False
+417.2013 	EXP 	Control_2_instruction: autoDraw = False
+417.2013 	EXP 	Control_2_3: autoDraw = False
+417.2013 	EXP 	Control_2_2: autoDraw = False
+417.2013 	EXP 	Control_2_1: autoDraw = False
+417.2013 	EXP 	Control_2_video: autoDraw = False
+417.2013 	EXP 	Control_2_same_different_text: autoDraw = False
+417.2013 	EXP 	Control_2_resp_recorded_text: autoDraw = False
+417.2013 	EXP 	Control_2_fixation_horz: autoDraw = False
+417.2013 	EXP 	Control_2_fixation_vert: autoDraw = False
+417.2013 	EXP 	Learning_3_instruction: autoDraw = True
+418.2341 	DATA 	Keypress: t
+419.7360 	DATA 	Keypress: t
+420.1826 	EXP 	Learning_3_3: autoDraw = True
+420.2160 	EXP 	Learning_3_instruction: autoDraw = False
+421.1827 	EXP 	Learning_3_3: autoDraw = False
+421.1827 	EXP 	Learning_3_2: autoDraw = True
+421.2358 	DATA 	Keypress: t
+422.1828 	EXP 	Learning_3_2: autoDraw = False
+422.1828 	EXP 	Learning_3_1: autoDraw = True
+422.7350 	DATA 	Keypress: t
+423.1820 	EXP 	Learning_3_1: autoDraw = False
+423.1820 	EXP 	Learning_3_video: autoDraw = True
+424.2269 	DATA 	Keypress: t
+425.7432 	DATA 	Keypress: t
+427.2277 	DATA 	Keypress: t
+428.7266 	DATA 	Keypress: t
+430.2273 	DATA 	Keypress: t
+431.7264 	DATA 	Keypress: t
+433.2271 	DATA 	Keypress: t
+434.7272 	DATA 	Keypress: t
+436.2267 	DATA 	Keypress: t
+437.7271 	DATA 	Keypress: t
+439.2274 	DATA 	Keypress: t
+440.7271 	DATA 	Keypress: t
+442.2266 	DATA 	Keypress: t
+443.7262 	DATA 	Keypress: t
+445.2282 	DATA 	Keypress: t
+446.7270 	DATA 	Keypress: t
+448.2277 	DATA 	Keypress: t
+449.7266 	DATA 	Keypress: t
+451.2267 	DATA 	Keypress: t
+452.7266 	DATA 	Keypress: t
+454.2265 	DATA 	Keypress: t
+455.7269 	DATA 	Keypress: t
+457.2278 	DATA 	Keypress: t
+458.7268 	DATA 	Keypress: t
+460.2279 	DATA 	Keypress: t
+461.7275 	DATA 	Keypress: t
+463.2268 	DATA 	Keypress: t
+464.7271 	DATA 	Keypress: t
+466.2274 	DATA 	Keypress: t
+467.7274 	DATA 	Keypress: t
+469.2280 	DATA 	Keypress: t
+470.7431 	DATA 	Keypress: t
+472.2451 	DATA 	Keypress: t
+473.7270 	DATA 	Keypress: t
+475.2276 	DATA 	Keypress: t
+476.7290 	DATA 	Keypress: t
+478.2271 	DATA 	Keypress: t
+479.7289 	DATA 	Keypress: t
+481.2276 	DATA 	Keypress: t
+482.7277 	DATA 	Keypress: t
+483.1832 	EXP 	Learning_3_video: autoDraw = False
+483.1832 	EXP 	Learning_3_fixation_horz: autoDraw = True
+483.1832 	EXP 	Learning_3_fixation_vert: autoDraw = True
+484.2356 	DATA 	Keypress: t
+485.7366 	DATA 	Keypress: t
+487.2348 	DATA 	Keypress: t
+488.7377 	DATA 	Keypress: t
+490.2353 	DATA 	Keypress: t
+491.7354 	DATA 	Keypress: t
+493.2352 	DATA 	Keypress: t
+494.7348 	DATA 	Keypress: t
+496.2365 	DATA 	Keypress: t
+497.7386 	DATA 	Keypress: t
+498.2049 	EXP 	Learning_3_fixation_horz: autoDraw = False
+498.2049 	EXP 	Learning_3_fixation_vert: autoDraw = False
+498.2049 	EXP 	Learning_3_instruction: autoDraw = False
+498.2049 	EXP 	Learning_3_3: autoDraw = False
+498.2049 	EXP 	Learning_3_2: autoDraw = False
+498.2049 	EXP 	Learning_3_1: autoDraw = False
+498.2049 	EXP 	Learning_3_video: autoDraw = False
+498.2049 	EXP 	Learning_3_fixation_horz: autoDraw = False
+498.2049 	EXP 	Learning_3_fixation_vert: autoDraw = False
+498.2049 	EXP 	Done_text: autoDraw = True
+499.2362 	DATA 	Keypress: t
+500.7368 	DATA 	Keypress: t
+502.2370 	DATA 	Keypress: t
+503.7363 	DATA 	Keypress: t
+544.4242 	DATA 	Keypress: return
+544.4363 	EXP 	Done_text: autoDraw = False
+544.4463 	INFO 	saved data to 'C:\\Users\\Public\\Moore_fMRI\\DSP_PsychoPy\\data/22049_DSP_Bold_3_alt_A_1.csv'
+544.4522 	INFO 	saved data to C:\Users\Public\Moore_fMRI\DSP_PsychoPy\data/22049_DSP_Bold_3_alt_A_1.psydat
+544.4712 	EXP 	window1: mouseVisible = True
+544.4718 	DEBUG 	Saving data for DSP_Bold ExperimentHandler
